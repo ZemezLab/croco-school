@@ -41,6 +41,18 @@ if ( ! class_exists( 'Croco_School_Widgets' ) ) {
 				'before_wrapper' => '<div id="%1$s" %2$s role="complementary">',
 				'after_wrapper'  => '</div>',
 			] );
+
+			register_sidebar( [
+				'id'             => 'croco-school-course-article-sidebar',
+				'name'           => esc_html__( 'Croco School Course Article Sidebar', 'croco-school' ),
+				'description'    => '',
+				'before_widget'  => '<aside id="%1$s" class="widget %2$s">',
+				'after_widget'   => '</aside>',
+				'before_title'   => '<h3 class="widget-title">',
+				'after_title'    => '</h3>',
+				'before_wrapper' => '<div id="%1$s" %2$s role="complementary">',
+				'after_wrapper'  => '</div>',
+			] );
 		}
 
 		/**

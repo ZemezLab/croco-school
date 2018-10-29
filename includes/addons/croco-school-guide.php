@@ -513,8 +513,8 @@ class Croco_School_Guide extends Croco_School_Base {
 
 				endwhile;
 
-				wp_reset_postdata();
-
+				wp_reset_postdata();?>
+			</ul><?php
 				if ( $use_article_limit ) {
 					$term_link_text = esc_html__( 'See all articles', 'croco-school' );
 					$term_link = get_term_link( (int)$term_id, croco_school()->post_type->category_term_slug() );
@@ -523,9 +523,7 @@ class Croco_School_Guide extends Croco_School_Base {
 
 					echo sprintf( '<a class="croco-school-guide__more-articles" href="%s">%s%s</a>', $term_link, $term_link_text, $more_link_icon_html );
 				}
-
-				?>
-			</ul>
+			?>
 		</div><?php
 	}
 

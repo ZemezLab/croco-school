@@ -84,6 +84,7 @@ class Croco_School_Course_List extends Croco_School_Base {
 	public function generate_list_item( $term_data ) {
 		$course_id = $term_data->term_id;
 		$course_name = $term_data->name;
+		$course_link = get_term_link( (int)$course_id, croco_school()->post_type->course_term_slug() );
 		$course_description = $term_data->description;
 		$course_article_count = $term_data->count;
 		$course_thumbnail_id = get_term_meta( $course_id, 'course_thumbnail', true );
@@ -103,7 +104,7 @@ class Croco_School_Course_List extends Croco_School_Base {
 
 		?><div class="croco-school-course-list__item-content"><?php
 
-			echo sprintf( '<h3 class="croco-school-course-list__item-name">%s</h3>', $course_name );
+			echo sprintf( '<h3 class="croco-school-course-list__item-name"><a href="%1$s">%2$s</a></h3>', $course_link, $course_name );
 
 			echo sprintf( '<p class="croco-school-course-list__item-desc">%s</p>', $course_description );
 

@@ -22,30 +22,11 @@ do_action( 'croco_article_before_main_content' );
 
 ?><div class="croco-school">
 	<div class="container">
-		<div class="croco-school__single-article"><?php
+		<?php
 
-			$post_id = get_the_ID();
+			croco_school()->article_data->get_single_article();
 
-			if ( is_active_sidebar( 'croco-school-article-sidebar' ) ) : ?>
-				<aside id="secondary" class="croco-school__single-article-sidebar">
-					<?php dynamic_sidebar( 'croco-school-article-sidebar' ); ?>
-				</aside><!-- #secondary -->
-			<?php endif;
-
-			while ( have_posts() ) : the_post();
-
-			?><article id="primary" class="croco-school__single-article-content"><?php
-
-				croco_school()->article_data->get_single_article();
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?></article><?php
-
-			endwhile;?>
-		</div>
+			?>
 	</div>
 </div><?php
 

@@ -52,7 +52,6 @@ class Croco_School_Course extends Croco_School_Base {
 			]
 		);
 
-
 		$avaliable_courses = \Croco_School_Utils::avaliable_courses();
 
 		if ( ! $avaliable_courses ) {

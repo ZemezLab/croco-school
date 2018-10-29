@@ -54,16 +54,81 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 			$post_id = get_the_ID();
 
-			$format = $this->get_post_format( $post_id );
+			if ( ! has_term( '', croco_school()->post_type->course_term_slug() ) ) {
+				$this->get_single_guide_article();
+			} else {
+				$this->get_single_course_article();
+			}
+		}
 
-			$post_format_template = 'croco-article-' . $format . '-single-post.php';
+		/**
+		 * [get_single_guide_article description]
+		 * @return [type] [description]
+		 */
+		public function get_single_guide_article() {
 
-			croco_school()->progress->article_progress_start();
+			?><div class="croco-school__single-article guide-article"><?php
 
-			include croco_school()->get_template( $post_format_template );
+				if ( is_active_sidebar( 'croco-school-article-sidebar' ) ) : ?>
+					<aside id="secondary" class="croco-school__single-article-sidebar">
+						<?php dynamic_sidebar( 'croco-school-article-sidebar' ); ?>
+					</aside><!-- #secondary -->
+				<?php endif;
 
-			echo $this->get_done_lesson_button();
+				while ( have_posts() ) : the_post();
 
+				?><article id="primary" class="croco-school__single-article-content"><?php
+
+					$post_id = get_the_ID();
+
+					$format = $this->get_post_format( $post_id );
+
+					$post_format_template = 'croco-article-' . $format . '-single-post.php';
+
+					croco_school()->progress->article_progress_start();
+
+					include croco_school()->get_template( $post_format_template );
+
+				?></article><?php
+				endwhile;
+
+			?></div><?php
+		}
+
+		/**
+		 * [get_single_course_article description]
+		 * @return [type] [description]
+		 */
+		public function get_single_course_article() {
+
+			?><div class="croco-school__single-article course-article"><?php
+
+				while ( have_posts() ) : the_post();
+
+				?><article id="primary" class="croco-school__single-article-content"><?php
+
+					$post_id = get_the_ID();
+
+					$format = $this->get_post_format( $post_id );
+
+					$post_format_template = 'croco-article-' . $format . '-single-post.php';
+
+					croco_school()->progress->article_progress_start();
+
+					include croco_school()->get_template( $post_format_template );
+
+					echo $this->get_done_lesson_button();
+
+				?></article><?php
+				endwhile;
+
+				if ( is_active_sidebar( 'croco-school-course-article-sidebar' ) ) : ?>
+					<aside id="secondary" class="croco-school__single-article-sidebar">
+						<?php dynamic_sidebar( 'croco-school-course-article-sidebar' ); ?>
+					</aside><!-- #secondary -->
+				<?php endif;
+
+			?></div><?php
 		}
 
 		/**
@@ -88,7 +153,7 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 						'article_id' => $article_id,
 					], $current_url );
 
-					$html .= sprintf( '<a href="%s"><span>%s</span></a>', $current_url, __( 'Complete', 'croco-school' ) );
+					$html .= sprintf( '<a href="%s"><span>%s</span></a>', $current_url, __( 'Finish The Lesson', 'croco-school' ) );
 
 					break;
 
@@ -101,9 +166,9 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 					$html .= sprintf(
 						'<span class="progress-message">%s</span><a href="%s"><span>%s</span></a>',
-						__( 'Complete', 'croco-school' ),
+						__( 'Lesson Learned', 'croco-school' ),
 						$current_url,
-						__( 'Go Back To Training', 'croco-school' ) );
+						__( 'Go Back This Lesson To Training', 'croco-school' ) );
 
 					break;
 			}
