@@ -1,0 +1,67 @@
+.croco-school-course {
+	color: #162B40;
+
+	&__inner {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	&__name {
+		font-size: 30px;
+		line-height: 46px;
+		color: #162B40;
+		text-align: center;
+		margin: 0 0 15px 0;
+	}
+
+	&__lessons {
+		font-size: 18px;
+		line-height: 26px;
+		color: #617BE5;
+		font-weight: normal;
+		margin-bottom: 10px;
+
+		span {
+			margin-right: 5px;
+		}
+	}
+
+	&__thumb {
+		width: 450px;
+		height: 230px;
+		max-width: 100%;
+		position: relative;
+		margin-bottom: 10px;
+
+		.elementor & img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__desc {
+		font-size: 18px;
+		line-height: 30px;
+		margin: 0 0 30px 0;
+		text-align: center;
+	}
+
+	&__progress-link {
+		padding: 12px 60px;
+		background-color: #34D7A1;
+		border-radius: 3px;
+		text-align: center;
+
+		span {
+			color: white;
+			font-size: 13px;
+			border-radius: 3px;
+
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+	}
+}

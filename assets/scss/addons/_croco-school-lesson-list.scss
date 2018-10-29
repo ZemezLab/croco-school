@@ -1,0 +1,120 @@
+.croco-school-lesson-list {
+
+	&__grid {
+		display: flex;
+		flex-flow: row wrap;
+		padding-left: -20px;
+		padding-right: -20px;
+	}
+
+	&__item {
+		width: 33.3333%;
+		display: flex;
+		align-items: stretch;
+
+		color: #162B40;
+
+		@media (max-width: 1024px) {
+			width: 50%;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	&__item-inner {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		position: relative;
+		margin: 20px;
+		padding: 30px;
+		background-color: white;
+		box-shadow: 2px 2px 5px rgba(22, 43, 64, 0.05);
+		transition: all 0.4s ease;
+
+		&:hover {
+			box-shadow: 5px 5px 20px rgba(22, 43, 64, 0.12);
+		}
+	}
+
+	&__lessons {
+		font-size: 18px;
+		line-height: 22px;
+		color: #617BE5;
+		margin-bottom: 20px;
+		font-weight: normal;
+
+		span {
+			margin-right: 5px;
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0 0 10px 0;
+	}
+
+	&__excerpt {
+		flex: 1 1 auto;
+		font-size: 16px;
+		line-height: 24px;
+		margin: 0 0 25px 0;
+	}
+
+	&__permalink {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+
+		padding: 10px 20px;
+		background-color: #34D7A1;
+		border-radius: 3px;
+		text-align: center;
+
+
+		&.status-done {
+			background-color: white;
+			box-shadow: inset 0 0 0 1px #e4e7ed;
+
+			i {
+				display: block;
+			}
+
+			span {
+				color: #34D7A1;
+			}
+
+			&:hover {
+				background-color: white;
+				box-shadow: inset 0 0 0 1px #34D7A1;
+			}
+		}
+
+		i {
+			display: none;
+			color: #34D7A1;
+			font-size: 20px;
+			margin-right: 5px;
+		}
+
+		span {
+			color: white;
+			font-size: 13px;
+			border-radius: 3px;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+
+		&:hover {
+			background-color: #2fc594;
+		}
+	}
+
+}

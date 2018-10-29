@@ -1,0 +1,112 @@
+@import "addons/croco-school-guide";
+@import "addons/croco-school-course-list";
+@import "addons/croco-school-course";
+@import "addons/croco-school-lesson-list";
+
+.croco-school {
+
+	&-container {
+		width: 760px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: .9375rem;
+		padding-right: .9375rem;
+	}
+
+	&__search-form {
+		padding: 40px 0;
+		background-color: #F4F5F7;
+	}
+
+	&__title {
+		margin-top: 25px;
+		margin-bottom: 35px;
+	}
+
+	&__article-list {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	&__article-list-item {
+		align-self: stretch;
+		padding: 10px 0;
+		border-bottom: 1px solid #E4E7ED;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__single-article {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	&__single-article-title {
+		margin-bottom: 35px;
+	}
+
+	&__single-article-content {
+		margin-bottom: 35px;
+	}
+
+	&__single-article-sidebar {
+		width: 30%;
+		min-width: 250px;
+		padding-right: 40px;
+		margin-right: 40px;
+		border-right: 1px solid #E4E7ED;
+	}
+
+	&__single-article-content {
+		flex: 1 1 auto;
+	}
+
+	&__lesson-progress {
+		display: flex;
+		margin: 40px 0 40px 0;
+		padding: 40px 0 40px 0;
+		border-top: 1px solid #E4E7ED;
+		border-bottom: 1px solid #E4E7ED;
+
+		&.status-in_progress {
+			flex-flow: column;
+			align-items: stretch;
+		}
+
+		&.status-done {
+			flex-flow: row;
+			justify-content: center;
+		}
+
+		.progress-message {
+			color: #162B40;
+			font-size: 24px;
+			margin-right: 25px;
+
+			border: 2px solid #34D7A1;
+			border-radius: 3px;
+			padding: 0 25px;
+		}
+
+		a {
+			padding: 10px 25px;
+			background-color: #34D7A1;
+			border-radius: 3px;
+			text-align: center;
+
+			span {
+				color: white;
+				font-size: 13px;
+				border-radius: 3px;
+
+				text-transform: uppercase;
+			}
+		}
+	}
+
+}

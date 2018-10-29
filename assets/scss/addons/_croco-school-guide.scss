@@ -1,0 +1,103 @@
+.croco-school-guide {
+
+	&__inner {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: stretch;
+	}
+
+	&__thumbnail {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 30px;
+
+		img {
+			width: 500px;
+			object-fit: cover;
+		}
+	}
+
+	&__name-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	&__name {
+		text-align: center;
+		font-size: 30px;
+		line-height: 46px;
+		margin: 0;
+	}
+
+	&__back {
+		position: absolute;
+		font-size: 16px;
+		color: #162B40;
+		left: 0;
+
+		i {
+			margin-right: 10px;
+		}
+	}
+
+	&__more-articles {
+		font-size: 16px;
+		color: #162B40;
+		margin-top: 25px;
+		display: block;
+
+		i {
+			margin-left: 10px;
+		}
+	}
+
+	&__terms-list {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-top: 40px;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	&__terms-item {
+		width: 33.3333%;
+		padding: 0 20px;
+
+		.croco-school-guide__article-list {
+		}
+	}
+
+	&__article-list {
+
+		&-title {
+			font-size: 18px;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				padding: 15px 0;
+				border-bottom: 1px solid #E4E7ED;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				a {
+					font-size: 16px;
+					color: #617BE5;
+				}
+			}
+		}
+	}
+}
