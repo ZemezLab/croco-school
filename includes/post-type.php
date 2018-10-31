@@ -29,16 +29,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 		 * @return string
 		 */
 		public function article_post_slug() {
-			return 'croco-article';
-		}
-
-		/**
-		 * Returns post type slug
-		 *
-		 * @return string
-		 */
-		public function teacher_post_slug() {
-			return 'croco-teacher';
+			return 'article';
 		}
 
 		/**
@@ -47,7 +38,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 		 * @return string
 		 */
 		public function course_term_slug() {
-			return 'croco-сourse';
+			return 'сourse';
 		}
 
 		/**
@@ -55,7 +46,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 		 * @return [type] [description]
 		 */
 		public function category_term_slug() {
-			return 'croco-article-category';
+			return 'article-category';
 		}
 
 		/**
@@ -84,7 +75,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 
 				$this->article_post_slug() => [
 					'labels'              => [
-						'name'          => esc_html__( 'Croco Article', 'croco-school' ),
+						'name'          => esc_html__( 'Article', 'croco-school' ),
 						'singular_name' => esc_html__( 'Article', 'croco-school' ),
 						'all_items'     => esc_html__( 'All Articles', 'croco-school' ),
 						'add_new'       => esc_html__( 'Add New Article', 'croco-school' ),
@@ -117,42 +108,6 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 					'can_export'      => true,
 					'has_archive'     => true,
 				],
-
-				/*$this->teacher_post_slug() => [
-					'labels'              => [
-						'name'          => esc_html__( 'Croco Teacher', 'croco-school' ),
-						'singular_name' => esc_html__( 'Teacher', 'croco-school' ),
-						'all_items'     => esc_html__( 'All Teachers', 'croco-school' ),
-						'add_new'       => esc_html__( 'Add New Teacher', 'croco-school' ),
-						'add_new_item'  => esc_html__( 'Add New Teacher', 'croco-school' ),
-						'edit_item'     => esc_html__( 'Edit Teacher Data', 'croco-school' ),
-						'menu_name'     => esc_html__( 'Croco Teacher', 'croco-school' ),
-					],
-					'hierarchical'        => false,
-					'description'         => 'description',
-					'public'              => true,
-					'show_ui'             => true,
-					'show_in_menu'        => true,
-					'show_in_admin_bar'   => true,
-					'menu_position'       => 26,
-					'menu_icon'           => 'dashicons-welcome-learn-more',
-					'show_in_nav_menus'   => false,
-					'publicly_queryable'  => true,
-					'exclude_from_search' => true,
-					'has_archive'         => true,
-					'query_var'           => true,
-					'can_export'          => true,
-					'rewrite'             => true,
-					'capability_type'     => 'post',
-					'supports'            => apply_filters( 'croco-school/post-type/teacher/register/supports', [
-						'title',
-						'editor',
-						'author',
-						'thumbnail',
-						'comments',
-						'revisions',
-					] ),
-				],*/
 			];
 
 			foreach ( $post_types as $post_slug => $post_data ) {
@@ -166,14 +121,16 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 		 */
 		public function register_taxonomy() {
 
+
+
 			$taxonomy_list = [
 				$this->course_term_slug() => [
 					'labels'        => [
-						'name'          => esc_html__( 'Croco Courses', 'croco-school' ),
-						'singular_name' => esc_html__( 'Croco Course', 'croco-school' ),
-						'label'         => esc_html__( 'Croco Courses', 'croco-school' ),
-						'menu_name'     => esc_html__( 'Croco Courses', 'croco-school' ),
-						'search_items'  => esc_html__( 'Search Croco Courses', 'croco-school' ),
+						'name'          => esc_html__( 'Courses', 'croco-school' ),
+						'singular_name' => esc_html__( 'Course', 'croco-school' ),
+						'label'         => esc_html__( 'Courses', 'croco-school' ),
+						'menu_name'     => esc_html__( 'Courses', 'croco-school' ),
+						'search_items'  => esc_html__( 'Search Courses', 'croco-school' ),
 					],
 					'hierarchical'      => true,
 					'rewrite'           => true,
@@ -187,10 +144,10 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 
 				$this->category_term_slug() => [
 					'labels'        => [
-						'name'          => esc_html__( 'Croco Arcticle Category', 'croco-school' ),
-						'singular_name' => esc_html__( 'Croco Arcticle Category', 'croco-school' ),
-						'label'         => esc_html__( 'Croco Arcticle Category', 'croco-school' ),
-						'menu_name'     => esc_html__( 'Croco Arcticle Category', 'croco-school' ),
+						'name'          => esc_html__( 'Arcticle Category', 'croco-school' ),
+						'singular_name' => esc_html__( 'Arcticle Category', 'croco-school' ),
+						'label'         => esc_html__( 'Arcticle Category', 'croco-school' ),
+						'menu_name'     => esc_html__( 'Arcticle Category', 'croco-school' ),
 						'search_items'  => esc_html__( 'Search Article Categories', 'croco-school' ),
 					],
 					'hierarchical'          => true,
@@ -222,11 +179,11 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 			$find        = [];
 			$file        = '';
 
-			$archive_template = 'archive-croco-article.php';
+			$archive_template = 'archive-article.php';
 
 			if ( is_single() && $this->article_post_slug() === get_post_type() ) {
 
-				$file   = 'single-croco-article.php';
+				$file   = 'single-article.php';
 				$find[] = $file;
 				$find[] = croco_school()->template_path() . $file;
 

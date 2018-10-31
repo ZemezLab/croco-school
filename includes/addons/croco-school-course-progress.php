@@ -13,14 +13,14 @@ use Elementor\Widget_Base;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Croco_School_Lesson_List extends Croco_School_Base {
+class Croco_School_Course_Progress extends Croco_School_Base {
 
 	public function get_name() {
-		return 'croco-school-lesson-list';
+		return 'croco-school-course-progress';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Croco Lesson List', 'croco-school' );
+		return esc_html__( 'Croco Course Progress', 'croco-school' );
 	}
 
 	public function get_icon() {
@@ -41,6 +41,15 @@ class Croco_School_Lesson_List extends Croco_School_Base {
 		);
 
 		$this->add_control(
+			'title',
+			array(
+				'label'   => esc_html__( 'Title', 'croco-school' ),
+				'type'    => Controls_Manager::TEXT,
+				'default' => esc_html__( 'Course Lessons', 'croco-school' ),
+			)
+		);
+
+		$this->add_control(
 			'is_archive_template',
 			[
 				'label'        => esc_html__( 'Use as Archive Template', 'croco-school' ),
@@ -51,7 +60,6 @@ class Croco_School_Lesson_List extends Croco_School_Base {
 				'default'      => 'no',
 			]
 		);
-
 
 		$avaliable_courses = \Croco_School_Utils::avaliable_courses();
 
@@ -75,7 +83,7 @@ class Croco_School_Lesson_List extends Croco_School_Base {
 					'label'   => esc_html__( 'Croco Course', 'croco-school' ),
 					'type'    => Controls_Manager::SELECT,
 					'options' => $avaliable_courses,
-					'default' => $default_course,
+					'default' => $default_course
 				]
 			);
 		}
@@ -95,28 +103,37 @@ class Croco_School_Lesson_List extends Croco_School_Base {
 
 		$is_archive_template = filter_var( $settings['is_archive_template'], FILTER_VALIDATE_BOOLEAN );
 
-		if ( ! $is_archive_template ) {
-			$course_id = $settings['course_id'];
-		} else {
+		$course_id = $settings['course_id'];
 
-			if ( isset( get_queried_object()->term_id )) {
-				$course_id = get_queried_object()->term_id;
-			}else {
-				$course_id = $settings['course_id'];
+		if ( $is_archive_template && isset( get_queried_object()->ID ) ) {
+			$article_id = get_queried_object()->ID;
+
+			$term_list = get_the_terms( $article_id, croco_school()->post_type->course_term_slug() );
+
+			if ( ! empty( $term_list ) ) {
+				$course_id = $term_list[0]->term_id;
 			}
 		}
 
+		$term_data = get_term( $course_id, croco_school()->post_type->course_term_slug() );
+
+		$course_id = $term_data->term_id;
+
 		$this->add_render_attribute( 'container', [
 			'class' => [
-				'croco-school-lesson-list',
+				'croco-school-course-progress',
 			],
 		] );
 
-		?><div <?php echo $this->get_render_attribute_string( 'container' ); ?>>
-			<div class="croco-school-lesson-list__inner">
-				<div class="croco-school-lesson-list__grid"><?php
+		?><div <?php echo $this->get_render_attribute_string( 'container' ); ?>><?php
 
-					$query = new \WP_Query( [
+			if ( ! empty( $settings['title'] ) ) {
+				echo sprintf( '<h2 class="croco-school-course-progress__title">%s</h2>', $settings['title'] );
+			}
+
+			?><div class="croco-school-course-progress__inner"><?php
+
+				$query = new \WP_Query( [
 						'post_type' => croco_school()->post_type->article_post_slug(),
 						'tax_query' => [
 							[
@@ -133,43 +150,39 @@ class Croco_School_Lesson_List extends Croco_School_Base {
 						$post_id  = $query->post->ID;
 
 						$title = get_the_title( $post_id );
-						$excerpt = get_the_excerpt( $post_id );
-						$excerpt = \Croco_School_Utils::cut_text( $excerpt, 15, 'word', '...', true );
 						$permalink = get_the_permalink( $post_id );
 
-						$permalink = add_query_arg( [
-							'course_id' => $course_id,
-						], $permalink );
-
 						$status = croco_school()->progress->get_article_progress( $post_id );
-
-						$link_text = __( 'View Lesson', 'croco-school' );
 
 						switch ( $status ) {
 
 							case 'in_progress':
-								$link_text = __( 'Continue', 'croco-school' );
+								$progress_text = __( 'In Progress', 'croco-school' );
+								$progress_icon = '<i class="nc-icon-glyph ui-1_eye-19"></i>';
 								break;
 
 							case 'done':
-								$link_text = __( 'Complete', 'croco-school' );
+								$progress_text = __( 'Completed', 'croco-school' );
+								$progress_icon = '<i class="nc-icon-glyph ui-1_check-bold"></i>';
 								break;
 
 							case 'not_started':
-								$link_text = __( 'View Lesson', 'croco-school' );
+								$progress_text = __( 'Not Viewed', 'croco-school' );
+								$progress_icon = '<i class="nc-icon-glyph arrows-3_super-bold-right"></i>';
+								break;
+
+							default:
+								$progress_text = __( 'Not Viewed', 'croco-school' );
 								break;
 						}
 
-						?><div id="croco-article-<?php the_ID(); ?>" class="croco-school-lesson-list__item">
-							<div class="croco-school-lesson-list__item-inner"><?php
-
-								echo sprintf( '<span class="croco-school-lesson-list__lessons"><span>%s</span>%s</span>', __( 'Lesson', 'croco-school' ), $count );
-
-								echo sprintf( '<h2 class="croco-school-lesson-list__title">%s</h2>', $title );
-
-								echo sprintf( '<p class="croco-school-lesson-list__excerpt">%s</p>', $excerpt );
-
-								echo sprintf( '<a class="croco-school-lesson-list__permalink status-%s" href="%s"><i class="fa fa-check"></i><span>%s</span></a>', $status, $permalink, $link_text ); ?>
+						?><div id="croco-school-course-progress-<?php the_ID(); ?>" class="croco-school-course-progress__item <?php echo $status; ?>-status">
+							<div class="croco-school-course-progress__item-icon"><?php
+								echo $progress_icon;
+							?></div>
+							<div class="croco-school-course-progress__item-inner"><?php
+								echo sprintf( '<h3 class="croco-school-course-progress__item-title"><a href="%s">%s</a></h3>', $permalink, $title );
+								echo sprintf( '<span class="croco-school-course-progress__item-progress">%s</span>', $progress_text ); ?>
 							</div>
 						</div><?php
 
@@ -177,13 +190,11 @@ class Croco_School_Lesson_List extends Croco_School_Base {
 
 					endwhile;
 
-					wp_reset_postdata();
+					wp_reset_postdata();?>
 
-					?>
-				</div>
 			</div>
 		</div><?php
-
 	}
+
 }
 

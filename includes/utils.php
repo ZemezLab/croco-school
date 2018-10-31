@@ -22,7 +22,8 @@ if ( ! class_exists( 'Croco_School_Utils' ) ) {
 
 		public static function avaliable_courses() {
 			$terms = get_terms( [
-				'taxonomy'   => 'croco-сourse',
+				'taxonomy'   => 'сourse',
+				'hide_empty' => false,
 			] );
 
 			$result = [];
@@ -39,7 +40,8 @@ if ( ! class_exists( 'Croco_School_Utils' ) ) {
 		public static function avaliable_article_category() {
 
 			$terms = get_terms( [
-				'taxonomy'   => 'croco-article-category',
+				'taxonomy'   => 'article-category',
+				'hide_empty' => false,
 			] );
 
 			$result = [];

@@ -1,9 +1,20 @@
 @import "addons/croco-school-guide";
 @import "addons/croco-school-course-list";
 @import "addons/croco-school-course";
+@import "addons/croco-school-course-progress";
 @import "addons/croco-school-lesson-list";
 
 .croco-school {
+
+	.guide-article {
+		a {
+			color: #617BE5;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 
 	&-container {
 		width: 760px;
@@ -14,97 +25,117 @@
 		padding-right: .9375rem;
 	}
 
-	&__search-form {
-		padding: 40px 0;
-		background-color: #F4F5F7;
-	}
-
-	&__title {
-		margin-top: 25px;
-		margin-bottom: 35px;
-	}
-
-	&__article-list {
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-	}
-
-	&__article-list-item {
-		align-self: stretch;
-		padding: 10px 0;
-		border-bottom: 1px solid #E4E7ED;
-
-		&:last-child {
-			border-bottom: none;
-		}
-	}
-
 	&__single-article {
 		display: flex;
 		flex-flow: row nowrap;
 	}
 
 	&__single-article-title {
-		margin-bottom: 35px;
+		font-size: 30px;
+		margin: 0 0 35px 0;
 	}
 
 	&__single-article-content {
 		margin-bottom: 35px;
+	}
+
+	&__single-article-container {
+		width: 75%;
+		flex: 1 1 auto;
+
+		.guide-article.has-sidebar & .croco-school__single-article-container-inner {
+			padding-left: 60px;
+			margin-left: 60px;
+			border-left: 1px solid #E4E7ED;
+		}
 	}
 
 	&__single-article-sidebar {
-		width: 30%;
-		min-width: 250px;
-		padding-right: 40px;
-		margin-right: 40px;
-		border-right: 1px solid #E4E7ED;
+		width: 25%;
+		min-width: 280px;
+
+		.course-article & .croco-school__single-article-sidebar-inner {
+			padding-left: 20px;
+			margin-left: 20px;
+		}
 	}
 
-	&__single-article-content {
-		flex: 1 1 auto;
+	&__single-search {
+		padding: 50px 0;
+		background-color: #F4F5F7;
+		margin-bottom: 60px;
 	}
 
 	&__lesson-progress {
 		display: flex;
-		margin: 40px 0 40px 0;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: 80px 0 0 0;
 		padding: 40px 0 40px 0;
 		border-top: 1px solid #E4E7ED;
 		border-bottom: 1px solid #E4E7ED;
 
 		&.status-in_progress {
-			flex-flow: column;
-			align-items: stretch;
+
 		}
 
 		&.status-done {
-			flex-flow: row;
-			justify-content: center;
+
 		}
 
 		.progress-message {
-			color: #162B40;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			color: #162b40;
 			font-size: 24px;
-			margin-right: 25px;
-
-			border: 2px solid #34D7A1;
+			margin: 0 0 30px 0;
 			border-radius: 3px;
-			padding: 0 25px;
+
+			i {
+				font-size: 30px;
+				color: #34D7A1;
+				margin-right: 10px;
+			}
 		}
 
 		a {
-			padding: 10px 25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 16px 60px 16px 50px;
+			margin: 10px 0;
 			background-color: #34D7A1;
 			border-radius: 3px;
 			text-align: center;
+
+			width: 48%;
+
+			i {
+				color: white;
+				font-size: 20px;
+				margin-right: 10px;
+			}
 
 			span {
 				color: white;
 				font-size: 13px;
 				border-radius: 3px;
-
 				text-transform: uppercase;
+			}
+
+			&:hover {
+				background-color: #2fc594;
+			}
+
+			&.back-button {
+				background-color: #617BE5;
+
+				&:hover {
+					background-color: #576fd0;
+				}
 			}
 		}
 	}

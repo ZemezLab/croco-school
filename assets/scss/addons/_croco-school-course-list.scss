@@ -3,8 +3,8 @@
 	&__grid {
 		display: flex;
 		flex-flow: row wrap;
-		padding-left: -20px;
-		padding-right: -20px;
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 
 	&__item {
@@ -65,7 +65,7 @@
 	}
 
 	&__item-desc {
-		margin: 0 0 20px 0;
+		margin: 0 0 15px 0;
 		flex: 1 1 auto;
 	}
 
@@ -73,7 +73,7 @@
 		display: flex;
 		color: #a2aab3;
 		font-size: 14px;
-		margin: 0 0 25px 0;
+		margin: 0 0 15px 0;
 	}
 
 	&__progress-label {
@@ -126,6 +126,7 @@
 		background-color: #34D7A1;
 		border-radius: 3px;
 		text-align: center;
+		transition: all 0.3s ease;
 
 		span {
 			color: white;
@@ -134,6 +135,10 @@
 
 			text-transform: uppercase;
 			font-weight: normal;
+		}
+
+		&:hover {
+			background-color: #2fc594;
 		}
 	}
 

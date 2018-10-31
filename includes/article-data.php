@@ -31,22 +31,6 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 		}
 
 		/**
-		 * [get_article_listing description]
-		 * @param  array  $args [description]
-		 * @return [type]       [description]
-		 */
-		public function get_article_listing( $args = [] ) {
-
-			if ( have_posts() ) : while ( have_posts() ) : the_post();
-
-					include croco_school()->get_template( 'croco-article-list-item.php' );
-
-				endwhile;
-
-			endif;
-		}
-
-		/**
 		 * [get_single_article description]
 		 * @return [type] [description]
 		 */
@@ -55,6 +39,16 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 			$post_id = get_the_ID();
 
 			if ( ! has_term( '', croco_school()->post_type->course_term_slug() ) ) {
+
+				?><div class="croco-school__single-search">
+					<div class="container"><?php
+
+						if ( function_exists( 'cherry_get_search_form' ) ) {
+							cherry_get_search_form();
+						}
+					?></div>
+				</div><?php
+
 				$this->get_single_guide_article();
 			} else {
 				$this->get_single_course_article();
@@ -66,30 +60,41 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 		 * @return [type] [description]
 		 */
 		public function get_single_guide_article() {
+			$is_active_sidebar = is_active_sidebar( 'croco-school-article-sidebar' );
 
-			?><div class="croco-school__single-article guide-article"><?php
+			$is_sidebar_class = $is_active_sidebar ? 'has-sidebar' : 'no-sidebar';
 
-				if ( is_active_sidebar( 'croco-school-article-sidebar' ) ) : ?>
+			?><div class="croco-school__single-article container guide-article <?php echo $is_sidebar_class; ?>"><?php
+
+				if ( $is_active_sidebar ) : ?>
 					<aside id="secondary" class="croco-school__single-article-sidebar">
-						<?php dynamic_sidebar( 'croco-school-article-sidebar' ); ?>
+						<div class="croco-school__single-article-sidebar-inner">
+							<?php dynamic_sidebar( 'croco-school-article-sidebar' ); ?>
+						</div>
 					</aside><!-- #secondary -->
 				<?php endif;
 
 				while ( have_posts() ) : the_post();
 
-				?><article id="primary" class="croco-school__single-article-content"><?php
+				?><article id="primary" class="croco-school__single-article-container">
+					<div class="croco-school__single-article-container-inner"><?php
 
-					$post_id = get_the_ID();
+						$post_id = get_the_ID();
 
-					$format = $this->get_post_format( $post_id );
+						$format = $this->get_post_format( $post_id );?>
 
-					$post_format_template = 'croco-article-' . $format . '-single-post.php';
+						<h2 class="croco-school__single-article-title"><?php echo the_title(); ?></h2>
 
-					croco_school()->progress->article_progress_start();
+						<div class="croco-school__single-article-content"><?php
+							ob_start();
+							the_content( '' );
+							$content = ob_get_contents();
+							ob_end_clean();
 
-					include croco_school()->get_template( $post_format_template );
-
-				?></article><?php
+							echo $content;
+						?></div>
+					</div>
+				</article><?php
 				endwhile;
 
 			?></div><?php
@@ -101,21 +106,28 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 		 */
 		public function get_single_course_article() {
 
-			?><div class="croco-school__single-article course-article"><?php
+		?><div class="croco-school__single-article container course-article"><?php
 
 				while ( have_posts() ) : the_post();
 
-				?><article id="primary" class="croco-school__single-article-content"><?php
+				?><article id="primary" class="croco-school__single-article-container"><?php
 
 					$post_id = get_the_ID();
 
 					$format = $this->get_post_format( $post_id );
 
-					$post_format_template = 'croco-article-' . $format . '-single-post.php';
+					croco_school()->progress->article_progress_start();?>
 
-					croco_school()->progress->article_progress_start();
+					<h2 class="croco-school__single-article-title"><?php echo the_title(); ?></h2>
 
-					include croco_school()->get_template( $post_format_template );
+					<div class="croco-school__single-article-content"><?php
+						ob_start();
+						the_content( '' );
+						$content = ob_get_contents();
+						ob_end_clean();
+
+						echo $content;
+					?></div><?php
 
 					echo $this->get_done_lesson_button();
 
@@ -124,11 +136,13 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 				if ( is_active_sidebar( 'croco-school-course-article-sidebar' ) ) : ?>
 					<aside id="secondary" class="croco-school__single-article-sidebar">
-						<?php dynamic_sidebar( 'croco-school-course-article-sidebar' ); ?>
+						<div class="croco-school__single-article-sidebar-inner">
+							<?php dynamic_sidebar( 'croco-school-course-article-sidebar' ); ?>
+						</div>
 					</aside><!-- #secondary -->
-				<?php endif;
+				<?php endif;?>
 
-			?></div><?php
+			</div><?php
 		}
 
 		/**
@@ -153,7 +167,7 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 						'article_id' => $article_id,
 					], $current_url );
 
-					$html .= sprintf( '<a href="%s"><span>%s</span></a>', $current_url, __( 'Finish The Lesson', 'croco-school' ) );
+					$html .= sprintf( '<a class="finish-button" href="%s"><i class="nc-icon-glyph sport_flag-finish"></i><span>%s</span></a>', $current_url, __( 'Finish The Lesson', 'croco-school' ) );
 
 					break;
 
@@ -165,12 +179,26 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 					], $current_url );
 
 					$html .= sprintf(
-						'<span class="progress-message">%s</span><a href="%s"><span>%s</span></a>',
+						'<div class="progress-message">
+							<i class="nc-icon-glyph ui-1_check-bold"></i>
+							<span>%s</span>
+						</div>
+						<a class="go-back-button" href="%s"><i class="nc-icon-glyph arrows-1_curved-previous"></i><span>%s</span></a>',
 						__( 'Lesson Learned', 'croco-school' ),
 						$current_url,
 						__( 'Go Back This Lesson To Training', 'croco-school' ) );
 
 					break;
+			}
+
+			$term_list = get_the_terms( $article_id, croco_school()->post_type->course_term_slug() );
+
+			if ( ! empty( $term_list ) ) {
+				$course_id = $term_list[0]->term_id;
+
+				$course_link = get_term_link( (int)$course_id, croco_school()->post_type->course_term_slug() );
+
+				$html .= sprintf( '<a class="back-button" href="%s"><i class="nc-icon-glyph education_book-bookmark"></i><span>%s</span></a>', $course_link, __( 'Back To Course', 'croco-school' ) );
 			}
 
 			$html .= '</div>';

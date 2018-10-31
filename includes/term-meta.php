@@ -35,7 +35,7 @@ if ( ! class_exists( 'Croco_School_Term_Meta' ) ) {
 		public function register_meta_boxes() {
 
 			new Cherry_X_Term_Meta( [
-				'tax'        => 'croco-сourse',
+				'tax'        => 'сourse',
 				'builder_cb' => array( $this, 'get_interface_builder' ),
 				'fields'     => [
 					'container' => array(
@@ -49,6 +49,28 @@ if ( ! class_exists( 'Croco_School_Term_Meta' ) ) {
 					'course_thumbnail' => array(
 						'type'               => 'media',
 						'parent'             => 'course_settings',
+						'title'              => esc_html__( 'Thumbnail', 'croco-school' ),
+						'multi_upload'       => false,
+						'upload_button_text' => esc_html__( 'Set Thumbnail', 'croco-school' ),
+					),
+				],
+			] );
+
+			new Cherry_X_Term_Meta( [
+				'tax'        => 'article-category',
+				'builder_cb' => array( $this, 'get_interface_builder' ),
+				'fields'     => [
+					'container' => array(
+						'type'        => 'section',
+						'title'       => __( 'Category Settings', 'croco-school' ),
+					),
+					'category_settings' => array(
+						'type'   => 'settings',
+						'parent' => 'container',
+					),
+					'category_thumbnail' => array(
+						'type'               => 'media',
+						'parent'             => 'category_settings',
 						'title'              => esc_html__( 'Thumbnail', 'croco-school' ),
 						'multi_upload'       => false,
 						'upload_button_text' => esc_html__( 'Set Thumbnail', 'croco-school' ),

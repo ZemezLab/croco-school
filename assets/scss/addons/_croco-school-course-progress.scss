@@ -1,0 +1,75 @@
+.croco-school-course-progress {
+
+	&__inner {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: stretch;
+	}
+
+	&__title {
+		font-size: 18px;
+		margin: 0 0 20px 0;
+	}
+
+	&__item {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-top: 22px;
+		padding-top: 22px;
+		border-top: 1px solid #E4E8ED;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+	}
+
+	&__item-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 40px;
+		height: 40px;
+		border: 2px solid #E4E8ED;
+		border-radius: 50%;
+		color: #A2AAB3;
+		font-size: 20px;
+		margin-right: 20px;
+
+		.done-status & {
+			color: #34D7A1;
+			border-color: #34D7A1;
+		}
+
+		.in_progress-status & {
+			color: #617BE5;
+			border-color: #617BE5;
+		}
+	}
+
+	&__item-inner {
+		flex: 1 1 auto;
+	}
+
+	&__item-title {
+		font-size: 16px;
+		margin: 0 0 7px 0;
+	}
+
+	&__item-progress {
+		font-size: 14px;
+		font-weight: normal;
+		color: #A2AAB3;
+
+		.done-status & {
+			color: #34D7A1;
+		}
+
+		.in_progress-status & {
+			color: #617BE5;
+		}
+	}
+}

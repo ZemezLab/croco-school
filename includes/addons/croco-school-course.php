@@ -142,10 +142,55 @@ class Croco_School_Course extends Croco_School_Base {
 
 				echo sprintf( '<p class="croco-school-course__desc">%s</p>', $course_description );
 
+				$this->get_course_progress( $course_id );
+
 				$this->get_course_progress_link( $course_id );?>
 
 			</div>
 		</div><?php
+	}
+
+	/**
+	 * [get_course_progress description]
+	 * @param  [type] $course_id [description]
+	 * @return [type]            [description]
+	 */
+	public function get_course_progress( $course_id ) {
+		$progress = croco_school()->progress->get_course_progress_data( $course_id );
+
+		?><div class="croco-school-course__progress <?php echo $progress['status']; ?>-status">
+			<div class="croco-school-course__progress-label"><?php echo esc_html__( 'Progress:', 'croco-school' ); ?></div>
+			<div class="croco-school-course__progress-status"><?php
+
+				switch ( $progress['status'] ) {
+					case 'in_progress':
+						$progress_data = $progress['data'];
+						$done = $progress_data['done'];
+						$total = $progress_data['total'];
+
+						$percent = $done * 100 / $total;
+
+						echo sprintf( '<div class="progress-bar">
+							<div class="bar"><span style="width: %1$s%%"></span></div><div class="progress-count">%2$s/%3$s</div>
+							</div>',
+							$percent,
+							$done,
+							$total
+						);
+						break;
+
+					case 'done':
+						echo sprintf( '<div class="complete-message">%s</div>', __( 'Completed', 'croco-school' ) );
+						break;
+
+					case 'not_started':
+						echo sprintf( '<div class="not-started-message">%s</div>', __( 'Not Started', 'croco-school' ) );
+						break;
+				}
+			?>
+			</div>
+		</div>
+		<?php
 	}
 
 	/**
@@ -158,15 +203,15 @@ class Croco_School_Course extends Croco_School_Base {
 
 		$progress = croco_school()->progress->get_course_progress_data( $course_id );
 
+		$term_link = $progress['link'];
+
 		switch ( $progress['status'] ) {
 			case 'in_progress':
 				$term_link_text = esc_html__( 'Continue', 'croco-school' );
-				$term_link = $progress['link'];
 				break;
 
 			case 'done':
 				$term_link_text = esc_html__( 'Learn More', 'croco-school' );
-				$term_link = $progress['link'];
 				break;
 
 			case 'not_started':

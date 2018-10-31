@@ -13,21 +13,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'croco-article' );
+get_header( 'article' );
 
 /**
  * Fires before main content output started
  */
 do_action( 'croco_article_before_main_content' );
 
-?><div class="croco-school">
-	<div class="container">
-		<?php
+?><div class="croco-school"><?php
 
-			croco_school()->article_data->get_single_article();
+	croco_school()->article_data->get_single_article();?>
 
-			?>
-	</div>
 </div><?php
 
 /**
@@ -35,4 +31,4 @@ do_action( 'croco_article_before_main_content' );
  */
 do_action( 'croco_article_after_main_content' );
 
-get_footer( 'croco-article' );
+get_footer( 'article' );

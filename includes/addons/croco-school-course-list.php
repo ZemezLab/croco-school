@@ -59,14 +59,20 @@ class Croco_School_Course_List extends Croco_School_Base {
 			],
 		] );
 
+		$course_terms = get_terms( [
+			'taxonomy'   => croco_school()->post_type->course_term_slug(),
+			'hide_empty' => false,
+		] );
+
+		if ( empty( $course_terms ) ) {
+			echo esc_html__( 'Any Course Not Found', 'croco-school' );
+
+			return;
+		}
+
 		?><div <?php echo $this->get_render_attribute_string( 'container' ); ?>>
 			<div class="croco-school-course-list__inner">
 				<div class="croco-school-course-list__grid"><?php
-
-					$course_terms = get_terms( [
-						'taxonomy'   => croco_school()->post_type->course_term_slug(),
-						'hide_empty' => false,
-					] );
 
 					foreach( $course_terms as $term_data ) {?>
 						<div class="croco-school-course-list__item">
@@ -86,6 +92,7 @@ class Croco_School_Course_List extends Croco_School_Base {
 		$course_name = $term_data->name;
 		$course_link = get_term_link( (int)$course_id, croco_school()->post_type->course_term_slug() );
 		$course_description = $term_data->description;
+		$course_description = \Croco_School_Utils::cut_text( $course_description, 15, 'word', '...', true );
 		$course_article_count = $term_data->count;
 		$course_thumbnail_id = get_term_meta( $course_id, 'course_thumbnail', true );
 
