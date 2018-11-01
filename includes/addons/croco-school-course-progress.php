@@ -172,7 +172,8 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 								break;
 
 							default:
-								$progress_text = __( 'Not Viewed', 'croco-school' );
+								$progress_text = false;
+								$progress_icon = '<i class="nc-icon-glyph education_book-open"></i>';
 								break;
 						}
 
@@ -182,7 +183,10 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 							?></div>
 							<div class="croco-school-course-progress__item-inner"><?php
 								echo sprintf( '<h3 class="croco-school-course-progress__item-title"><a href="%s">%s</a></h3>', $permalink, $title );
-								echo sprintf( '<span class="croco-school-course-progress__item-progress">%s</span>', $progress_text ); ?>
+
+								if ( ! $progress_text ) {
+									echo sprintf( '<span class="croco-school-course-progress__item-progress">%s</span>', $progress_text );
+								}?>
 							</div>
 						</div><?php
 

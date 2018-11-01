@@ -158,6 +158,10 @@ class Croco_School_Lesson_List extends Croco_School_Base {
 							case 'not_started':
 								$link_text = __( 'View Lesson', 'croco-school' );
 								break;
+
+							case 'guest':
+								$link_text = __( 'View Lesson', 'croco-school' );
+								break;
 						}
 
 						?><div id="croco-article-<?php the_ID(); ?>" class="croco-school-lesson-list__item">

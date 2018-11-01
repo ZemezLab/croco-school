@@ -157,6 +157,10 @@ class Croco_School_Course_List extends Croco_School_Base {
 					case 'not_started':
 						echo sprintf( '<div class="not-started-message">%s</div>', __( 'Not Started', 'croco-school' ) );
 						break;
+
+					case 'guest':
+						echo sprintf( '<div class="not-started-message">%s</div>', __( 'Not Available For Guests', 'croco-school' ) );
+						break;
 				}
 			?>
 			</div>
@@ -186,6 +190,10 @@ class Croco_School_Course_List extends Croco_School_Base {
 
 			case 'not_started':
 				$term_link_text = esc_html__( 'Start', 'croco-school' );
+				break;
+
+			case 'guest':
+				$term_link_text = esc_html__( 'View', 'croco-school' );
 				break;
 		}
 

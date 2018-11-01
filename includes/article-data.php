@@ -106,35 +106,40 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 		 */
 		public function get_single_course_article() {
 
-		?><div class="croco-school__single-article container course-article"><?php
+			$is_active_sidebar = is_active_sidebar( 'croco-school-course-article-sidebar' );
+
+			$is_sidebar_class = $is_active_sidebar ? 'has-sidebar' : 'no-sidebar';
+
+			?><div class="croco-school__single-article container course-article <?php echo $is_sidebar_class; ?>"><?php
 
 				while ( have_posts() ) : the_post();
 
-				?><article id="primary" class="croco-school__single-article-container"><?php
+				?><article id="primary" class="croco-school__single-article-container">
+					<div class="croco-school__single-article-container-inner"><?php
 
-					$post_id = get_the_ID();
+						$post_id = get_the_ID();
 
-					$format = $this->get_post_format( $post_id );
+						$format = $this->get_post_format( $post_id );
 
-					croco_school()->progress->article_progress_start();?>
+						croco_school()->progress->article_progress_start();?>
 
-					<h2 class="croco-school__single-article-title"><?php echo the_title(); ?></h2>
+						<h2 class="croco-school__single-article-title"><?php echo the_title(); ?></h2>
 
-					<div class="croco-school__single-article-content"><?php
-						ob_start();
-						the_content( '' );
-						$content = ob_get_contents();
-						ob_end_clean();
+						<div class="croco-school__single-article-content"><?php
+							ob_start();
+							the_content( '' );
+							$content = ob_get_contents();
+							ob_end_clean();
 
-						echo $content;
-					?></div><?php
+							echo $content;
+						?></div><?php
 
-					echo $this->get_done_lesson_button();
-
-				?></article><?php
+						echo $this->get_done_lesson_button();
+					?></div>
+				</article><?php
 				endwhile;
 
-				if ( is_active_sidebar( 'croco-school-course-article-sidebar' ) ) : ?>
+				if ( $is_active_sidebar ) : ?>
 					<aside id="secondary" class="croco-school__single-article-sidebar">
 						<div class="croco-school__single-article-sidebar-inner">
 							<?php dynamic_sidebar( 'croco-school-course-article-sidebar' ); ?>

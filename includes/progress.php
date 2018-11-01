@@ -130,8 +130,15 @@ if ( ! class_exists( 'Croco_School_Progress' ) ) {
 		 */
 		public function get_user_progress_data() {
 
-			$user_data  = wp_get_current_user()->data;
-			$user_id    = $user_data->ID;
+			$user = wp_get_current_user();
+
+			$user_data  = $user->data;
+
+			$user_id    = $user->ID;
+
+			if ( 0 === $user_id ) {
+				return false;
+			}
 
 			$progress = get_user_meta( $user_id, $this->meta_slug(), true );
 
@@ -161,6 +168,10 @@ if ( ! class_exists( 'Croco_School_Progress' ) ) {
 		public function get_article_progress( $article_id ) {
 
 			$progress_data = $this->get_user_progress_data();
+
+			if ( ! $progress_data ) {
+				return 'guest';
+			}
 
 			if ( ! isset( $progress_data[ $article_id ] ) ) {
 				return 'not_started';
@@ -198,6 +209,17 @@ if ( ! class_exists( 'Croco_School_Progress' ) ) {
 			endwhile;
 
 			wp_reset_postdata();
+
+			if ( in_array( 'guest', $progress_data ) ) {
+				$link = get_term_link( (int)$course_id, croco_school()->post_type->course_term_slug() );
+
+				return [
+					'status'           => 'guest',
+					'article_progress' => $progress_data,
+					'data'             => [],
+					'link'             => $link,
+				];
+			}
 
 			if ( ! in_array( 'not_started', $progress_data ) && ! in_array( 'in_progress', $progress_data ) ) {
 
