@@ -83,7 +83,7 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 						$format = $this->get_post_format( $post_id );?>
 
-						<h2 class="croco-school__single-article-title"><?php echo the_title(); ?></h2>
+						<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
 
 						<div class="croco-school__single-article-content"><?php
 							ob_start();
@@ -123,7 +123,7 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 						croco_school()->progress->article_progress_start();?>
 
-						<h2 class="croco-school__single-article-title"><?php echo the_title(); ?></h2>
+						<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
 
 						<div class="croco-school__single-article-content"><?php
 							ob_start();

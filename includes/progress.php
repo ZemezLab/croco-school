@@ -50,9 +50,6 @@ if ( ! class_exists( 'Croco_School_Progress' ) ) {
 		 * @return [type] [description]
 		 */
 		public function article_progress_start() {
-
-			$user_data = wp_get_current_user()->data;
-			$user_id = $user_data->ID;
 			$article_id = get_the_ID();
 
 			$current = $this->get_user_progress_data();
@@ -154,8 +151,9 @@ if ( ! class_exists( 'Croco_School_Progress' ) ) {
 		 * @param [type] $data [description]
 		 */
 		public function set_user_progress_data( $data ) {
-			$user_data  = wp_get_current_user()->data;
-			$user_id    = $user_data->ID;
+			$user  = wp_get_current_user();
+			$user_data  = $user->data;
+			$user_id    = $user->ID;
 
 			update_user_meta( $user_id, $this->meta_slug(), $data );
 		}

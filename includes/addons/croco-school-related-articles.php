@@ -128,8 +128,6 @@ class Croco_School_Related_Articles extends Croco_School_Base {
 
 			$term_list = get_the_terms( $article_id, croco_school()->post_type->category_term_slug() );
 
-			var_dump($term_list);
-
 			if ( ! empty( $term_list ) ) {
 				$term_id = $term_list[0]->term_id;
 			}
