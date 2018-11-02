@@ -25,6 +25,8 @@ if ( ! class_exists( 'Croco_School_Assets' ) ) {
 		 */
 		public function __construct() {
 
+			add_action( 'wp_enqueue_scripts', array( $this, 'register_scripts' ) );
+
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 
 			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_assets' ), 10 );
@@ -38,11 +40,24 @@ if ( ! class_exists( 'Croco_School_Assets' ) ) {
 		 * @access public
 		 * @return void
 		 */
+		public function register_scripts() {
+
+			wp_register_script(
+				'croco-school-sticky-sidebar',
+				croco_school()->plugin_url( 'assets/js/sticky-sidebar.min.js' ),
+				[],
+				'1.1.3',
+				true
+			);
+		}
+
+		/**
+		 * [enqueue_scripts description]
+		 * @return [type] [description]
+		 */
 		public function enqueue_scripts() {
 
 			//$screen = get_current_screen();
-
-			//var_dump( $screen );
 
 			/*wp_enqueue_style(
 				'croco-school-frontend',
@@ -51,22 +66,21 @@ if ( ! class_exists( 'Croco_School_Assets' ) ) {
 				croco_school()->get_version()
 			);*/
 
-			/*wp_enqueue_script(
-				'jet-popup-frontend',
-				jet_popup()->plugin_url( 'assets/js/jet-popup-frontend' . $this->suffix() . '.js' ),
-				array( 'jquery', 'elementor-frontend' ),
-				jet_popup()->get_version(),
+			wp_enqueue_script(
+				'croco-school-frontend',
+				croco_school()->plugin_url( 'assets/js/croco-school-frontend.js' ),
+				array( 'jquery', 'croco-school-sticky-sidebar' ),
+				croco_school()->get_version(),
 				true
 			);
 
-			$this->localize_data['version'] = jet_popup()->get_version();
 			$this->localize_data['ajax_url'] = esc_url( admin_url( 'admin-ajax.php' ) );
 
 			wp_localize_script(
-				'jet-popup-frontend',
-				'jetPopupData',
+				'croco-school-frontend',
+				'CrocoSchool',
 				$this->localize_data
-			);*/
+			);
 
 		}
 

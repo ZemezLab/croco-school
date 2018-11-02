@@ -226,7 +226,6 @@ if ( ! class_exists( 'Croco_School' ) ) {
 			require $this->plugin_path( 'includes/article-data.php' );
 
 			if ( class_exists( 'Elementor\Plugin' ) ) {
-				require_once $this->plugin_path( 'includes/widgets/class-cherry-abstract-widget.php' );
 				require_once $this->plugin_path( 'includes/widgets/class-elementor-template-widget.php' );
 			}
 		}
@@ -307,10 +306,6 @@ if ( ! class_exists( 'Croco_School' ) ) {
 		 * @return void
 		 */
 		public function activation() {
-
-			require $this->plugin_path( 'includes/role.php' );
-
-			Croco_School_Role::add_student_role();
 
 			flush_rewrite_rules();
 		}

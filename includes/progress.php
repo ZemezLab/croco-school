@@ -169,7 +169,7 @@ if ( ! class_exists( 'Croco_School_Progress' ) ) {
 
 			$progress_data = $this->get_user_progress_data();
 
-			if ( ! $progress_data ) {
+			if ( false === $progress_data ) {
 				return 'guest';
 			}
 

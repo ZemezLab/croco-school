@@ -52,7 +52,7 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 		$this->add_control(
 			'is_archive_template',
 			[
-				'label'        => esc_html__( 'Use as Archive Template', 'croco-school' ),
+				'label'        => esc_html__( 'Use as Single Article Widget', 'croco-school' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'label_on'     => esc_html__( 'Yes', 'croco-school' ),
 				'label_off'    => esc_html__( 'No', 'croco-school' ),
@@ -171,7 +171,7 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 								$progress_icon = '<i class="nc-icon-glyph arrows-3_super-bold-right"></i>';
 								break;
 
-							default:
+							case 'guest':
 								$progress_text = false;
 								$progress_icon = '<i class="nc-icon-glyph education_book-open"></i>';
 								break;
@@ -184,7 +184,7 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 							<div class="croco-school-course-progress__item-inner"><?php
 								echo sprintf( '<h3 class="croco-school-course-progress__item-title"><a href="%s">%s</a></h3>', $permalink, $title );
 
-								if ( ! $progress_text ) {
+								if ( $progress_text ) {
 									echo sprintf( '<span class="croco-school-course-progress__item-progress">%s</span>', $progress_text );
 								}?>
 							</div>

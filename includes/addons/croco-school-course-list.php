@@ -111,7 +111,7 @@ class Croco_School_Course_List extends Croco_School_Base {
 
 		?><div class="croco-school-course-list__item-content"><?php
 
-			echo sprintf( '<h3 class="croco-school-course-list__item-name"><a href="%1$s">%2$s</a></h3>', $course_link, $course_name );
+			echo sprintf( '<h2 class="croco-school-course-list__item-name"><a href="%1$s">%2$s</a></h2>', $course_link, $course_name );
 
 			echo sprintf( '<p class="croco-school-course-list__item-desc">%s</p>', $course_description );
 
