@@ -1,4 +1,5 @@
-@import "addons/croco-school-guide";
+@import "addons/croco-school-articles";
+@import "addons/croco-school-related-articles";
 @import "addons/croco-school-course-list";
 @import "addons/croco-school-course";
 @import "addons/croco-school-course-progress";
@@ -13,6 +14,10 @@
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+
+		.cherry-search-wrapper .cherry-search form.cherry-search__form button.cherry-search__submit {
+			background-color: #617BE5;
 		}
 	}
 
@@ -30,8 +35,9 @@
 		flex-flow: row nowrap;
 	}
 
-	&__single-article-title {
+	h1.croco-school__single-article-title {
 		font-size: 30px;
+		font-weight: 400;
 		margin: 0 0 35px 0;
 	}
 
@@ -48,16 +54,15 @@
 			margin-left: 60px;
 			border-left: 1px solid #E4E7ED;
 		}
+
+		.course-article.has-sidebar & .croco-school__single-article-container-inner {
+			margin-right: 40px;
+		}
 	}
 
 	&__single-article-sidebar {
 		width: 25%;
 		min-width: 280px;
-
-		.course-article & .croco-school__single-article-sidebar-inner {
-			padding-left: 20px;
-			margin-left: 20px;
-		}
 	}
 
 	&__single-search {
@@ -69,7 +74,7 @@
 	&__lesson-progress {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		margin: 80px 0 0 0;
 		padding: 40px 0 40px 0;
@@ -110,8 +115,8 @@
 			background-color: #34D7A1;
 			border-radius: 3px;
 			text-align: center;
-
 			width: 48%;
+			margin: 0 1%;
 
 			i {
 				color: white;
@@ -140,4 +145,91 @@
 		}
 	}
 
+}
+
+.cherry-search-wrapper {
+	.cherry-search {
+		form.cherry-search__form {
+
+			.cherry-search__label {
+				padding: 0;
+			}
+
+			button.cherry-search__submit {
+				padding: 9px 20px;
+				font-size: 13px;
+				line-height: 21px;
+				font-weight: 300;
+				margin-left: 10px;
+			}
+
+			.cherry-search__field {
+				padding: 11px 15px;
+				color: #162B40;
+				font-weight: 300;
+				font-size: 14px;
+			}
+		}
+
+		.cherry-search__results-list {
+			box-shadow: 0 0 20px rgba( 22, 43, 64, .1 );
+			border: none;
+			padding: 15px;
+			border-radius: 3px;
+			margin-top: 10px;
+
+			.cherry-search__results-item {
+				border-top-color: #E4E7ED;
+				padding-top: 10px;
+				margin-top: 10px;
+
+				&:hover {
+					background-color: transparent;
+
+					a {
+						background-color: #f6f6f6;
+					}
+
+					.cherry-search__item-title {
+						color: #617BE5;
+					}
+				}
+
+				> a {
+					padding: 5px 15px;
+					border-radius: 3px;
+				}
+
+				.cherry-search__item-attr {
+
+				}
+
+				.cherry-search__item-thumbnail {
+					display: none;
+				}
+
+				.cherry-search__item-title {
+					color: #162B40;
+					font-size: 14px;
+					font-weight: 600;
+				}
+
+				.cherry-search__item-content {
+					color: #162B40;
+					font-size: 14px;
+				}
+
+				.cherry-search__item-author {
+					color: #162B40;
+					font-size: 11px;
+				}
+			}
+
+			.cherry-search__more-button {
+				border: none;
+				margin-top: 20px;
+			}
+		}
+
+	}
 }

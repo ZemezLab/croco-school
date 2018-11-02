@@ -59,12 +59,12 @@ if ( ! class_exists( 'Croco_School_Assets' ) ) {
 
 			//$screen = get_current_screen();
 
-			/*wp_enqueue_style(
+			wp_enqueue_style(
 				'croco-school-frontend',
 				croco_school()->plugin_url( 'assets/css/croco-school-frontend.css' ),
 				false,
 				croco_school()->get_version()
-			);*/
+			);
 
 			wp_enqueue_script(
 				'croco-school-frontend',

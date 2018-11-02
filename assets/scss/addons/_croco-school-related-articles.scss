@@ -1,27 +1,42 @@
 .croco-school-related-articles {
 
+	&__inner {
+
+	}
+
 	&__list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0
+		}
 	}
 
 	&__item {
 		margin-bottom: 5px;
+		padding: 10px;
+		border-radius: 5px;
+		background-color: transparent;
+		transition: all 0.3s ease;
 
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		&:hover {
+			background-color: #F4F5F7;
+
+			.croco-school-related-articles__link {
+				color: #162B40;
+			}
+		}
+
 	}
 
 	&__link {
-		color: #162B40;
-		padding: 10px;
-		border-radius: 5px;
-
-		&:hover {
-			color: #162B40;
-			background-color: #F4F5F7;
-		}
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 400;
+		color: #617BE5;
 	}
 }
