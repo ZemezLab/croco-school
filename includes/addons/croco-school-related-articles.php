@@ -181,13 +181,22 @@ class Croco_School_Related_Articles extends Croco_School_Base {
 					$count = 0;
 
 					while ( $query->have_posts() ) : $query->the_post();
+						$post_id = $query->post->ID;
+
+						$is_course_article = croco_school()->progress->is_course_article( $post_id );
 
 						if ( $use_article_limit && $count > $article_list_limit - 1 ) {
 							continue;
 						}?>
 
 						<li class="croco-school-related-articles__item" id="croco-article-<?php the_ID(); ?>">
-							<a class="croco-school-related-articles__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							<a class="croco-school-related-articles__link" href="<?php the_permalink(); ?>"><?php
+								the_title();
+
+								if ( $is_course_article ) {
+									echo '<i class="nc-icon-glyph education_hat"></i>';
+								}
+							?></a>
 						</li><?php
 
 						$count++;

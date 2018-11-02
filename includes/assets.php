@@ -49,6 +49,14 @@ if ( ! class_exists( 'Croco_School_Assets' ) ) {
 				'1.1.3',
 				true
 			);
+
+			wp_register_script(
+				'croco-school-tippy',
+				croco_school()->plugin_url( 'assets/js/tippy.all.min.js' ),
+				[],
+				'2.5.3',
+				true
+			);
 		}
 
 		/**
@@ -69,7 +77,7 @@ if ( ! class_exists( 'Croco_School_Assets' ) ) {
 			wp_enqueue_script(
 				'croco-school-frontend',
 				croco_school()->plugin_url( 'assets/js/croco-school-frontend.js' ),
-				array( 'jquery', 'croco-school-sticky-sidebar' ),
+				[ 'jquery', 'croco-school-sticky-sidebar', 'croco-school-tippy' ],
 				croco_school()->get_version(),
 				true
 			);

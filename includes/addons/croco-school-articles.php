@@ -227,6 +227,7 @@ class Croco_School_Articles extends Croco_School_Base {
 			'class' => [
 				'croco-school-articles',
 			],
+			'data-tippy-content' => "fkfkf fjfjfj",
 		] );
 
 		?><div <?php echo $this->get_render_attribute_string( 'container' ); ?>>
@@ -319,13 +320,22 @@ class Croco_School_Articles extends Croco_School_Base {
 				$count = 0;
 
 				while ( $query->have_posts() ) : $query->the_post();
+					$post_id = $query->post->ID;
+
+					$is_course_article = croco_school()->progress->is_course_article( $post_id );
 
 					if ( $use_article_limit && $count > $article_list_limit - 1 ) {
 						continue;
 					}?>
 
-					<li id="croco-article-<?php the_ID(); ?>">
-						<a class="croco-school-articles__article-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					<li id="croco-school-article-<?php echo $post_id; ?>"><?php
+						?><a class="croco-school-articles__article-link" href="<?php the_permalink(); ?>"><?php
+							the_title();
+
+							if ( $is_course_article ) {
+								echo '<i class="nc-icon-glyph education_hat"></i>';
+							}
+						?></a>
 					</li><?php
 
 					$count++;

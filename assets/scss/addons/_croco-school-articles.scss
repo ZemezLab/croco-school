@@ -83,9 +83,6 @@
 	&__terms-item {
 		width: 33.3333%;
 		padding: 0 20px;
-
-		.croco-school-articles__article-list {
-		}
 	}
 
 	&__article-list {
@@ -108,12 +105,21 @@
 				}
 
 				a {
+					position: relative;
 					font-size: 16px;
 					color: #617BE5;
 					font-weight: 400;
 
 					&:hover {
 						text-decoration: underline;
+					}
+
+					i {
+						position: absolute;
+						top: -10px;
+						right: -25px;
+						font-size: 25px;
+						color: #34d7a1;
 					}
 				}
 			}
