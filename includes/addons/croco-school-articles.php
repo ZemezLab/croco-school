@@ -333,7 +333,10 @@ class Croco_School_Articles extends Croco_School_Base {
 							the_title();
 
 							if ( $is_course_article ) {
-								echo sprintf( '<i class="nc-icon-glyph education_hat" data-tippy="%s" data-tippy-theme="light-border" data-tippy-arrow="true"></i>', esc_html__( 'This article is presented as a lesson from the course.', 'croco-school' ) );
+
+								echo sprintf( '<i class="nc-icon-glyph education_hat" data-tippy="%s" data-tippy-theme="light-border" data-tippy-arrow="true"></i>',
+									esc_html__( 'This article is a lesson from the educational course at CrocoBlock', 'croco-school' )
+								);
 							}
 						?></a>
 					</li><?php
