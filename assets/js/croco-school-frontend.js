@@ -10,7 +10,8 @@
 				var stickySidebar = new StickySidebar( '.croco-school__single-article-sidebar', { topSpacing: 20 } );
 			}
 
-			tippy('.croco-school-articles__article-link i', { content: "I'm a tooltip!" });
+			//tippy('.croco-school-articles__article-link i', { content: "I'm a tooltip!" });
+			tippy('.site-logo__link', { content: "I'm a tooltip!" });
 		}
 
 	};

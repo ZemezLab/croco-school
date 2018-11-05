@@ -36,6 +36,5 @@ gulp.task( 'croco-school-frontend-css', () => {
 
 //watch
 gulp.task( 'watch', () => {
-	livereload.listen();
 	gulp.watch( './assets/scss/**', ['croco-school-frontend-css']);
 });

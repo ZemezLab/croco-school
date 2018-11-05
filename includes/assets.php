@@ -52,9 +52,9 @@ if ( ! class_exists( 'Croco_School_Assets' ) ) {
 
 			wp_register_script(
 				'croco-school-tippy',
-				croco_school()->plugin_url( 'assets/js/tippy.all.min.js' ),
+				'https://unpkg.com/tippy.js@3/dist/tippy.all.min.js',
 				[],
-				'2.5.3',
+				'3.1.1',
 				true
 			);
 		}
