@@ -57,18 +57,21 @@
 	&__item-title {
 		font-size: 16px;
 		margin: 0 0 7px 0;
+		font-weight: 500;
 	}
 
 	&__item-progress {
 		font-size: 14px;
-		font-weight: normal;
+		font-weight: 500;
 		color: #A2AAB3;
 
 		.done-status & {
 			color: #34D7A1;
+			font-weight: 500;
 		}
 
 		.in_progress-status & {
+			font-weight: 500;
 			color: #617BE5;
 		}
 	}

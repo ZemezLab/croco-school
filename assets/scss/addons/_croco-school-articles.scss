@@ -11,7 +11,7 @@
 		flex-flow: column;
 		justify-content: flex-start;
 		align-items: center;
-		margin-bottom: 30px;
+		margin-bottom: 18px;
 
 		img {
 			width: 500px;
@@ -29,15 +29,17 @@
 
 	&__name {
 		text-align: center;
-		font-size: 30px;
-		line-height: 46px;
+		font-size: 40px;
+		line-height: 47px;
+		font-weight: 900;
 		margin: 0;
+		letter-spacing: -1px;
 	}
 
 	&__back {
 		position: absolute;
 		font-size: 16px;
-		font-weight: 300;
+		font-weight: 400;
 		color: #162B40;
 		left: 0;
 
@@ -48,7 +50,7 @@
 
 	&__more-articles {
 
-		margin-top: 15px;
+		margin-top: 11px;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
@@ -56,7 +58,7 @@
 		a {
 			font-size: 16px;
 			color: #162B40;
-			font-weight: 300;
+			font-weight: 400;
 		}
 
 		i {
@@ -97,6 +99,7 @@
 			padding: 0;
 
 			li {
+				line-height: 23px;
 				padding: 13px 0;
 				border-bottom: 1px solid #E4E7ED;
 
@@ -109,13 +112,15 @@
 					font-size: 16px;
 					color: #617BE5;
 					font-weight: 400;
+					line-height: 23px;
 
 					&:hover {
 						text-decoration: underline;
 					}
 
 					i {
-						font-size: 23px;
+						margin-left: 5px;
+						font-size: 16px;
 						color: #34d7a1;
 					}
 				}

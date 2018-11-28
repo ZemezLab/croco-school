@@ -9,18 +9,20 @@
 	}
 
 	&__name {
-		font-size: 30px;
-		line-height: 46px;
+		font-size: 40px;
+		line-height: 49px;
 		color: #162B40;
+		font-weight: 900;
+		letter-spacing: -1px;
 		text-align: center;
-		margin: 0 0 15px 0;
+		margin: 0 0 8px 0;
 	}
 
 	&__lessons {
 		font-size: 18px;
 		line-height: 26px;
 		color: #617BE5;
-		font-weight: normal;
+		font-weight: 500;
 		margin-bottom: 10px;
 
 		span {
@@ -30,10 +32,11 @@
 
 	&__thumb {
 		width: 450px;
-		height: 230px;
+		height: 250px;
 		max-width: 100%;
 		position: relative;
-		margin-bottom: 10px;
+		margin-bottom: 18px;
+		margin-top: 12px;
 
 		.elementor & img {
 			width: 100%;
@@ -43,10 +46,12 @@
 	}
 
 	&__desc {
+		max-width: 750px;
 		font-size: 18px;
 		line-height: 30px;
 		margin: 0 0 20px 0;
 		text-align: center;
+		color: #5C6B79;
 	}
 
 	&__progress {
@@ -66,19 +71,22 @@
 	}
 
 	&__progress-label {
+		font-size: 16px;
 		color: #152c40;
 		margin-right: 10px;
-		font-weight: normal;
+		font-weight: 500;
 	}
 
 	&__progress-status {
 		flex: 0 1 auto;
 		display: flex;
 		flex-flow: row nowrap;
-
+		font-weight: 500;
+font-size: 16px;
 		.complete-message {
+			font-weight: 500;
+			font-size: 16px;
 			color: #34D7A1;
-			font-weight: normal;
 		}
 
 		.progress-bar {
@@ -110,21 +118,22 @@
 	}
 
 	&__progress-link {
-		padding: 12px 60px;
+		padding: 11px 55px;
 		background-color: #34D7A1;
 		border-radius: 3px;
 		text-align: center;
 
 		span {
 			color: white;
-			font-size: 13px;
+			font-size: 14px;
+			letter-spacing: 0.8px;
 			border-radius: 3px;
 			text-transform: uppercase;
-			font-weight: normal;
+			font-weight: 600;
 		}
 
 		&:hover {
-			background-color: #2fc594;
+			background-color: #617BE5;
 		}
 	}
 }

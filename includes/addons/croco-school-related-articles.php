@@ -179,6 +179,7 @@ class Croco_School_Related_Articles extends Croco_School_Base {
 				<ul><?php
 
 					$count = 0;
+					$current_course_article = get_the_ID();
 
 					while ( $query->have_posts() ) : $query->the_post();
 						$post_id = $query->post->ID;
@@ -187,9 +188,11 @@ class Croco_School_Related_Articles extends Croco_School_Base {
 
 						if ( $use_article_limit && $count > $article_list_limit - 1 ) {
 							continue;
-						}?>
+						}
+			        $article_item_current_class = $post_id === $current_course_article ? 'current' : '';
+						?>
 
-						<li class="croco-school-related-articles__item" id="croco-article-<?php the_ID(); ?>">
+						<li class="croco-school-related-articles__item <?php echo esc_attr( $article_item_current_class ) ?>" id="croco-article-<?php the_ID(); ?>">
 							<a class="croco-school-related-articles__link" href="<?php the_permalink(); ?>"><?php
 								the_title();
 

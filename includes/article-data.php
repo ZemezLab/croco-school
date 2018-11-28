@@ -66,14 +66,6 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 			?><div class="croco-school__single-article container guide-article <?php echo $is_sidebar_class; ?>"><?php
 
-				if ( $is_active_sidebar ) : ?>
-					<aside id="secondary" class="croco-school__single-article-sidebar">
-						<div class="croco-school__single-article-sidebar-inner">
-							<?php dynamic_sidebar( 'croco-school-article-sidebar' ); ?>
-						</div>
-					</aside><!-- #secondary -->
-				<?php endif;
-
 				while ( have_posts() ) : the_post();
 
 				?><article id="primary" class="croco-school__single-article-container">
@@ -96,8 +88,14 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 					</div>
 				</article><?php
 				endwhile;
-
-			?></div><?php
+				if ( $is_active_sidebar ) : ?>
+					<aside id="secondary" class="croco-school__single-article-sidebar">
+						<div class="croco-school__single-article-sidebar-inner">
+							<?php dynamic_sidebar( 'croco-school-article-sidebar' ); ?>
+						</div>
+					</aside><!-- #secondary -->
+				<?php endif;?>
+			</div><?php
 		}
 
 		/**
@@ -115,7 +113,8 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 				while ( have_posts() ) : the_post();
 
 				?><article id="primary" class="croco-school__single-article-container">
-					<div class="croco-school__single-article-container-inner"><?php
+					<div class="croco-school__single-article-container-inner">
+							<?php
 
 						$post_id = get_the_ID();
 
