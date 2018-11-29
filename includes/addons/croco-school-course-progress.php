@@ -146,7 +146,7 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 
 					$count = 1;
 
-					while ( $query->have_posts() ) : $query->the_post();
+	  while ( $query->have_posts() ) : $query->the_post();
 						$post_id  = $query->post->ID;
 
 						$title = get_the_title( $post_id );
@@ -154,11 +154,13 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 
 						$status = croco_school()->progress->get_article_progress( $post_id );
 
-						switch ( $status ) {
+						$current_post = $article_id === $post_id ? true : false;
+
+			  switch ( $status ) {
 
 							case 'in_progress':
 								$progress_text = __( 'In Progress', 'croco-school' );
-								$progress_icon = '<i class="nc-icon-glyph ui-1_eye-19"></i>';
+								$progress_icon = '<i class="nc-icon-glyph arrows-3_super-bold-right"></i>';
 								break;
 
 							case 'done':
@@ -177,7 +179,13 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 								break;
 						}
 
-						?><div id="croco-school-course-progress-<?php the_ID(); ?>" class="croco-school-course-progress__item <?php echo $status; ?>-status">
+						if ( $current_post ){
+							$progress_icon = '<i class="nc-icon-glyph ui-1_eye-19"></i>';
+						}
+
+						$current_class = $current_post ? 'current' : '';
+
+						?><div id="croco-school-course-progress-<?php the_ID(); ?>" class="croco-school-course-progress__item <?php echo $status; ?>-status <?php echo $current_class ?>">
 							<div class="croco-school-course-progress__item-icon"><?php
 								echo $progress_icon;
 							?></div>

@@ -32,17 +32,25 @@
 		}
 
 	}
-
 	&__link {
 		font-size: 14px;
 		line-height: 16px;
 		font-weight: 400;
 		color: #617BE5;
 		position: relative;
-
+		}
+	@media ( max-width: 768px ) {
+		&__link {
+			font-size: 12px;
+		}
+	}
+	i {
+		font-size: 18px;
+		color: #34d7a1;
+	}
+	@media ( max-width: 768px ) {
 		i {
-			font-size: 22px;
-			color: #34d7a1;
+			font-size: 13px;
 		}
 	}
 }

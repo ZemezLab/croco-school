@@ -43,6 +43,10 @@
   position: relative;
   margin-bottom: 30px; }
 
+@media (max-width: 425px) {
+  .croco-school-articles__name-container {
+    margin-bottom: 0; } }
+
 .croco-school-articles__name {
   text-align: center;
   font-size: 40px;
@@ -50,6 +54,10 @@
   font-weight: 900;
   margin: 0;
   letter-spacing: -1px; }
+
+@media (max-width: 425px) {
+  .croco-school-articles__name {
+    font-size: 30px; } }
 
 .croco-school-articles__back {
   position: absolute;
@@ -98,9 +106,21 @@
   margin-left: -20px;
   margin-right: -20px; }
 
+@media (max-width: 425px) {
+  .croco-school-articles__terms-list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
 .croco-school-articles__terms-item {
   width: 33.3333%;
   padding: 0 20px; }
+
+@media (max-width: 425px) {
+  .croco-school-articles__terms-item {
+    width: 100%;
+    padding: 10px;
+    max-width: 280px; } }
 
 .croco-school-articles__article-list-title {
   font-size: 18px; }
@@ -154,9 +174,18 @@
   font-weight: 400;
   color: #617BE5;
   position: relative; }
-  .croco-school-related-articles__link i {
-    font-size: 22px;
-    color: #34d7a1; }
+
+@media (max-width: 768px) {
+  .croco-school-related-articles__link {
+    font-size: 12px; } }
+
+.croco-school-related-articles i {
+  font-size: 18px;
+  color: #34d7a1; }
+
+@media (max-width: 768px) {
+  .croco-school-related-articles i {
+    font-size: 13px; } }
 
 .croco-school-course-list__grid {
   display: -webkit-box;
@@ -507,9 +536,9 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 22px;
   padding-top: 22px;
   border-top: 1px solid #E4E8ED; }
@@ -537,6 +566,9 @@
     color: #34D7A1;
     border-color: #34D7A1; }
   .in_progress-status .croco-school-course-progress__item-icon {
+    color: #A2AAB3;
+    border-color: #E4E8ED; }
+  .in_progress-status.current .croco-school-course-progress__item-icon {
     color: #617BE5;
     border-color: #617BE5; }
 
@@ -547,7 +579,7 @@
 
 .croco-school-course-progress__item-title {
   font-size: 16px;
-  margin: 0 0 7px 0;
+  margin: 0;
   font-weight: 500; }
 
 .croco-school-course-progress__item-progress {
@@ -696,6 +728,17 @@
   font-size: 40px;
   line-height: 1.175; }
 
+@media (max-width: 768px) {
+  .site-content .croco-school h1 {
+    font-size: 36px; } }
+
+@media (max-width: 425px) {
+  .site-content .croco-school h1 {
+    font-size: 30px; } }
+
+.croco-school__single-article {
+  margin-top: 60px; }
+
 .croco-school .guide-article a {
   color: #617BE5; }
   .croco-school .guide-article a:hover {
@@ -721,9 +764,14 @@
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap; }
 
+@media (max-width: 425px) {
+  .croco-school__single-article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; } }
+
 .croco-school h1.croco-school__single-article-title {
-  font-size: 40px;
-  font-weight: 900;
   margin: 0 0 30px 0; }
 
 .croco-school__single-article-content {
@@ -741,20 +789,45 @@
     padding-left: 0;
     margin-left: 0;
     border-left: none;
-    padding-right: 56px;
-    margin-right: 60px;
+    padding-right: 57px;
+    margin-right: 30px;
     border-right: 1px solid #E4E7ED; }
+  @media (max-width: 768px) {
+    .guide-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
+      padding-right: 20px;
+      margin-right: 10px; } }
+  @media (max-width: 768px) {
+    .guide-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
+      padding: 10px;
+      margin-right: 0;
+      border: none; } }
   .course-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
     margin-right: 40px; }
+  @media (max-width: 425px) {
+    .course-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
+      margin-right: 0; } }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-container {
+    width: 100%; } }
 
 .croco-school__single-article-sidebar {
   width: 25%;
-  min-width: 280px; }
+  min-width: 200px; }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-sidebar {
+    width: 100%;
+    min-width: 280px; } }
 
 .croco-school__single-search {
   padding: 50px 0;
   background-color: #F4F5F7;
   margin-bottom: 71px; }
+
+@media (max-width: 425px) {
+  .croco-school__single-search {
+    margin-bottom: 10px; } }
 
 .croco-school__lesson-progress {
   display: -webkit-box;
@@ -822,12 +895,28 @@
       border-radius: 3px;
       letter-spacing: 1.4px;
       text-transform: uppercase; }
+    @media (max-width: 425px) {
+      .croco-school__lesson-progress a span {
+        font-size: 9px; } }
     .croco-school__lesson-progress a:hover {
       background-color: #2fc594; }
     .croco-school__lesson-progress a.back-button {
       background-color: #617BE5; }
       .croco-school__lesson-progress a.back-button:hover {
         background-color: #576fd0; }
+  @media (max-width: 425px) {
+    .croco-school__lesson-progress a {
+      padding: 14px 10px 12px 10px;
+      margin-top: 20px;
+      width: 100%; } }
+
+@media (max-width: 425px) {
+  .croco-school__lesson-progress {
+    margin: 40px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 .cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__label {
   padding: 0; }
@@ -925,9 +1014,14 @@
     padding: 9px 15px;
     font-weight: 500;
     line-height: 1.467em; }
+  @media (max-width: 768px) {
+    .croco-school-related-articles__list .croco-school-related-articles__item .croco-school-related-articles__link {
+      font-size: 12px; } }
   .croco-school-related-articles__list .croco-school-related-articles__item .education_hat {
-    font-size: 16px;
-    margin-left: 5px; }
+    padding: 0 10px; }
+  @media (max-width: 768px) {
+    .croco-school-related-articles__list .croco-school-related-articles__item .education_hat {
+      padding: 0 5px 0 5px; } }
 
 .croco-school-related-articles__item.current {
   background-color: #617BE5; }
@@ -940,14 +1034,40 @@
 .croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky {
   margin-top: 40px; }
 
+@media (max-width: 425px) {
+  .croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky {
+    margin-top: 0; } }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky {
+    position: relative !important;
+    width: 100% !important;
+    padding: 0;
+    top: 0 !important;
+    left: 0 !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important; }
+  .croco-school__single-article-sidebar .inner-wrapper-sticky {
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+
+@media (max-width: 425px) {
+  #secondary.croco-school__single-article-sidebar.is-affixed {
+    height: 100% !important; } }
+
+@media (max-width: 425px) {
+  #secondary {
+    margin-top: 10px; } }
+
 .croco-school__single-article-container-inner h1, .croco-school__single-article-container-inner h2, .croco-school__single-article-container-inner h3, .croco-school__single-article-container-inner h4 {
-  margin: 31px 0;
+  margin: 30px 0;
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none; }
 
 .croco-school__single-article-container-inner h5, .croco-school__single-article-container-inner h6 {
-  margin: 31px 0 0;
+  margin: 30px 0 0;
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none; }
@@ -972,14 +1092,61 @@
 .croco-school__single-article-container-inner li > ol {
   margin-left: 0; }
 
-.croco-school__single-article-container-inner p + p {
-  margin-top: 32px; }
+.croco-school__single-article-container-inner p {
+  margin-bottom: 30px; }
 
 .croco-school__single-article-container-inner b {
   color: #162b40; }
 
+.croco-school__single-article-container-inner strong {
+  color: #162b40; }
+
 .croco-school__single-article-container-inner a {
   color: #617BE5; }
+
+table {
+  margin: 30px 0; }
+
+table tr td, table tr th,
+table td, table th {
+  padding: 5px 10px;
+  font-size: 16px; }
+
+@media screen and (max-width: 640px) {
+  table {
+    display: block;
+    overflow-x: auto; } }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-container-inner h1, .croco-school__single-article-container-inner h2, .croco-school__single-article-container-inner h3, .croco-school__single-article-container-inner h4 {
+    margin: 15px 0; }
+  .croco-school__single-article-container-inner h3 {
+    font-size: 20px; }
+  .croco-school__single-article-container-inner h5 {
+    font-size: 16px; }
+  .croco-school__single-article-container-inner p {
+    font-size: 16px; }
+  .croco-school__single-article-container-inner li {
+    font-size: 16px; }
+  .croco-school__single-article-container-inner table td, .croco-school__single-article-container-inner table th {
+    font-size: 14px; }
+  .croco-school__single-article-container-inner h5, .croco-school__single-article-container-inner h6 {
+    margin: 15px 0 0; }
+  .croco-school__single-article-container-inner ul {
+    margin: 1em 0 1em 1.8em;
+    padding-left: 0;
+    padding-right: 0; }
+  .croco-school__single-article-container-inner p + p {
+    margin-top: 15px; }
+  .croco-school__single-article-container-inner ol {
+    margin: 1em 0 1em 1em;
+    padding-left: 0;
+    padding-right: 0; }
+  .croco-school__single-article-container-inner ul > ul {
+    margin: 0 0 0 0.7em; }
+  .croco-school__single-article-container-inner li > ul {
+    margin-bottom: 0;
+    margin-left: 0.6em; } }
 
 .croco-school__single-article-container-inner .croco-school__single-article-content a:hover {
   color: #617BE5;

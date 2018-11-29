@@ -16,15 +16,13 @@
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: flex-start;
-		align-items: flex-start;
+		align-items: center;
 		margin-top: 22px;
 		padding-top: 22px;
 		border-top: 1px solid #E4E8ED;
-
 		&:first-child {
 			margin-top: 0;
 		}
-
 	}
 
 	&__item-icon {
@@ -45,6 +43,10 @@
 		}
 
 		.in_progress-status & {
+			color: #A2AAB3;
+			border-color: #E4E8ED;
+		}
+		.in_progress-status.current & {
 			color: #617BE5;
 			border-color: #617BE5;
 		}
@@ -56,7 +58,7 @@
 
 	&__item-title {
 		font-size: 16px;
-		margin: 0 0 7px 0;
+		margin: 0;
 		font-weight: 500;
 	}
 
