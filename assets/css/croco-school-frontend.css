@@ -520,6 +520,11 @@
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
+  .croco-school-course-progress__inner .in_progress-status.current .croco-school-course-progress__item-icon,
+  .croco-school-course-progress__inner .done-status.current .croco-school-course-progress__item-icon,
+  .croco-school-course-progress__inner .current .croco-school-course-progress__item-icon {
+    color: #617BE5;
+    border-color: #617BE5; }
 
 .croco-school-course-progress__title {
   font-size: 18px;
@@ -563,8 +568,9 @@
   font-size: 20px;
   margin-right: 20px; }
   .done-status .croco-school-course-progress__item-icon {
-    color: #34D7A1;
-    border-color: #34D7A1; }
+    color: #ffffff;
+    border-color: #34D7A1;
+    background-color: #34D7A1; }
   .in_progress-status .croco-school-course-progress__item-icon {
     color: #A2AAB3;
     border-color: #E4E8ED; }
@@ -1078,7 +1084,7 @@
   padding-right: 0; }
 
 .croco-school__single-article-container-inner ol {
-  margin: 1.5em 0 1.5em 1.5em;
+  margin: 1.5em 0 1.5em 1.1em;
   padding-left: 0;
   padding-right: 0; }
 
@@ -1151,6 +1157,9 @@ table td, table th {
 .croco-school__single-article-container-inner .croco-school__single-article-content a:hover {
   color: #617BE5;
   text-decoration: underline; }
+
+.arrows-1_bold-right {
+  font-size: 14px; }
 
 /*
   Tippy theme

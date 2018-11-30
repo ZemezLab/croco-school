@@ -5,6 +5,14 @@
 		flex-flow: column;
 		justify-content: center;
 		align-items: stretch;
+		.in_progress-status.current,
+		.done-status.current,
+		.current {
+			.croco-school-course-progress__item-icon {
+				color: #617BE5;
+				border-color: #617BE5;
+			}
+		}
 	}
 
 	&__title {
@@ -38,8 +46,9 @@
 		margin-right: 20px;
 
 		.done-status & {
-			color: #34D7A1;
+			color: #ffffff;
 			border-color: #34D7A1;
+			background-color: #34D7A1;
 		}
 
 		.in_progress-status & {
@@ -51,7 +60,7 @@
 			border-color: #617BE5;
 		}
 	}
-
+	
 	&__item-inner {
 		flex: 1 1 auto;
 	}
