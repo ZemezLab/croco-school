@@ -99,6 +99,12 @@ if ( ! class_exists( 'Croco_School' ) ) {
 		public $term_meta = null;
 
 		/**
+		 * [$post_meta description]
+		 * @var null
+		 */
+		public $post_meta = null;
+
+		/**
 		 * [$article_data description]
 		 * @var null
 		 */
@@ -206,6 +212,7 @@ if ( ! class_exists( 'Croco_School' ) ) {
 
 			if ( is_admin() ) {
 				$this->term_meta = new Croco_School_Term_Meta();
+				$this->post_meta = new Croco_School_Post_Meta();
 			}
 
 		}
@@ -223,6 +230,7 @@ if ( ! class_exists( 'Croco_School' ) ) {
 			require $this->plugin_path( 'includes/widgets.php' );
 			require $this->plugin_path( 'includes/progress.php' );
 			require $this->plugin_path( 'includes/term-meta.php' );
+			require $this->plugin_path( 'includes/post-meta.php' );
 			require $this->plugin_path( 'includes/article-data.php' );
 
 			if ( class_exists( 'Elementor\Plugin' ) ) {

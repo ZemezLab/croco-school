@@ -48,8 +48,9 @@
 
 	&__single-article {
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 	}
+
 	@media ( max-width: 425px ) {
 		&__single-article {
 			flex-flow: column nowrap;
@@ -68,6 +69,86 @@
 			text-decoration: none;
 		}
 	}
+
+	&__single-article-media {
+		width: 100%;
+		padding-bottom: 55px;
+
+		.croco-school__single-article-media-inner {
+			position: relative;
+		}
+
+		.croco-school-article-image {
+			width: 100%;
+			line-height: 0;
+		}
+
+		.croco-school__single-media-frame {
+			position: relative;
+
+			&.aspect-ratio-169 {
+				padding-bottom: 56.25%;
+			}
+
+			&.aspect-ratio-219 {
+				padding-bottom: 42.8571%;
+			}
+
+			&.aspect-ratio-43 {
+				padding-bottom: 75%;
+			}
+
+			&.aspect-ratio-32 {
+				padding-bottom: 66.6666%;
+			}
+
+		}
+
+		.croco-school-video-iframe {
+			max-width: 100%;
+			margin: 0;
+			line-height: 1;
+			border: none;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		.video-embed-image-overlay {
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			z-index: 2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+
+			.video-play-icon {
+				width: 130px;
+				height: 80px;
+				background-color: white;
+				border-radius: 15px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 40px;
+				color: #162B40;
+				transition: all 0.4s ease;
+			}
+
+			&:hover {
+				.video-play-icon {
+					box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
+				}
+			}
+		}
+	}
+
 	&__single-article-container {
 		width: 75%;
 		flex: 1 1 auto;
@@ -138,7 +219,7 @@
 		padding: 40px 0 40px 0;
 		border-top: 1px solid #E4E7ED;
 		border-bottom: 1px solid #E4E7ED;
-		
+
 		&.status-in_progress {
 
 		}
@@ -243,7 +324,7 @@
 			button.cherry-search__submit:hover {
 				background-color: #617BE5;
 			}
-			
+
 			.cherry-search__field {
 				padding: 11px 15px;
 				color: #5C6B79;
@@ -258,14 +339,14 @@
 				box-shadow: none;
 			}
 		}
-		
+
 		.cherry-search__results-list {
 			box-shadow: 0 0 20px rgba( 22, 43, 64, .1 );
 			border: none;
 			padding: 15px;
 			border-radius: 3px;
 			margin-top: 10px;
-			
+
 			.cherry-search__results-item {
 				border-top-color: #E4E7ED;
 				border-radius: 3px;
@@ -428,7 +509,7 @@
 		margin: 30px 0 0;
 		hyphens: none;
 	}
-	
+
 	ul {
 		margin: 1.5em 0 1.5em 3.8em;
 		padding-left:0;
@@ -442,7 +523,7 @@
 	ul > ul {
 		margin: 0 0 0 1.7em;
 	}
-	
+
 	li > ul
 	{
 		margin-bottom: 0;
@@ -517,7 +598,7 @@ table td, table th {
 		ul > ul {
 			margin: 0 0 0 0.7em;
 		}
-		
+
 		li > ul
 		{
 			margin-bottom: 0;

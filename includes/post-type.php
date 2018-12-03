@@ -57,9 +57,9 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 			$this->register_post_type();
 			$this->register_taxonomy();
 
-			add_action( 'post.php',          array( $this, 'add_post_formats_support' ) );
-			add_action( 'load-post.php', array( $this, 'add_post_formats_support' ) );
-			add_action( 'load-post-new.php', array( $this, 'add_post_formats_support' ) );
+			//add_action( 'post.php',          array( $this, 'add_post_formats_support' ) );
+			//add_action( 'load-post.php', array( $this, 'add_post_formats_support' ) );
+			//add_action( 'load-post-new.php', array( $this, 'add_post_formats_support' ) );
 
 			add_filter( 'template_include', array( $this, 'article_view_template' ) );
 		}
@@ -92,7 +92,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 						'comments',
 						'revisions',
 						'page-attributes',
-						'post-formats',
+						//'post-formats',
 					] ),
 					'public'          => true,
 					'capability_type' => 'post',
@@ -187,29 +187,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 				$find[] = $file;
 				$find[] = croco_school()->template_path() . $file;
 
-			} /*elseif ( is_tax( $this->category_term_slug() ) ) {
-
-				$term = get_queried_object();
-				$file = 'archive-croco-article.php';
-
-				$file_term = 'taxonomy-' . $term->taxonomy . '.php';
-
-				$find[] = 'taxonomy-' . $term->taxonomy . '-' . $term->slug . '.php';
-				$find[] = croco_school()->template_path() . 'taxonomy-' . $term->taxonomy . '-' . $term->slug . '.php';
-				$find[] = 'taxonomy-' . $term->taxonomy . '.php';
-				$find[] = croco_school()->template_path() . 'taxonomy-' . $term->taxonomy . '.php';
-				$find[] = $file_term;
-				$find[] = croco_school()->template_path() . $file_term;
-				$find[] = $file;
-				$find[] = croco_school()->template_path() . $file;
-
-			} elseif ( is_post_type_archive( $this->article_post_slug() ) ) {
-
-				$file   = $archive_template;
-				$find[] = $file;
-				$find[] = croco_school()->template_path() . $file;
-
-			}*/
+			}
 
 			if ( $file ) {
 				$template = locate_template( array_unique( $find ) );
