@@ -160,7 +160,7 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 
 							case 'in_progress':
 								$progress_text = __( 'In Progress', 'croco-school' );
-								$progress_icon = '<i class="nc-icon-glyph arrows-3_super-bold-right"></i>';
+								$progress_icon = '<i class="nc-icon-glyph arrows-1_bold-right"></i>';
 								break;
 
 							case 'done':
@@ -170,7 +170,7 @@ class Croco_School_Course_Progress extends Croco_School_Base {
 
 							case 'not_started':
 								$progress_text = __( 'Not Viewed', 'croco-school' );
-								$progress_icon = '<i class="nc-icon-glyph arrows-3_super-bold-right"></i>';
+								$progress_icon = '<i class="nc-icon-glyph arrows-1_bold-right"></i>';
 								break;
 
 							case 'guest':
