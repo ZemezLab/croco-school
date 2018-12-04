@@ -60,43 +60,47 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 		 */
 		public function get_single_guide_article() {
 
-			$is_active_sidebar = is_active_sidebar( 'croco-school-article-sidebar' );
+			//$is_active_sidebar = is_active_sidebar( 'croco-school-article-sidebar' );
+
+			$is_active_sidebar = false;
 
 			$is_sidebar_class = $is_active_sidebar ? 'has-sidebar' : 'no-sidebar';
 
 			?><div class="croco-school__single-article container guide-article <?php echo $is_sidebar_class; ?>"><?php
+					do_action( 'cx_breadcrumbs/render' );
+					$this->get_article_media();
+				?><div class="croco-school__single-article-inner"><?php
 
-				$this->get_article_media();
+					while ( have_posts() ) : the_post();
 
-				while ( have_posts() ) : the_post();
+					?><article id="primary" class="croco-school__single-article-container">
+						<div class="croco-school__single-article-container-inner"><?php
 
-				?><article id="primary" class="croco-school__single-article-container">
-					<div class="croco-school__single-article-container-inner"><?php
+							$post_id = get_the_ID();
 
-						$post_id = get_the_ID();
+							$format = $this->get_post_format( $post_id );?>
 
-						$format = $this->get_post_format( $post_id );?>
+							<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
 
-						<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
+							<div class="croco-school__single-article-content"><?php
+								ob_start();
+								the_content( '' );
+								$content = ob_get_contents();
+								ob_end_clean();
 
-						<div class="croco-school__single-article-content"><?php
-							ob_start();
-							the_content( '' );
-							$content = ob_get_contents();
-							ob_end_clean();
-
-							echo $content;
-						?></div>
-					</div>
-				</article><?php
-				endwhile;
-				if ( $is_active_sidebar ) : ?>
-					<aside id="secondary" class="croco-school__single-article-sidebar">
-						<div class="croco-school__single-article-sidebar-inner">
-							<?php dynamic_sidebar( 'croco-school-article-sidebar' ); ?>
+								echo $content;
+							?></div>
 						</div>
-					</aside><!-- #secondary -->
-				<?php endif;?>
+					</article><?php
+					endwhile;
+					if ( $is_active_sidebar ) : ?>
+						<aside id="secondary" class="croco-school__single-article-sidebar">
+							<div class="croco-school__single-article-sidebar-inner">
+								<?php dynamic_sidebar( 'croco-school-article-sidebar' ); ?>
+							</div>
+						</aside><!-- #secondary -->
+					<?php endif;?>
+				</div>
 			</div><?php
 		}
 
@@ -111,45 +115,45 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 			$is_sidebar_class = $is_active_sidebar ? 'has-sidebar' : 'no-sidebar';
 
 			?><div class="croco-school__single-article container course-article <?php echo $is_sidebar_class; ?>"><?php
+					$this->get_article_media();
+				?><div class="croco-school__single-article-inner"><?php
 
-				$this->get_article_media();
+					while ( have_posts() ) : the_post();
 
-				while ( have_posts() ) : the_post();
+					?><article id="primary" class="croco-school__single-article-container">
+						<div class="croco-school__single-article-container-inner">
+								<?php
 
-				?><article id="primary" class="croco-school__single-article-container">
-					<div class="croco-school__single-article-container-inner">
-							<?php
+							$post_id = get_the_ID();
 
-						$post_id = get_the_ID();
+							$format = $this->get_post_format( $post_id );
 
-						$format = $this->get_post_format( $post_id );
+							croco_school()->progress->article_progress_start();?>
 
-						croco_school()->progress->article_progress_start();?>
+							<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
 
-						<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
+							<div class="croco-school__single-article-content"><?php
+								ob_start();
+								the_content( '' );
+								$content = ob_get_contents();
+								ob_end_clean();
 
-						<div class="croco-school__single-article-content"><?php
-							ob_start();
-							the_content( '' );
-							$content = ob_get_contents();
-							ob_end_clean();
+								echo $content;
+							?></div><?php
 
-							echo $content;
-						?></div><?php
+							echo $this->get_done_lesson_button();
+						?></div>
+					</article><?php
+					endwhile;
 
-						echo $this->get_done_lesson_button();
-					?></div>
-				</article><?php
-				endwhile;
-
-				if ( $is_active_sidebar ) : ?>
-					<aside id="secondary" class="croco-school__single-article-sidebar">
-						<div class="croco-school__single-article-sidebar-inner">
-							<?php dynamic_sidebar( 'croco-school-course-article-sidebar' ); ?>
-						</div>
-					</aside><!-- #secondary -->
-				<?php endif;?>
-
+					if ( $is_active_sidebar ) : ?>
+						<aside id="secondary" class="croco-school__single-article-sidebar">
+							<div class="croco-school__single-article-sidebar-inner">
+								<?php dynamic_sidebar( 'croco-school-course-article-sidebar' ); ?>
+							</div>
+						</aside><!-- #secondary -->
+					<?php endif;?>
+				</div>
 			</div><?php
 		}
 

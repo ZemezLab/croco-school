@@ -47,12 +47,19 @@
 	}
 
 	&__single-article {
+		.breadcrumbs {
+			border-top: none;;
+		}
+	}
+
+	&__single-article-inner {
 		display: flex;
 		flex-flow: row wrap;
 	}
 
 	@media ( max-width: 425px ) {
-		&__single-article {
+
+		&__single-article-inner {
 			flex-flow: column nowrap;
 		}
 	}
@@ -202,7 +209,7 @@
 	&__single-search {
 		padding: 50px 0;
 		background-color: #F4F5F7;
-		margin-bottom: 71px;
+		margin-bottom: 51px;
 	}
 	@media ( max-width: 425px ) {
 		&__single-search {
@@ -403,6 +410,7 @@
 
 	}
 }
+
 .cherry-search-wrapper {
 	::-webkit-input-placeholder {
 		color:#5C6B79;
@@ -497,8 +505,6 @@
 		margin-top: 10px;
 	}
 }
-
-
 
 .croco-school__single-article-container-inner {
 	h1, h2, h3, h4 {
