@@ -20,13 +20,24 @@
 	}
 }
 .croco-school__single-article {
-	margin-top: 60px;
+	margin-top: 0;
+}
+.site-content .error-404,
+.site-content .not-found {
+	margin: 60px auto;
+	.search-form {
+		label {
+			padding: 0;
+		}
+		.search-form__submit.btn {
+			padding: 14px;
+		}
+	}
 }
 .croco-school {
 	.guide-article {
 		a {
 			color: #617BE5;
-
 			&:hover {
 				text-decoration: underline;
 			}
@@ -49,7 +60,16 @@
 	&__single-article {
 
 		.breadcrumbs {
+			max-width: 800px;
+			margin: 28px auto;
+			padding-right: 20px;
+			padding-left: 20px;
 			border-top: none;
+			.breadcrumbs_item{
+				font-size: 12px;
+				line-height: 21px;
+				font-weight: 400;
+			}
 		}
 	}
 
@@ -212,7 +232,7 @@
 	&__single-search {
 		padding: 50px 0;
 		background-color: #F4F5F7;
-		margin-bottom: 51px;
+		margin-bottom: 0;
 	}
 	@media ( max-width: 425px ) {
 		&__single-search {
@@ -549,7 +569,7 @@
 		color: #162b40;
 	}
 	strong {
-			color: #162b40;
+			color: #5C6B79;
 	}
 	a {
 		color: #617BE5;
@@ -795,17 +815,21 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 	border-bottom: 8px solid transparent;
   }
 }
+
 .guide-article .croco-school__single-article-title,
 .guide-article .croco-school__single-article-content {
 	max-width: 800px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin: 0 auto!important;
-
-	img.aligncenter{
+	
+	img.aligncenter {
 		margin: 0 auto;
 		box-shadow: 0 20px 20px rgba(22, 43, 64, 0.12);
 	}
 }
-.guide-article .custom-width , .custom-width .wp-video  {
+.guide-article .custom-width,
+.custom-width .wp-video  {
 	background-color: #F4F5F7;
 	width: 100vw;
 	padding: 50px 30px;
@@ -813,4 +837,114 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 	margin-left: 50%;
 	margin-right: auto;
 	transform: translateX(-50%);
+	margin-bottom: 49px;
+	margin-top: 40px;
+}
+@media ( max-width: 768px ) {
+	.guide-article .custom-width,
+	.custom-width .wp-video {
+		max-width: 680px;
+	}
+}
+//custom banner style
+.banner a:hover {
+	background-color: #ffffff;
+	color: #34D7A1;
+}
+.croco-school__single-article-content .banner.invert a:hover {
+	background-color: #ffffff;
+	color: #34D7A1;
+}
+.croco-school__single-article-content .banner.invert a {
+	background-color: #34D7A1;
+	color: #fff;
+}
+.croco-school__single-article-content .banner a:hover {
+	background-color: #617BE5;
+	color: #ffffff;
+}
+.croco-school__single-article-content .banner a {
+	background-color: #34D7A1;
+	color: #fff;
+}
+.croco-school__single-article-content .banner {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	background-color: #F4F6FD;
+	border: 1px solid #DCE1F8;
+	padding: 13px 52px 35px 52px;
+	border-radius: 3px;
+	p {
+		line-height: 30px;
+		font-size: 18px;
+		margin-bottom: 26px;
+	}
+	h3 {
+		color: #617BE5;
+		font-weight: bold;
+		line-height: 45px;
+		font-size: 32px;
+		margin-bottom: 0;
+	}
+	a {
+		border-radius: 3px;
+		text-decoration: none;
+		font-weight: bold;
+		line-height: 25px;
+		font-size: 14px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		padding: 16px 36px;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	&.invert {
+		background-color: #617BE5;
+		border: none;
+		h3 {
+			color: #ffffff;
+		}
+	}
+}
+.croco-school__single-article-content .info-banner {
+	display: flex;
+	margin-bottom: 43px;
+	margin-top: 39px;
+	background-color: #F4F6FD;
+	border: 1px solid #DCE1F8;
+	padding: 20px 20px 20px 20px;
+	border-radius: 3px;
+	img {
+		align-self: flex-start;
+		margin: 5px 16px 0 0;
+	}
+	p,
+	span {
+		line-height: 30px;
+		font-size: 18px;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 425px) {
+	.croco-school__single-article-content .info-banner {
+		p,
+		span {
+			font-size: 16px;
+		}
+	}
+	.croco-school__single-article-content .banner,
+	.croco-school__single-article-content .banner.invert {
+		padding: 13px 20px 35px 20px;
+		h3 {
+			line-height: 38px;
+			font-size: 25px;
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
 }
