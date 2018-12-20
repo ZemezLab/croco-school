@@ -60,6 +60,12 @@
     font-size: 30px; } }
 
 .croco-school-articles__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   font-size: 16px;
   font-weight: 400;
@@ -102,7 +108,7 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-top: 40px;
+  margin-top: 0;
   margin-left: -20px;
   margin-right: -20px; }
 
@@ -800,7 +806,7 @@
     flex-flow: column nowrap; } }
 
 .croco-school h1.croco-school__single-article-title {
-  margin: 0 0 30px 0; }
+  margin: 0 auto 30px auto; }
 
 .croco-school__single-article-content {
   margin-bottom: 35px; }
@@ -810,7 +816,8 @@
 
 .croco-school__single-article-media {
   width: 100%;
-  padding-bottom: 55px; }
+  padding-bottom: 60px;
+  padding-top: 60px; }
   .croco-school__single-article-media .croco-school__single-article-media-inner {
     position: relative; }
   .croco-school__single-article-media .croco-school-article-image {
@@ -1378,12 +1385,14 @@ table td, table th {
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent; }
 
+.guide-article .croco-school__single-article-content {
+  margin: 0 auto; }
+
 .guide-article .croco-school__single-article-title,
 .guide-article .croco-school__single-article-content {
   max-width: 800px;
   padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto !important; }
+  padding-right: 20px; }
   .guide-article .croco-school__single-article-title img.aligncenter,
   .guide-article .croco-school__single-article-content img.aligncenter {
     margin: 0 auto;
@@ -1499,5 +1508,11 @@ table td, table th {
     .croco-school__single-article-content .banner p,
     .croco-school__single-article-content .banner.invert p {
       font-size: 16px; } }
+
+.search-no-results #primary {
+  margin: 0 auto; }
+
+.search.search-results .site-content {
+  margin-top: 60px; }
 
 /*# sourceMappingURL=croco-school-frontend.css.map */
