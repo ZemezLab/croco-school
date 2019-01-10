@@ -75,7 +75,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 
 				$this->article_post_slug() => [
 					'labels'              => [
-						'name'          => esc_html__( 'Article', 'croco-school' ),
+						'name'          => esc_html__( 'Articles', 'croco-school' ),
 						'singular_name' => esc_html__( 'Article', 'croco-school' ),
 						'all_items'     => esc_html__( 'All Articles', 'croco-school' ),
 						'add_new'       => esc_html__( 'Add New Article', 'croco-school' ),
@@ -98,7 +98,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 					'capability_type' => 'post',
 					'hierarchical'    => false, // Hierarchical causes memory issues - WP loads all records!
 					'rewrite'         => [
-						'slug'       => $this->article_post_slug(),
+						'slug'       => $this->article_post_slug() . 's',
 						'with_front' => false,
 						'feeds'      => true,
 					],

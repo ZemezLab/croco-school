@@ -27,8 +27,21 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 		 * Constructor for the class
 		 */
 		public function __construct( $args = [] ) {
-
+			add_filter( 'cx_breadcrumbs/trail_taxonomies', [ $this, 'modify_breadcrumbs_trail_taxonomies'] );
 		}
+
+		/**
+		 * [modify_breadcrumbs_trail_taxonomies description]
+		 * @param  [type] $trail_taxonomies [description]
+		 * @return [type]                   [description]
+		 */
+		public function modify_breadcrumbs_trail_taxonomies ( $trail_taxonomies ) {
+
+			$trail_taxonomies['article'] = 'article-category';
+
+			return $trail_taxonomies;
+		}
+
 
 		/**
 		 * [get_single_article description]

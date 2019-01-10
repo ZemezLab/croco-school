@@ -152,6 +152,8 @@ class Croco_School_Articles extends Croco_School_Base {
 		} else {
 			$default_category = array_keys( $avaliable_category )[0];
 
+			$avaliable_category['all'] = esc_html__( 'All Articles', 'croco-school' );
+
 			$this->add_control(
 				'term_id',
 				[
@@ -208,12 +210,13 @@ class Croco_School_Articles extends Croco_School_Base {
 
 		$is_archive_template = filter_var( $settings['is_archive_template'], FILTER_VALIDATE_BOOLEAN );
 		$show_child_terms = filter_var( $settings['show_child_terms'], FILTER_VALIDATE_BOOLEAN );
+		$show_parent_articles = filter_var( $settings['show_parent_articles'], FILTER_VALIDATE_BOOLEAN );
 		$use_back_button = filter_var( $settings['use_back_button'], FILTER_VALIDATE_BOOLEAN );
-
-		$term_id = $settings['term_id'];
 
 		if ( $is_archive_template && isset( get_queried_object()->term_id ) ) {
 			$term_id = get_queried_object()->term_id;
+		} else {
+			$term_id = $settings['term_id'];
 		}
 
 		if ( empty( $term_id ) ) {
@@ -227,7 +230,6 @@ class Croco_School_Articles extends Croco_School_Base {
 			'class' => [
 				'croco-school-articles',
 			],
-			'data-tippy-content' => "fkfkf fjfjfj",
 		] );
 
 		?><div <?php echo $this->get_render_attribute_string( 'container' ); ?>>
@@ -235,13 +237,7 @@ class Croco_School_Articles extends Croco_School_Base {
 
 				$term_data = get_term( $term_id );
 
-				$atricle_thumbnail_id = get_term_meta( $term_data->term_id, 'category_thumbnail', true );
-
-				if ( ! empty( $atricle_thumbnail_id ) ) {
-					echo sprintf( '<div class="croco-school-articles__thumbnail">%s</div>', wp_get_attachment_image( $atricle_thumbnail_id, 'full' ) );
-				}
-
-				if ( ! empty( $term_data->name ) && filter_var( $settings['show_title'], FILTER_VALIDATE_BOOLEAN ) ) {
+				if ( 'all' !== $term_id && ! empty( $term_data->name ) && filter_var( $settings['show_title'], FILTER_VALIDATE_BOOLEAN ) ) {
 					$back_button_text = $settings['back_button_text'];
 
 					$back_button_html = '';
@@ -257,7 +253,7 @@ class Croco_School_Articles extends Croco_School_Base {
 					echo sprintf( '<div class="croco-school-articles__name-container">%s<h2 class="croco-school-articles__name">%s</h2></div>', $back_button_html, $term_data->name );
 				}
 
-				if ( filter_var( $settings['show_parent_articles'], FILTER_VALIDATE_BOOLEAN ) ) {
+				if ( $show_parent_articles ) {
 					$this->generate_article_list( $term_id );
 				}
 
@@ -284,31 +280,43 @@ class Croco_School_Articles extends Croco_School_Base {
 	 */
 	public function generate_article_list( $term_id = '', $term_name_visible = false ) {
 
-		if ( empty( $term_id ) ) {
-			return false;
-		}
-
 		$settings = $this->get_settings();
 		$is_archive_template = filter_var( $settings['is_archive_template'], FILTER_VALIDATE_BOOLEAN );
 		$use_article_limit = filter_var( $settings['use_article_limit'], FILTER_VALIDATE_BOOLEAN );
 		$article_list_limit = $settings['article_limit'];
 
-		$query = new \WP_Query( [
-			'post_type' => croco_school()->post_type->article_post_slug(),
-			'tax_query' => [
+		$query_param = [
+			'post_type'      => croco_school()->post_type->article_post_slug(),
+			'posts_per_page' => -1,
+		];
+
+		if ( empty( $term_id ) ) {
+			return false;
+		}
+
+		$term_data = get_term( $term_id );
+
+		if ( 'all' !== $term_id ) {
+			$query_param['tax_query'] = [
 				[
 					'taxonomy'	=> croco_school()->post_type->category_term_slug(),
 					'field'		=> 'term_id',
 					'terms'		=> $term_id,
 				]
-			]
-		] );
+			];
+
+			$atricle_thumbnail_id = get_term_meta( $term_data->term_id, 'category_thumbnail', true );
+
+			if ( ! empty( $atricle_thumbnail_id ) ) {
+				echo sprintf( '<div class="croco-school-articles__thumbnail">%s</div>', wp_get_attachment_image( $atricle_thumbnail_id, 'full' ) );
+			}
+		}
+
+		$query = new \WP_Query( $query_param );
 
 		if( empty( $query->posts ) ) {
 			return false;
 		}
-
-		$term_data = get_term( $term_id );
 
 		?><div class="croco-school-articles__article-list"><?php
 			if ( $term_name_visible ) {?>
