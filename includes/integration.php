@@ -47,6 +47,8 @@ if ( ! class_exists( 'Croco_School_Integration' ) ) {
 
 			add_action( 'wp_ajax_elementor_render_widget', array( $this, 'set_elementor_ajax' ), 10, -1 );
 
+			add_filter( 'wp_dropdown_cats', array( $this, 'remove_spacing_wp_dropdown_cats' ), 10, 2 );
+
 		}
 
 		/**
@@ -138,6 +140,14 @@ if ( ! class_exists( 'Croco_School_Integration' ) ) {
 				),
 				1
 			);
+		}
+		public function remove_spacing_wp_dropdown_cats( $output, $args ) {
+
+			if ( $args['name'] === 'jet_ajax_search_categories' ) {
+				$output = str_replace( '&nbsp;', '', $output );
+			}
+
+			return $output;
 		}
 
 		/**
