@@ -1,0 +1,84 @@
+.croco-school-cats {
+
+	&__title {
+		color: #162B40;
+
+		.croco-school-cats--single & {
+			margin: 0 0 20px;
+			font-size: 30px;
+			line-height: 42px;
+			font-weight: 700;
+		}
+
+		.croco-school-cats--archive & {
+			margin: 0 0 10px;
+			font-size: 18px;
+			line-height: 27px;
+			font-weight: 500;
+		}
+	}
+
+	&__child-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+		list-style: none;
+
+		.croco-school-cats--single & {
+			font-size: 18px;
+			line-height: 32px;
+			font-weight: 500;
+		}
+
+		.croco-school-cats--archive & {
+			font-size: 16px;
+			line-height: 28px;
+			font-weight: 400;
+		}
+	}
+
+	&__child-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 0 10px;
+	}
+
+	&__child-link {
+		position: relative;
+		display: inline-block;
+		color: #617BE5;
+
+		&:before {
+			content: '\f054';
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: 'FontAwesome';
+			font-size: 8px;
+		}
+
+		.croco-school-cats--single & {
+			padding-left: 15px;
+
+			&:hover {
+				color: #34D7A1;
+			}
+		}
+
+		.croco-school-cats--archive & {
+			padding-left: 35px;
+			padding-right: 20px;
+
+			&:before {
+				left: 20px;
+			}
+
+			&:hover,
+			&.current-category {
+				color: #fff;
+				background-color: #617BE5;
+			}
+		}
+	}
+
+}
