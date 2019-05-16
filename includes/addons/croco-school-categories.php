@@ -68,6 +68,15 @@ class Croco_School_Categories extends Croco_School_Base {
 		}
 
 		$this->add_control(
+			'is_archive_template',
+			array(
+				'label'   => esc_html__( 'Is Archive Template?', 'croco-school' ),
+				'type'    => Controls_Manager::SWITCHER,
+				'default' => '',
+			)
+		);
+
+		$this->add_control(
 			'title_tag',
 			array(
 				'label'   => esc_html__( 'Title Tag', 'croco-school' ),
@@ -122,13 +131,14 @@ class Croco_School_Categories extends Croco_School_Base {
 		$title_tag = $settings['title_tag'];
 		$term_slug = croco_school()->post_type->category_term_slug();
 
+		$is_archive = filter_var( $settings['is_archive_template'], FILTER_VALIDATE_BOOLEAN );
 		$archive_id = null;
 
-		if ( is_archive() && isset( get_queried_object()->term_id ) ) {
+		if ( $is_archive && is_archive() && isset( get_queried_object()->term_id ) ) {
 			$archive_id = get_queried_object()->term_id;
 		}
 		
-		$mod = is_archive() ? 'archive' : 'single';
+		$mod = $is_archive ? 'archive' : 'single';
 
 		?>
 		<div class="croco-school-cats croco-school-cats--<?php echo $mod; ?>">
@@ -150,7 +160,7 @@ class Croco_School_Categories extends Croco_School_Base {
 						$current_class   = ( $archive_id === $term_child_id ) ? 'current-category' : '';
 
 						printf(
-							'<li class="croco-school-cats__child-item croco-school-cats__child-item-%1$s%4$s"><a href="%2$s" class="croco-school-cats__child-link">%3$s</a></li>',
+							'<li class="croco-school-cats__child-item croco-category-%1$s%4$s"><a href="%2$s" class="croco-school-cats__child-link">%3$s</a></li>',
 							$term_child_id,
 							esc_url( get_term_link( $term_child_id, $term_slug ) ),
 							$child_term_data->name,
