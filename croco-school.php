@@ -3,7 +3,7 @@
  * Plugin Name: Croco School
  * Plugin URI:  http://crocoblock.com
  * Description: The advanced plugin for creating popups with Elementor
- * Version:     1.0.2
+ * Version:     1.0.3
  * Author:      Croco
  * Author URI:  http://crocoblock.com
  * Text Domain: croco-school
@@ -45,7 +45,7 @@ if ( ! class_exists( 'Croco_School' ) ) {
 		 *
 		 * @var string
 		 */
-		private $version = '1.0.0';
+		private $version = '1.0.3';
 
 		/**
 		 * Holder for base plugin URL
