@@ -5,6 +5,7 @@
 @import "addons/croco-school-course-progress";
 @import "addons/croco-school-lesson-list";
 @import "addons/croco-school-article-categories";
+@import "addons/croco-school-articles-archive";
 
 .site-content  .croco-school h1 {
 	font-weight: 900;
@@ -956,4 +957,17 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 }
 .search.search-results .site-content  {
 	margin-top: 60px;
+}
+
+// New Article Archive
+.article-sidebar-bg {
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 9999em;
+		background-color: #fff;
+	}
 }

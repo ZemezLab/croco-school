@@ -148,22 +148,27 @@ class Croco_School_Categories extends Croco_School_Base {
 				$term_data->name
 			);
 
-			$term_child = get_term_children( $term_id, $term_slug );
-			
-			if ( ! empty( $term_child ) ) { ?>
+			$terms_child = get_terms(
+				array(
+					'parent'     => $term_id,
+					'taxonomy'   => $term_slug,
+					'hide_empty' => 1,
+				)
+			);
+
+			if ( ! empty( $terms_child ) ) { ?>
 				<ul class="croco-school-cats__child-list">
 
 					<?php
-					foreach ( $term_child as $term_child_id ) {
+					foreach ( $terms_child as $term_child ) {
 
-						$child_term_data = get_term( $term_child_id );
-						$current_class   = ( $archive_id === $term_child_id ) ? 'current-category' : '';
+						$current_class = ( $archive_id === $term_child->term_id ) ? ' current-category' : '';
 
 						printf(
-							'<li class="croco-school-cats__child-item croco-category-%1$s%4$s"><a href="%2$s" class="croco-school-cats__child-link">%3$s</a></li>',
-							$term_child_id,
-							esc_url( get_term_link( $term_child_id, $term_slug ) ),
-							$child_term_data->name,
+							'<li class="croco-school-cats__child-item croco-category-%1$s"><a href="%2$s" class="croco-school-cats__child-link%4$s">%3$s</a></li>',
+							$term_child->term_id,
+							esc_url( get_term_link( $term_child->term_id, $term_slug ) ),
+							$term_child->name,
 							$current_class
 						);
 

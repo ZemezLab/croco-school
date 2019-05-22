@@ -41,6 +41,12 @@
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding: 0 10px;
+
+		.croco-school-cats--archive & {
+			& + .croco-school-cats__child-item {
+				margin-top: 1px;
+			}
+		}
 	}
 
 	&__child-link {

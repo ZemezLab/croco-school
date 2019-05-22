@@ -62,6 +62,8 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 			//add_action( 'load-post-new.php', array( $this, 'add_post_formats_support' ) );
 
 			add_filter( 'template_include', array( $this, 'article_view_template' ) );
+
+			add_action( 'restrict_manage_posts', array( $this, 'admin_filter_by_tax' ) , 10, 2);
 		}
 
 		/**
@@ -217,6 +219,38 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 
 			add_post_type_support( $this->article_post_slug(), 'post-formats', $args );
 			add_theme_support( 'post-formats', $args );
+		}
+
+		function admin_filter_by_tax( $post_type, $which ) {
+
+			// Apply this only on a specific post type
+			if ( $this->article_post_slug() !== $post_type ) {
+				return;
+			}
+
+			$taxonomy_slug = $this->category_term_slug();
+
+			// Retrieve taxonomy data
+			$taxonomy_obj  = get_taxonomy( $taxonomy_slug );
+			$taxonomy_name = $taxonomy_obj->labels->name;
+
+			// Retrieve taxonomy terms
+			$terms = get_terms( $taxonomy_slug );
+
+			// Display filter HTML
+			echo "<select name='{$taxonomy_slug}' id='{$taxonomy_slug}' class='postform'>";
+			echo '<option value="">' . sprintf( esc_html__( 'Show All %s', 'croco-school' ), $taxonomy_name ) . '</option>';
+			foreach ( $terms as $term ) {
+				printf(
+					'<option value="%1$s" %2$s>%3$s (%4$s)</option>',
+					$term->slug,
+					( ( isset( $_GET[$taxonomy_slug] ) && ( $_GET[$taxonomy_slug] == $term->slug ) ) ? ' selected="selected"' : '' ),
+					$term->name,
+					$term->count
+				);
+			}
+			echo '</select>';
+
 		}
 
 		/**
