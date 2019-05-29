@@ -53,14 +53,6 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 			if ( ! has_term( '', croco_school()->post_type->course_term_slug() ) ) {
 
-				if ( function_exists( 'cherry_get_search_form' ) ) {
-					?><div class="croco-school__single-search">
-						<div class="croco-school-container"><?php
-							cherry_get_search_form();
-						?></div>
-					</div><?php
-				}
-
 				$this->get_single_guide_article();
 			} else {
 				$this->get_single_course_article();
@@ -81,7 +73,6 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 			?><div class="croco-school__single-article container guide-article <?php echo $is_sidebar_class; ?>"><?php
 					do_action( 'cx_breadcrumbs/render' );
-					$this->get_article_media();
 				?><div class="croco-school__single-article-inner"><?php
 
 					while ( have_posts() ) : the_post();
@@ -94,7 +85,7 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 							$format = $this->get_post_format( $post_id );?>
 
 							<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
-
+							<?php	$this->get_article_media();?>
 							<div class="croco-school__single-article-content"><?php
 								ob_start();
 								the_content( '' );

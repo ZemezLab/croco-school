@@ -10,7 +10,7 @@
 	}
 
 	&__list {
-		margin: 30px 0 0;
+		margin: 42px 0 0;
 		list-style: none;
 
 		counter-reset: list;
@@ -100,5 +100,20 @@
 
 	&__child-term-item + &__child-term-item {
 		margin-top: 50px;
+	}
+}
+.custom-width-section.elementor-widget-croco-school-categories {
+	.croco-school-cats {
+		width: 75%;
+	}
+}
+.home-widgets.elementor-widget-croco-school-categories {
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px rgba(22, 43, 64, 0.1);
+	transition: .3s all;
+	&:hover {
+		box-shadow: 0 20px 20px rgba(22, 43, 64, 0.12);
+		transition: .3s all;
+		transform: translateY(-6px);
 	}
 }
