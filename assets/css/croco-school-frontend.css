@@ -743,6 +743,11 @@
     font-size: 30px;
     line-height: 42px;
     font-weight: 700; }
+    @media (max-width: 425px) {
+      .croco-school-cats--single .croco-school-cats__title {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 0 10px; } }
   .croco-school-cats--archive .croco-school-cats__title {
     margin: 0 0 10px;
     font-size: 18px;
@@ -761,6 +766,9 @@
     font-size: 18px;
     line-height: 32px;
     font-weight: 500; }
+    @media (max-width: 425px) {
+      .croco-school-cats--single .croco-school-cats__child-list {
+        font-size: 14px; } }
   .croco-school-cats--archive .croco-school-cats__child-list {
     font-size: 16px;
     line-height: 28px;
@@ -800,6 +808,13 @@
       color: #fff;
       background-color: #617BE5; }
 
+@media (max-width: 425px) {
+  .custom-width-section .croco-school-cats__child-item {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 calc(100% / 2) !important;
+    flex: 0 0 calc(100% / 2) !important;
+    max-width: calc(100% / 2) !important; } }
+
 .cs-articles-archive__main-title {
   margin: 0;
   font-weight: 900;
@@ -807,6 +822,10 @@
   line-height: 47px;
   letter-spacing: -1px;
   color: #162B40; }
+  @media (max-width: 425px) {
+    .cs-articles-archive__main-title {
+      font-size: 30px;
+      line-height: 40px; } }
 
 .cs-articles-archive__list {
   margin: 42px 0 0;
@@ -832,6 +851,10 @@
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(22, 43, 64, 0.1);
   box-shadow: 0 2px 4px rgba(22, 43, 64, 0.1); }
+  @media (max-width: 425px) {
+    .cs-articles-archive .cs-articles-archive__article-link {
+      padding: 10px 10px;
+      font-size: 16px; } }
   .cs-articles-archive .cs-articles-archive__article-link .cs-article-link-text:before {
     content: counter(list) ". ";
     counter-increment: list;
@@ -844,6 +867,9 @@
     flex-shrink: 0;
     margin-left: auto;
     padding-left: 15px; }
+    @media (max-width: 425px) {
+      .cs-articles-archive .cs-articles-archive__article-link .read-now {
+        display: none; } }
     .cs-articles-archive .cs-articles-archive__article-link .read-now__text {
       font-weight: 700;
       font-size: 16px;
@@ -883,6 +909,9 @@
 
 .custom-width-section.elementor-widget-croco-school-categories .croco-school-cats {
   width: 75%; }
+  @media (max-width: 425px) {
+    .custom-width-section.elementor-widget-croco-school-categories .croco-school-cats {
+      width: 100%; } }
 
 .home-widgets.elementor-widget-croco-school-categories {
   background: #FFFFFF;

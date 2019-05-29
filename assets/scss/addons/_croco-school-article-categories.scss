@@ -8,6 +8,11 @@
 			font-size: 30px;
 			line-height: 42px;
 			font-weight: 700;
+			@media (max-width: 425px) {
+				font-size: 18px;
+				line-height: 28px;
+				margin: 0 0 10px;
+			}
 		}
 
 		.croco-school-cats--archive & {
@@ -28,6 +33,9 @@
 			font-size: 18px;
 			line-height: 32px;
 			font-weight: 500;
+			@media (max-width: 425px) {
+				font-size: 14px;
+			}
 		}
 
 		.croco-school-cats--archive & {
@@ -36,12 +44,10 @@
 			font-weight: 400;
 		}
 	}
-
 	&__child-item {
 		flex: 0 0 100%;
 		max-width: 100%;
 		padding: 0 10px;
-
 		.croco-school-cats--archive & {
 			& + .croco-school-cats__child-item {
 				margin-top: 1px;
@@ -88,4 +94,12 @@
 		}
 	}
 
+}
+.custom-width-section .croco-school-cats {
+	&__child-item {
+		@media (max-width: 425px) {
+			flex: 0 0 calc(100% / 2) !important;
+			max-width: calc(100% / 2) !important;
+		}
+	}
 }
