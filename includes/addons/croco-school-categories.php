@@ -65,6 +65,18 @@ class Croco_School_Categories extends Croco_School_Base {
 					'default' => $default_category,
 				)
 			);
+
+			$this->add_control(
+				'additional_sub_terms_ids',
+				array(
+					'label'       => esc_html__( 'Additional Sub Categories', 'croco-school' ),
+					'label_block' => true,
+					'type'        => Controls_Manager::SELECT2,
+					'multiple'    => true,
+					'options'     => $available_category,
+					'default'     => array(),
+				)
+			);
 		}
 
 		$this->add_control(
@@ -73,6 +85,15 @@ class Croco_School_Categories extends Croco_School_Base {
 				'label'   => esc_html__( 'Is Archive Template?', 'croco-school' ),
 				'type'    => Controls_Manager::SWITCHER,
 				'default' => '',
+			)
+		);
+
+		$this->add_control(
+			'show_title',
+			array(
+				'label'   => esc_html__( 'Show Title', 'croco-school' ),
+				'type'    => Controls_Manager::SWITCHER,
+				'default' => 'yes',
 			)
 		);
 
@@ -90,6 +111,38 @@ class Croco_School_Categories extends Croco_School_Base {
 					'div' => 'DIV',
 				),
 				'default' => 'h3',
+				'condition' => array(
+					'show_title' => 'yes',
+				),
+			)
+		);
+
+		$this->add_control(
+			'title_type',
+			array(
+				'label'   => esc_html__( 'Title Text', 'croco-school' ),
+				'type'    => Controls_Manager::SELECT,
+				'default' => 'default',
+				'options' => array(
+					'default' => esc_html__( 'Default', 'croco-school' ),
+					'custom'  => esc_html__( 'Custom', 'croco-school' ),
+				),
+				'condition' => array(
+					'show_title' => 'yes',
+				),
+			)
+		);
+
+		$this->add_control(
+			'custom_title',
+			array(
+				'label'   => esc_html__( 'Custom Title Text', 'croco-school' ),
+				'type'    => Controls_Manager::TEXT,
+				'default' => '',
+				'condition' => array(
+					'show_title' => 'yes',
+					'title_type' => 'custom',
+				),
 			)
 		);
 
@@ -127,9 +180,11 @@ class Croco_School_Categories extends Croco_School_Base {
 			return false;
 		}
 
-		$term_data = get_term( $term_id );
-		$title_tag = $settings['title_tag'];
-		$term_slug = croco_school()->post_type->category_term_slug();
+		$term_data  = get_term( $term_id );
+		$show_title = filter_var( $settings['show_title'], FILTER_VALIDATE_BOOLEAN );
+		$title_tag  = $settings['title_tag'];
+		$title_type = $settings['title_type'];
+		$term_slug  = croco_school()->post_type->category_term_slug();
 
 		$is_archive = filter_var( $settings['is_archive_template'], FILTER_VALIDATE_BOOLEAN );
 		$archive_id = null;
@@ -143,10 +198,13 @@ class Croco_School_Categories extends Croco_School_Base {
 		?>
 		<div class="croco-school-cats croco-school-cats--<?php echo $mod; ?>">
 			<?php
-			printf( '<%1$s class="croco-school-cats__title">%2$s</%1$s>',
-				$title_tag,
-				$term_data->name
-			);
+
+			if ( $show_title ) {
+				printf( '<%1$s class="croco-school-cats__title">%2$s</%1$s>',
+					$title_tag,
+					( 'default' === $title_type ) ? $term_data->name : $settings['custom_title']
+				);
+			}
 
 			$terms_child = get_terms(
 				array(
@@ -155,6 +213,18 @@ class Croco_School_Categories extends Croco_School_Base {
 					'hide_empty' => 1,
 				)
 			);
+
+			if ( ! empty( $settings['additional_sub_terms_ids'] ) ) {
+				$additional_sub_terms = get_terms(
+					array(
+						'include'    => $settings['additional_sub_terms_ids'],
+						'taxonomy'   => $term_slug,
+						'hide_empty' => 1,
+					)
+				);
+
+				$terms_child = array_merge( $terms_child, $additional_sub_terms );
+			}
 
 			if ( ! empty( $terms_child ) ) { ?>
 				<ul class="croco-school-cats__child-list">
