@@ -73,6 +73,9 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 			?><div class="croco-school__single-article container guide-article <?php echo $is_sidebar_class; ?>"><?php
 					do_action( 'cx_breadcrumbs/render' );
+
+					//$this->render_back_btn_html();
+
 				?><div class="croco-school__single-article-inner"><?php
 
 					while ( have_posts() ) : the_post();
@@ -428,6 +431,52 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 			}
 
 			return null;
+		}
+
+		public function render_back_btn_html() {
+			$btn_format = '<div class="croco-article-back-btn-wrap"><a href="%1$s" class="croco-article-back-btn">%2$s%3$s</a></div>';
+
+			$top_level_term = $this->get_top_level_category();
+
+			if ( ! $top_level_term ) {
+				return false;
+			}
+
+			$btn_icon = '';
+			$btn_text = '<span class="croco-article-back-btn__text">Back</span>';
+
+			printf(
+				$btn_format,
+				get_term_link( $top_level_term->term_id, $top_level_term->taxonomy ),
+				$btn_icon,
+				$btn_text
+			);
+		}
+
+		public function get_top_level_category() {
+			$post_id  = get_the_ID();
+			$taxonomy = croco_school()->post_type->category_term_slug();
+
+			$terms = wp_get_post_terms( $post_id, $taxonomy, array( 'orderby' => 'parent' ) );
+
+			if ( ! $terms || is_wp_error( $terms ) ) {
+				return false;
+			}
+
+			$term = array_pop( $terms );
+
+			$parent_id = $term->parent;
+
+			while ( $parent_id ) {
+				$_term     = get_term_by( 'id', $parent_id, $taxonomy );
+				$parent_id = $_term->parent;
+
+				if ( $parent_id ) {
+					$term = $_term;
+				}
+			}
+
+			return $term;
 		}
 
 		/**
