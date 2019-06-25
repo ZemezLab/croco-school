@@ -905,7 +905,7 @@
   margin-top: 40px; }
 
 .cs-articles-archive__child-term-item + .cs-articles-archive__child-term-item {
-  margin-top: 50px; }
+  margin-top: 80px; }
 
 .custom-width-section.elementor-widget-croco-school-categories .croco-school-cats {
   width: 75%; }
@@ -973,6 +973,7 @@
   padding-right: .9375rem; }
 
 .croco-school__single-article .breadcrumbs {
+  display: none;
   max-width: 1200px;
   margin: 28px auto;
   padding-right: 10px;
@@ -984,6 +985,7 @@
     font-weight: 400; }
 
 .croco-school__single-article-inner {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1397,6 +1399,25 @@
 
 .croco-school__single-article-container-inner b {
   color: #34D7A1; }
+  .croco-school__single-article-container-inner b span {
+    display: inline-block;
+    margin-right: 12px;
+    color: #ffffff;
+    position: relative; }
+    .croco-school__single-article-container-inner b span:before {
+      content: '';
+      color: #ffffff;
+      background-color: #34D7A1;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1; }
 
 .croco-school__single-article-container-inner strong {
   color: #5C6B79; }
@@ -1454,18 +1475,36 @@ table td, table th {
   content: '';
   display: block;
   height: 2px;
-  left: 0;
   position: absolute;
+  left: 0;
+  width: 100%;
   top: 100%;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
-  transition: all .2s ease;
-  width: 100%; }
+  transition: all .2s ease; }
+
+.croco-school__single-article-container-inner .croco-school__single-article-content a:after {
+  content: '';
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 0;
+  background-color: #617BE5; }
 
 .croco-school__single-article-container-inner .croco-school__single-article-content a:hover {
   text-decoration: none; }
-  .croco-school__single-article-container-inner .croco-school__single-article-content a:hover:before {
-    opacity: 1; }
+  .croco-school__single-article-container-inner .croco-school__single-article-content a:hover:after {
+    top: 100%;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    background-color: #617BE5; }
 
 .croco-school__single-article-container-inner .croco-school__single-article-content a {
   color: inherit;
@@ -1758,5 +1797,12 @@ table td, table th {
   right: 0;
   width: 9999em;
   background-color: #fff; }
+
+.cs-articles-archive .cs-article-link-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .cs-articles-archive .cs-article-link-text:before {
+    margin-right: 5px; }
 
 /*# sourceMappingURL=croco-school-frontend.css.map */
