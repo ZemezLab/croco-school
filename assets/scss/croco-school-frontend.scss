@@ -984,9 +984,9 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 	display: flex;
 	margin-bottom: 43px;
 	margin-top: 39px;
-	background-color: #F9FAFB;
+	background-color: transparent;
 	border: none;
-	padding: 20px 20px 20px 20px;
+	padding: 20px 0 20px 0;
 	border-radius: 3px;
 	img {
 		display: none;
@@ -995,16 +995,24 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 	}
 	&:before {
 		content: '';
-		background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23D2D6DB'%3E%3C/circle%3E%3Cpath d='M13 14.25C13 13.0074 13.8954 12 15 12C16.1046 12 17 13.0074 17 14.25V21.75C17 22.9926 16.1046 24 15 24C13.8954 24 13 22.9926 13 21.75V14.25Z' fill='white'%3E%3C/path%3E%3Cpath d='M13 8.25C13 7.00736 13.8954 6 15 6C16.1046 6 17 7.00736 17 8.25C17 9.49264 16.1046 10.5 15 10.5C13.8954 10.5 13 9.49264 13 8.25Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='56' height='57' viewBox='0 0 56 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 49.875C21 53.8101 24.1341 57 28 57C31.8659 57 35 53.8101 35 49.875V49.5H21V49.875Z' fill='%2334D7A1'/%3E%3Cpath d='M21 47V49.5H35V47H21Z' fill='%2334D7A1'/%3E%3Cg opacity='0.2'%3E%3Cpath d='M26.2775 35.9958C23.6298 35.2537 21.6842 32.8477 21.6842 30H25.1292C25.1292 31.5623 26.417 32.8333 28 32.8333C28 25.6755 28 17.5612 28 13C19.7158 13 13 19.628 13 27.8042C13 33.2903 16.0237 38.0792 20.5159 40.6368L22.5455 47H26.2775V35.9958Z' fill='%23617BE5'/%3E%3Cpath d='M28 13C28 17.5612 28 25.6755 28 32.8333C29.583 32.8333 30.8708 31.5623 30.8708 30H34.3158C34.3158 32.8477 32.3702 35.2537 29.7225 35.9958V47H33.4545L35.4841 40.6368C39.9763 38.0793 43 33.2904 43 27.8042C43 19.628 36.2842 13 28 13Z' fill='%23617BE5'/%3E%3C/g%3E%3Crect x='27' width='2' height='8' fill='%23FCD09F'/%3E%3Crect y='28' width='2' height='8' transform='rotate(-90 0 28)' fill='%23FCD09F'/%3E%3Crect x='48' y='28' width='2' height='8' transform='rotate(-90 48 28)' fill='%23FCD09F'/%3E%3Cpath d='M42.4142 13.0711L41 11.6569L46.6569 6L48.0711 7.41421L42.4142 13.0711Z' fill='%23FCD09F'/%3E%3Cpath d='M12.6571 13.0711L14.0713 11.6569L8.41443 6L7.00022 7.41421L12.6571 13.0711Z' fill='%23FCD09F'/%3E%3C/svg%3E");
 		background-size: auto;
 		background-repeat: no-repeat;
-		width: 52px;
-		height: 30px;
+		width: 94px;
+		height: 58px;
 		align-self: flex-start;
 		margin: 5px 16px 0 0;
 	}
+	a {
+		font-style: italic;
+		font-weight: bold;
+		color: #617BE5;
+	}
 	p,
 	span {
+		font-style: italic;
+		font-weight: bold;
+		color: #617BE5;
 		line-height: 30px;
 		font-size: 18px;
 		margin-bottom: 0;
@@ -1134,4 +1142,123 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 		position: relative;
 		text-decoration: none;
 
+}
+.croco-school__single-post-navigation {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #F9FAFB;
+	margin-bottom: -60px;
+	.post-navigation .nav-links {
+		.nav-next,
+		.nav-previous  {
+			a:hover .nav-text {
+				color:  #617BE5;
+			}
+			a {
+			.nav-text {
+				position: relative;
+				&:before {
+					background-color: #617BE5;
+					opacity: 0.4;
+					content: '';
+					display: block;
+					height: 2px;
+					position: absolute;
+					left: 0;
+					width: 100%;
+					top: 100%;
+					transition: all .2s ease;
+				}
+				&:after {
+					content: '';
+					height: 2px;
+					display: block;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					transition: all .2s ease;
+					width: 0;
+					background-color: #617BE5;
+				}
+				
+				&:hover {
+					&:after {
+						top: 100%;
+						transition: all 0.2s ease-out;
+						width: 100%;
+						background-color: #617BE5;
+					}
+					text-decoration: none;
+				}
+			}
+				&:hover {
+					.nav-post-title {
+						color: #617BE5;
+					}
+					.nav-text {
+							&:after {
+								top: 100%;
+								transition: all 0.2s ease-out;
+								width: 100%;
+								background-color: #617BE5;
+							}
+							text-decoration: none;
+					}
+				}
+			}
+			.croco-school-nav-wrap {
+				margin-top: 20px;
+				position: relative;
+				display: inline-flex;
+				i {
+					color: #617BE5;
+					position: relative;
+					height: 16px;
+					top: 7px;
+					font-size: 13px;
+				}
+			}
+			a {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		.nav-previous {
+			i {
+				margin-right: 10px;
+			}
+			padding-left: 0;
+		}
+		.nav-next {
+			.croco-school-nav-wrap {
+				flex-direction: row-reverse;
+			}
+			i {
+				margin-left: 10px;
+			}
+			padding-right: 0;
+		}
+		display: flex;
+		.nav-post-title {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 27px;
+			color: #162B40;
+		}
+		.nav-text {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 1.367;
+			font-family: Roboto, sans-serif;
+			letter-spacing: 0;
+			color: #617BE5;
+			text-transform: capitalize;
+		}
+	}
+	.post-navigation {
+		padding: 40px 0;
+		margin: 0 auto;
+		border: none;
+		width: 760px;
+	}
 }
