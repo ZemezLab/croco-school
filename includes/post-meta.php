@@ -103,7 +103,7 @@ if ( ! class_exists( 'Croco_School_Post_Meta' ) ) {
 					'video_url' => array(
 						'type'         => 'text',
 						'parent'       => 'video_tab',
-						'value'        => 'https://www.youtube.com/watch?v=QfDt0_inEIU',
+						'value'        => '',
 						'title'        => esc_html__( 'Video Url', 'jet-elements' ),
 					),
 

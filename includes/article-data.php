@@ -213,6 +213,10 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 					$video_aspect_ratio = get_post_meta( $post_id, 'video_aspect_ratio', true );
 					$video_aspect_ratio = isset( $video_aspect_ratio ) ? $video_aspect_ratio : '169';
 
+					if ( empty( $video_url ) ) {
+						return false;
+					}
+
 					?><div class="croco-school__single-media-frame aspect-ratio-<?php echo $video_aspect_ratio; ?>"><?php
 
 						$video_properties = $this->get_video_properties( $video_url );
