@@ -74,7 +74,7 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 			?><div class="croco-school__single-article container guide-article <?php echo $is_sidebar_class; ?>"><?php
 					do_action( 'cx_breadcrumbs/render' );
 
-					//$this->render_back_btn_html();
+					$this->render_back_btn_html();
 
 				?><div class="croco-school__single-article-inner"><?php
 
@@ -443,7 +443,7 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 			}
 
 			$btn_icon = '';
-			$btn_text = '<span class="croco-article-back-btn__text">Back</span>';
+			$btn_text = '<span class="croco-article-back-btn__text">Back to content</span>';
 
 			printf(
 				$btn_format,

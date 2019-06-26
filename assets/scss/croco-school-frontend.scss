@@ -679,14 +679,14 @@ table td, table th {
 		position: absolute;
 		top: 100%;
 		left: 0;
-		transition: all .5s ease;
+		transition: all .2s ease;
 		width: 0;
 		background-color: #617BE5;
 	}
 	a:hover {
 		&:after {
 			top: 100%;
-			transition: all 0.5s ease-out;
+			transition: all 0.2s ease-out;
 			width: 100%;
 			background-color: #617BE5;
 		}
@@ -910,7 +910,11 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 .banner a:hover {
 	background-color: #ffffff;
 	color: #34D7A1;
+	&:after {
+		display: none;
+	}
 }
+
 .croco-school__single-article-content .banner.invert a:hover {
 	background-color: #162B40;
 	color: #ffffff;
@@ -1052,4 +1056,65 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 	&:before {
 		margin-right: 5px;
 	}
+}
+.croco-article-back-btn-wrap a.croco-article-back-btn {
+	&:hover{
+		text-decoration: none;
+	}
+}
+.croco-article-back-btn-wrap {
+	margin-left: 12px;
+	margin-top: 50px;
+	&:before {
+		content: '';
+		display: inline-block;
+		margin-right: 7px;
+		transform: translateY(4px);
+		width: 21px;
+		height: 16px;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.08203' y='7' width='19' height='2' fill='%23D0D5D9'%3E%3C/rect%3E%3Crect x='1.41406' y='6.66797' width='11' height='2' transform='rotate(45 1.41406 6.66797)' fill='%23D0D5D9'%3E%3C/rect%3E%3Crect x='0.0820312' y='8' width='11' height='2' transform='rotate(-45 0.0820312 8)' fill='%23D0D5D9'%3E%3C/rect%3E%3C/svg%3E");
+	}
+}
+.croco-article-back-btn__text {
+	&:before {
+		background-color: #617BE5;
+		opacity: 0.4;
+		content: '';
+		display: block;
+		height: 2px;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 100%;
+		transition: all .2s ease;
+	}
+	&:after {
+		content: '';
+		height: 2px;
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		transition: all .2s ease;
+		width: 0;
+		background-color: #617BE5;
+	}
+	&:hover {
+		&:after {
+			top: 100%;
+			transition: all 0.2s ease-out;
+			width: 100%;
+			background-color: #617BE5;
+		}
+		&:before {
+		
+		}
+		text-decoration: none;
+	}
+
+		color: inherit;
+		position: relative;
+		text-decoration: none;
+
 }
