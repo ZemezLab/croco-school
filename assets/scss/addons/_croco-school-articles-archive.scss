@@ -50,8 +50,12 @@
 		}
 
 		.video-format-icon {
-			margin-left: 4px;
+			margin-left: 20px;
 			vertical-align: middle;
+			svg {
+				height: 100%;
+				vertical-align: middle;
+			}
 		}
 
 		.read-now {

@@ -809,11 +809,16 @@
       background-color: #617BE5; }
 
 @media (max-width: 425px) {
-  .custom-width-section .croco-school-cats__child-item {
-    -webkit-box-flex: 0 !important;
-    -ms-flex: 0 0 calc(100% / 2) !important;
-    flex: 0 0 calc(100% / 2) !important;
-    max-width: calc(100% / 2) !important; } }
+  .custom-background-image-size .elementor-widget-container {
+    background-image: none !important; } }
+
+@media (max-width: 425px) {
+  .custom-width-section .elementor-widget-container {
+    background-image: none !important; } }
+
+@media (max-width: 1024px) and (min-width: 425px) {
+  .custom-width-section .elementor-widget-container {
+    background-size: 350px !important; } }
 
 .cs-articles-archive__main-title {
   margin: 0;
@@ -860,8 +865,11 @@
     counter-increment: list;
     color: #34D7A1; }
   .cs-articles-archive .cs-articles-archive__article-link .video-format-icon {
-    margin-left: 4px;
+    margin-left: 20px;
     vertical-align: middle; }
+    .cs-articles-archive .cs-articles-archive__article-link .video-format-icon svg {
+      height: 100%;
+      vertical-align: middle; }
   .cs-articles-archive .cs-articles-archive__article-link .read-now {
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -1769,10 +1777,31 @@ table td, table th {
     margin-bottom: 0;
     margin-top: 0; }
 
+@media (min-width: 768px) {
+  .croco-school__single-article-content .banner.invert h3 {
+    padding-right: 100px; } }
+
+@media (max-width: 768px) {
+  .croco-school__single-article-content .banner.invert {
+    padding-right: 41px;
+    background-image: -webkit-linear-gradient(280deg, #5b77e7 0%, #26e8a8 100%);
+    background-image: -o-linear-gradient(280deg, #5b77e7 0%, #26e8a8 100%);
+    background-image: linear-gradient(170deg, #5b77e7 0%, #26e8a8 100%); } }
+
 @media (max-width: 425px) {
-  .croco-school__single-article-content .info-banner p,
-  .croco-school__single-article-content .info-banner span {
-    font-size: 16px; }
+  .croco-school__single-article-content .info-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .croco-school__single-article-content .info-banner:before {
+      margin-bottom: 10px; }
+    .croco-school__single-article-content .info-banner p,
+    .croco-school__single-article-content .info-banner span {
+      font-size: 16px; }
   .croco-school__single-article-content .banner,
   .croco-school__single-article-content .banner.invert {
     padding: 13px 20px 35px 20px; }

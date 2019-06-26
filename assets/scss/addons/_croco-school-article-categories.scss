@@ -93,13 +93,21 @@
 			}
 		}
 	}
-
+}
+.custom-background-image-size .elementor-widget-container {
+	@media (max-width: 425px) {
+		background-image: none!important;
+	}
+}
+.custom-width-section .elementor-widget-container {
+	@media (max-width: 425px) {
+		background-image: none!important;
+	}
+	@media (max-width: 1024px) and (min-width: 425px) {
+		background-size: 350px!important;
+	}
 }
 .custom-width-section .croco-school-cats {
 	&__child-item {
-		@media (max-width: 425px) {
-			flex: 0 0 calc(100% / 2) !important;
-			max-width: calc(100% / 2) !important;
-		}
 	}
 }

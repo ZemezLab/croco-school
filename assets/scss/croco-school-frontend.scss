@@ -1012,8 +1012,25 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 	}
 }
 
+	@media (min-width: 768px) {
+		.croco-school__single-article-content .banner.invert	h3 {
+			padding-right: 100px;
+		}
+	}
+	@media (max-width: 768px){
+		.croco-school__single-article-content .banner.invert {
+		padding-right: 41px;
+		background-image: linear-gradient(170deg, #5b77e7 0%, #26e8a8 100%);
+	}
+}
+
 @media (max-width: 425px) {
 	.croco-school__single-article-content .info-banner {
+		display: flex;
+		flex-direction:column;
+		&:before {
+			margin-bottom: 10px;
+		}
 		p,
 		span {
 			font-size: 16px;

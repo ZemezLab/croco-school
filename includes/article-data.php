@@ -443,7 +443,7 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 			}
 
 			$btn_icon = '';
-			$btn_text = '<span class="croco-article-back-btn__text">Back to content</span>';
+			$btn_text = '<span class="croco-article-back-btn__text">Back to contents</span>';
 
 			printf(
 				$btn_format,
