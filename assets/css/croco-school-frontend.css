@@ -1906,9 +1906,7 @@ table td, table th {
   background-color: #F9FAFB;
   margin-bottom: -60px; }
   .croco-school__single-post-navigation .post-navigation .nav-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: block; }
     .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-text,
     .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-text {
       color: #617BE5; }

@@ -1148,7 +1148,9 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 	margin: 0 auto;
 	background-color: #F9FAFB;
 	margin-bottom: -60px;
+	
 	.post-navigation .nav-links {
+		display: block;
 		.nav-next,
 		.nav-previous  {
 			a:hover .nav-text {
@@ -1238,7 +1240,6 @@ $transparentDarker: rgba(0, 8, 16, 0.24);
 			}
 			padding-right: 0;
 		}
-		display: flex;
 		.nav-post-title {
 			font-weight: 500;
 			font-size: 18px;
