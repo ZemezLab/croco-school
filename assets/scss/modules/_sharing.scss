@@ -1,0 +1,83 @@
+.croco-school-share{
+	display: none;
+
+	@media (min-width: 768px) {
+		display: block;
+		position: fixed;
+		left: 15px;
+		z-index: 999;
+	}
+
+	@media (min-width: 1440px) {
+		left: 75px;
+	}
+
+	&__inner {
+		display: block;
+		width: 44px;
+		padding: 13px 5px;
+		text-align: center;
+		background-color: #fff;
+		box-shadow: 0 8px 20px rgba(22, 43, 64, 0.12);
+		border-radius: 4px;
+	}
+
+	&__share-icon {
+		font-size: 18px;
+		line-height: 1;
+		color: #162B40;
+
+		margin-bottom: 18px;
+
+		i {
+			width: 1em;
+			height: 1em;
+		}
+	}
+
+	& &__list {
+		margin: 0;
+		list-style: none;
+	}
+
+	&__item {
+		display: block;
+	}
+
+	&__item + &__item {
+		margin-top: 15px;
+	}
+
+	&__link {
+		display: block;
+		text-decoration: none;
+		font-size: 24px;
+		line-height: 1;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	& &__item &__link {
+		color: #D0D5D9;
+
+		&--facebook:hover  { color: #3b5998; }
+		&--twitter:hover   { color: #1DA1F2; }
+		&--linkedin:hover  { color: #0077b5; }
+		&--pinterest:hover { color: #bd081c; }
+	}
+
+	&__link-icon {
+		width: 1em;
+		height: 1em;
+
+		.croco-school-share--both & {
+			margin-right: 4px;
+		}
+	}
+
+	&__link-text {
+		display: inline-block;
+	}
+}
