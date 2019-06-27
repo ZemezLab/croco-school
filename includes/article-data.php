@@ -103,22 +103,6 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 								remove_filter( 'embed_oembed_html', array( $this, 'add_oembed_wrapper' ) );
 							?></div>
 						</div>
-						<?php
-						the_post_navigation( array(
-							'prev_text' => sprintf(
-									'<span class="nav-post-title">%2$s</span><span class="nav-text">%1$s</span>',
-								esc_html__( 'Prev post', 'croco-school' ),
-								'%title'
-							),
-							'next_text' => sprintf(
-									'<span class="nav-post-title">%2$s</span><span class="nav-text">%1$s</span>',
-									esc_html__( 'Next post', 'croco-school' ),
-									'%title'
-							),
-							'in_same_term' => true,
-							'taxonomy'     => croco_school()->post_type->category_term_slug(),
-						) );
-						?>
 					</article><?php
 					endwhile;
 					if ( $is_active_sidebar ) : ?>
@@ -129,6 +113,24 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 						</aside><!-- #secondary -->
 					<?php endif;?>
 				</div>
+			</div>
+			<div class="croco-school__single-post-navigation">
+				<?php
+				the_post_navigation( array(
+					'prev_text' => sprintf(
+						'<span class="nav-post-title">%2$s</span><div class="croco-school-nav-wrap"><i class="fa fa-chevron-left" aria-hidden="true"></i><span class="nav-text">%1$s</span></div>',
+						esc_html__( 'Prev post', 'croco-school' ),
+						'%title'
+					),
+					'next_text' => sprintf(
+						'<span class="nav-post-title">%2$s</span><div class="croco-school-nav-wrap"><i class="fa fa-chevron-right" aria-hidden="true"></i><span class="nav-text">%1$s</span></div>',
+						esc_html__( 'Next post', 'croco-school' ),
+						'%title'
+					),
+					'in_same_term' => true,
+					'taxonomy'     => croco_school()->post_type->category_term_slug(),
+				) );
+				?>
 			</div><?php
 		}
 
