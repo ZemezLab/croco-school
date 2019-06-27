@@ -90,12 +90,17 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 							<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
 							<?php	$this->get_article_media();?>
 							<div class="croco-school__single-article-content"><?php
+
+								add_filter( 'embed_oembed_html', array( $this, 'add_oembed_wrapper' ) );
+
 								ob_start();
 								the_content( '' );
 								$content = ob_get_contents();
 								ob_end_clean();
 
 								echo $content;
+
+								remove_filter( 'embed_oembed_html', array( $this, 'add_oembed_wrapper' ) );
 							?></div>
 						</div>
 						<?php
@@ -497,6 +502,10 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 			}
 
 			return $term;
+		}
+
+		public function add_oembed_wrapper( $html ) {
+			return '<div class="croco-school-embed-responsive croco-school-embed-responsive-16by9">' . $html . '</div>';
 		}
 
 		/**
