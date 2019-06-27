@@ -1,1 +1,2049 @@
-.croco-school-articles__inner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}.croco-school-articles__thumbnail{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin-bottom:18px}.croco-school-articles__thumbnail img{width:500px;-o-object-fit:cover;object-fit:cover}.croco-school-articles__name-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative;margin-bottom:30px}@media (max-width: 425px){.croco-school-articles__name-container{margin-bottom:0}}.croco-school-articles__name{text-align:center;font-size:40px;line-height:47px;font-weight:900;margin:0;letter-spacing:-1px}@media (max-width: 425px){.croco-school-articles__name{font-size:30px}}.croco-school-articles__back{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:absolute;font-size:16px;font-weight:400;color:#162B40;left:0}.croco-school-articles__back i{margin-right:10px}.croco-school-articles__more-articles{margin-top:11px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.croco-school-articles__more-articles a{font-size:16px;color:#162B40;font-weight:400}.croco-school-articles__more-articles i{margin-left:10px}.croco-school-articles__more-articles:hover a{color:#34D7A1}.croco-school-articles__terms-list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;margin-top:0;margin-left:-20px;margin-right:-20px}@media (max-width: 425px){.croco-school-articles__terms-list{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}}.croco-school-articles__terms-item{width:33.3333%;padding:0 20px}@media (max-width: 425px){.croco-school-articles__terms-item{width:100%;padding:10px;max-width:280px}}.croco-school-articles__article-list-title{font-size:18px}.croco-school-articles__article-list ul{list-style:none;margin:0;padding:0}.croco-school-articles__article-list ul li{line-height:23px;padding:13px 0;border-bottom:1px solid #E4E7ED}.croco-school-articles__article-list ul li:last-child{border-bottom:none}.croco-school-articles__article-list ul li a{position:relative;font-size:16px;color:#617BE5;font-weight:400;line-height:23px}.croco-school-articles__article-list ul li a:hover{text-decoration:underline}.croco-school-articles__article-list ul li a i{margin-left:5px;font-size:16px;color:#34d7a1}.croco-school-related-articles__list ul{list-style:none;margin:0;padding:0}.croco-school-related-articles__item{margin-bottom:5px;padding:10px;-webkit-border-radius:5px;border-radius:5px;background-color:transparent;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease}.croco-school-related-articles__item:last-child{margin-bottom:0}.croco-school-related-articles__item:hover{background-color:#F4F5F7}.croco-school-related-articles__item:hover .croco-school-related-articles__link{color:#162B40}.croco-school-related-articles__link{font-size:14px;line-height:16px;font-weight:400;color:#617BE5;position:relative}@media (max-width: 768px){.croco-school-related-articles__link{font-size:12px}}.croco-school-related-articles i{font-size:18px;color:#34d7a1}@media (max-width: 768px){.croco-school-related-articles i{font-size:13px}}.croco-school-course-list__grid{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;margin-left:-20px;margin-right:-20px}.croco-school-course-list__item{width:33.3333%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}@media (max-width: 1024px){.croco-school-course-list__item{width:50%}}@media (max-width: 767px){.croco-school-course-list__item{width:100%}}.croco-school-course-list__item-inner{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;position:relative;margin:20px;background-color:white;-webkit-box-shadow:2px 2px 5px rgba(22,43,64,0.05);box-shadow:2px 2px 5px rgba(22,43,64,0.05);-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease}.croco-school-course-list__item-inner:hover{-webkit-box-shadow:0px 20px 20px rgba(22,43,64,0.12);box-shadow:0px 20px 20px rgba(22,43,64,0.12);-webkit-transform:translateY(-6px);-ms-transform:translateY(-6px);transform:translateY(-6px);-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease}.croco-school-course-list__item-thumb{position:relative;height:180px;background-color:#f9fafb}.elementor .croco-school-course-list__item-thumb img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.croco-school-course-list__item-content{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;padding:27px 30px 30px 30px}.croco-school-course-list__item-name{font-size:24px;margin:0 0 15px 0}.croco-school-course-list__item-desc{margin:0 0 15px 0;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;font-size:16px}.croco-school-course-list__progress{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;color:#a2aab3;font-size:14px;margin:0 0 15px 0}.croco-school-course-list__progress-label{color:#152c40;margin-right:5px;font-weight:500;font-size:14px}.croco-school-course-list__progress-status{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;font-weight:500}.croco-school-course-list__progress-status .complete-message{color:#34D7A1;font-weight:500}.croco-school-course-list__progress-status .progress-bar{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.croco-school-course-list__progress-status .progress-bar .bar{width:100%;height:8px;background-color:#F4F5F7;-webkit-border-radius:4px;border-radius:4px;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.croco-school-course-list__progress-status .progress-bar .bar span{display:block;height:100%;background-color:#617BE5;-webkit-border-radius:4px;border-radius:4px}.croco-school-course-list__progress-status .progress-bar .progress-count{margin-left:10px}.croco-school-course-list__progress-link{padding:10px;background-color:#34D7A1;-webkit-border-radius:3px;border-radius:3px;text-align:center;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;line-height:18px}.croco-school-course-list__progress-link span{color:white;font-size:14px;letter-spacing:0.8px;-webkit-border-radius:3px;border-radius:3px;font-weight:600;text-transform:uppercase}.croco-school-course-list__progress-link:hover{background-color:#617BE5}.croco-school-course-list__lessons{position:absolute;top:10px;right:10px;background-color:#617BE5;padding:6px 12px;-webkit-border-radius:20px;border-radius:20px;color:white;font-size:14px;line-height:20px;font-weight:normal;z-index:1}.croco-school-course-list__lessons span{margin-right:5px}.croco-school-course{color:#162B40}.croco-school-course__inner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}.croco-school-course__name{font-size:40px;line-height:49px;color:#162B40;font-weight:900;letter-spacing:-1px;text-align:center;margin:0 0 8px 0}.croco-school-course__lessons{font-size:18px;line-height:26px;color:#617BE5;font-weight:500;margin-bottom:10px}.croco-school-course__lessons span{margin-right:5px}.croco-school-course__thumb{width:450px;height:250px;max-width:100%;position:relative;margin-bottom:18px;margin-top:12px}.elementor .croco-school-course__thumb img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.croco-school-course__desc{max-width:750px;font-size:18px;line-height:30px;margin:0 0 20px 0;text-align:center;color:#5C6B79}.croco-school-course__progress{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;min-width:540px;max-width:100%;color:#a2aab3;font-size:14px;margin:0 0 20px 0}.croco-school-course__progress.in_progress-status .croco-school-course__progress-status{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.croco-school-course__progress-label{font-size:16px;color:#152c40;margin-right:10px;font-weight:500}.croco-school-course__progress-status{-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;font-weight:500;font-size:16px}.croco-school-course__progress-status .complete-message{font-weight:500;font-size:16px;color:#34D7A1}.croco-school-course__progress-status .progress-bar{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.croco-school-course__progress-status .progress-bar .bar{width:100%;height:8px;background-color:#F4F5F7;-webkit-border-radius:4px;border-radius:4px;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.croco-school-course__progress-status .progress-bar .bar span{display:block;height:100%;background-color:#617BE5;-webkit-border-radius:4px;border-radius:4px}.croco-school-course__progress-status .progress-bar .progress-count{margin-left:10px}.croco-school-course__progress-link{padding:11px 55px;background-color:#34D7A1;-webkit-border-radius:3px;border-radius:3px;text-align:center}.croco-school-course__progress-link span{color:white;font-size:14px;letter-spacing:0.8px;-webkit-border-radius:3px;border-radius:3px;text-transform:uppercase;font-weight:600}.croco-school-course__progress-link:hover{background-color:#617BE5}.croco-school-course-progress__inner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}.croco-school-course-progress__inner .in_progress-status.current .croco-school-course-progress__item-icon,.croco-school-course-progress__inner .done-status.current .croco-school-course-progress__item-icon,.croco-school-course-progress__inner .current .croco-school-course-progress__item-icon{color:#617BE5;border-color:#617BE5;background-color:#ffffff}.croco-school-course-progress__title{font-size:18px;margin:0 0 20px 0}.croco-school-course-progress__item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin-top:22px;padding-top:22px;border-top:1px solid #E4E8ED}.croco-school-course-progress__item:first-child{margin-top:0}.croco-school-course-progress__item-icon{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;min-width:40px;height:40px;border:2px solid #E4E8ED;-webkit-border-radius:50%;border-radius:50%;color:#A2AAB3;font-size:20px;margin-right:20px}.done-status .croco-school-course-progress__item-icon{color:#ffffff;border-color:#34D7A1;background-color:#34D7A1}.in_progress-status .croco-school-course-progress__item-icon{color:#A2AAB3;border-color:#E4E8ED}.in_progress-status.current .croco-school-course-progress__item-icon{color:#617BE5;border-color:#617BE5}.croco-school-course-progress__item-inner{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.croco-school-course-progress__item-title{font-size:16px;margin:0;font-weight:500}.croco-school-course-progress__item-progress{font-size:14px;font-weight:500;color:#A2AAB3}.done-status .croco-school-course-progress__item-progress{color:#34D7A1;font-weight:500}.in_progress-status .croco-school-course-progress__item-progress{font-weight:500;color:#617BE5}.croco-school-lesson-list__grid{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;padding-left:-20px;padding-right:-20px}.croco-school-lesson-list__item{width:33.3333%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;color:#162B40}@media (max-width: 1024px){.croco-school-lesson-list__item{width:50%}}@media (max-width: 767px){.croco-school-lesson-list__item{width:100%}}.croco-school-lesson-list__item-inner{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;position:relative;margin:20px;padding:26px 30px 30px 30px;background-color:white;-webkit-box-shadow:2px 2px 5px rgba(22,43,64,0.05);box-shadow:2px 2px 5px rgba(22,43,64,0.05);-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease}.croco-school-lesson-list__item-inner:hover{-webkit-box-shadow:0px 20px 20px rgba(22,43,64,0.12);box-shadow:0px 20px 20px rgba(22,43,64,0.12);-webkit-transform:translateY(-6px);-ms-transform:translateY(-6px);transform:translateY(-6px);-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease}.croco-school-lesson-list__lessons{font-size:18px;line-height:22px;color:#617BE5;margin-bottom:8px;font-weight:900}.croco-school-lesson-list__lessons span{margin-right:5px;font-weight:900}.croco-school-lesson-list__title{font-size:24px;line-height:34px;margin:0 0 10px 0}.croco-school-lesson-list__excerpt{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;font-size:16px;line-height:26px;margin:0 0 25px 0;color:#5C6B79}.croco-school-lesson-list__permalink{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:10px 16px;background-color:#34D7A1;-webkit-border-radius:3px;border-radius:3px;text-align:center}.croco-school-lesson-list__permalink.status-done{background-color:white;-webkit-box-shadow:inset 0 0 0 1px #e4e7ed;box-shadow:inset 0 0 0 1px #e4e7ed}.croco-school-lesson-list__permalink.status-done i{display:block}.croco-school-lesson-list__permalink.status-done span{color:#34D7A1}.croco-school-lesson-list__permalink.status-done:hover{background-color:white;-webkit-box-shadow:inset 0 0 0 1px #34D7A1;box-shadow:inset 0 0 0 1px #34D7A1}.croco-school-lesson-list__permalink i{display:none;color:#34D7A1;font-size:20px;margin-right:5px}.croco-school-lesson-list__permalink span{color:white;font-size:13px;font-weight:600;letter-spacing:1.4px;-webkit-border-radius:3px;border-radius:3px;text-transform:uppercase}.croco-school-lesson-list__permalink:hover{background-color:#2fc594}.croco-school-cats__title{color:#162B40}.croco-school-cats--single .croco-school-cats__title{margin:0 0 20px;font-size:30px;line-height:42px;font-weight:700}@media (max-width: 425px){.croco-school-cats--single .croco-school-cats__title{font-size:18px;line-height:28px;margin:0 0 10px}}.croco-school-cats--archive .croco-school-cats__title{margin:0 0 10px;font-size:18px;line-height:27px;font-weight:500}.croco-school-cats__child-list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -10px;list-style:none}.croco-school-cats--single .croco-school-cats__child-list{font-size:18px;line-height:32px;font-weight:500}@media (max-width: 425px){.croco-school-cats--single .croco-school-cats__child-list{font-size:14px}}.croco-school-cats--archive .croco-school-cats__child-list{font-size:16px;line-height:28px;font-weight:400}.croco-school-cats__child-item{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;padding:0 10px}.croco-school-cats--archive .croco-school-cats__child-item+.croco-school-cats__child-item{margin-top:1px}.croco-school-cats__child-link{position:relative;color:#617BE5}.croco-school-cats__child-link:before{content:'\f054';position:absolute;top:0;left:0;font-family:'FontAwesome';font-size:8px}.croco-school-cats--single .croco-school-cats__child-link{display:inline-block;padding-left:15px}.croco-school-cats--single .croco-school-cats__child-link:hover{color:#34D7A1}.croco-school-cats--archive .croco-school-cats__child-link{display:block;padding-left:35px;padding-right:20px}.croco-school-cats--archive .croco-school-cats__child-link:before{left:20px}.croco-school-cats--archive .croco-school-cats__child-link:hover,.croco-school-cats--archive .croco-school-cats__child-link.current-category{color:#fff;background-color:#617BE5}@media (max-width: 425px){.custom-background-image-size .elementor-widget-container{background-image:none !important}}@media (max-width: 425px){.custom-width-section .elementor-widget-container{background-image:none !important}}@media (max-width: 1024px) and (min-width: 425px){.custom-width-section .elementor-widget-container{-webkit-background-size:350px 350px !important;background-size:350px !important}}.cs-articles-archive__main-title{margin:0;font-weight:900;font-size:40px;line-height:47px;letter-spacing:-1px;color:#162B40}@media (max-width: 425px){.cs-articles-archive__main-title{font-size:30px;line-height:40px}}.cs-articles-archive__list{margin:42px 0 0;list-style:none;counter-reset:list}.cs-articles-archive__article-item+.cs-articles-archive__article-item{margin-top:20px}.cs-articles-archive .cs-articles-archive__article-link{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:11px 20px;font-weight:500;font-size:18px;line-height:27px;color:#5C6B79;background-color:#fff;-webkit-box-shadow:0 2px 4px rgba(22,43,64,0.1);box-shadow:0 2px 4px rgba(22,43,64,0.1)}@media (max-width: 425px){.cs-articles-archive .cs-articles-archive__article-link{padding:10px 10px;font-size:16px}}.cs-articles-archive .cs-articles-archive__article-link .cs-article-link-text:before{content:counter(list) ". ";counter-increment:list;color:#34D7A1}.cs-articles-archive .cs-articles-archive__article-link .video-format-icon{margin-left:20px;vertical-align:middle}.cs-articles-archive .cs-articles-archive__article-link .video-format-icon svg{height:100%;vertical-align:middle}.cs-articles-archive .cs-articles-archive__article-link .read-now{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;margin-left:auto;padding-left:15px}@media (max-width: 425px){.cs-articles-archive .cs-articles-archive__article-link .read-now{display:none}}.cs-articles-archive .cs-articles-archive__article-link .read-now__text{font-weight:700;font-size:16px;line-height:26px;white-space:nowrap;color:#617BE5;opacity:0;-webkit-transition:.2s ease;-o-transition:.2s ease;transition:.2s ease}.cs-articles-archive .cs-articles-archive__article-link .read-now__icon{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;font-size:12px;color:#D0D5D9}.cs-articles-archive .cs-articles-archive__article-link:hover{color:#162B40;-webkit-box-shadow:0 14px 14px rgba(22,43,64,0.12);box-shadow:0 14px 14px rgba(22,43,64,0.12)}.cs-articles-archive .cs-articles-archive__article-link:hover .read-now__text{opacity:1}.cs-articles-archive .cs-articles-archive__article-link:hover .read-now__icon{color:#617BE5}.cs-articles-archive__child-term-title{margin:0;font-weight:700;font-size:24px;line-height:37px;color:#162B40}.cs-articles-archive__child-terms-list{margin-top:80px}.cs-articles-archive__child-term-item+.cs-articles-archive__child-term-item{margin-top:80px}.custom-width-section.elementor-widget-croco-school-categories .croco-school-cats{width:75%}@media (max-width: 425px){.custom-width-section.elementor-widget-croco-school-categories .croco-school-cats{width:100%}}.home-widgets.elementor-widget-croco-school-categories{background:#FFFFFF;-webkit-box-shadow:0 2px 4px rgba(22,43,64,0.1);box-shadow:0 2px 4px rgba(22,43,64,0.1);-webkit-transition:.3s all;-o-transition:.3s all;transition:.3s all}.home-widgets.elementor-widget-croco-school-categories:hover{-webkit-box-shadow:0 20px 20px rgba(22,43,64,0.12);box-shadow:0 20px 20px rgba(22,43,64,0.12);-webkit-transition:.3s all;-o-transition:.3s all;transition:.3s all;-webkit-transform:translateY(-6px);-ms-transform:translateY(-6px);transform:translateY(-6px)}.site-content .croco-school h1{font-weight:900;font-size:40px;line-height:1.175}@media (max-width: 768px){.site-content .croco-school h1{font-size:36px}}@media (max-width: 425px){.site-content .croco-school h1{font-size:30px}}.croco-school__single-article{margin-top:0}.site-content .error-404,.site-content .not-found{margin:60px auto}.site-content .error-404 .search-form label,.site-content .not-found .search-form label{padding:0}.site-content .error-404 .search-form .search-form__submit.btn,.site-content .not-found .search-form .search-form__submit.btn{padding:14px}.croco-school .guide-article a{color:#617BE5}.croco-school .guide-article a:hover{text-decoration:underline}.croco-school .guide-article .cherry-search-wrapper .cherry-search form.cherry-search__form button.cherry-search__submit{background-color:#617BE5}.croco-school-container{width:760px;max-width:100%;margin-left:auto;margin-right:auto;padding-left:.9375rem;padding-right:.9375rem}.croco-school__single-article .breadcrumbs{display:none;max-width:1200px;margin:28px auto;padding-right:10px;padding-left:10px;border-top:none}.croco-school__single-article .breadcrumbs .breadcrumbs_item{font-size:12px;line-height:21px;font-weight:400}.croco-school__single-article-inner{margin-top:50px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}@media (max-width: 425px){.croco-school__single-article-inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap}}.croco-school h1.croco-school__single-article-title{margin:0 auto 30px auto}.croco-school__single-article-content{margin-bottom:35px}.croco-school .guide-article.has-sidebar .croco-school__single-article-sidebar .croco-school-related-articles__list a:hover{text-decoration:none}.croco-school__single-article-media{width:100%;padding-bottom:30px;padding-top:30px}.croco-school__single-article-media .croco-school__single-article-media-inner{position:relative}.croco-school__single-article-media .croco-school-article-image{width:100%;line-height:0}.croco-school__single-article-media .croco-school__single-media-frame{position:relative}.croco-school__single-article-media .croco-school__single-media-frame.aspect-ratio-169{padding-bottom:56.25%}.croco-school__single-article-media .croco-school__single-media-frame.aspect-ratio-219{padding-bottom:42.8571%}.croco-school__single-article-media .croco-school__single-media-frame.aspect-ratio-43{padding-bottom:75%}.croco-school__single-article-media .croco-school__single-media-frame.aspect-ratio-32{padding-bottom:66.6666%}.croco-school__single-article-media .croco-school-video-iframe{max-width:100%;margin:0;line-height:1;border:none;position:absolute;width:100%;height:100%;top:0;left:0}.croco-school__single-article-media .video-embed-image-overlay{width:100%;height:100%;top:0;left:0;position:absolute;z-index:2;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;-webkit-background-size:cover;background-size:cover;background-repeat:no-repeat}.croco-school__single-article-media .video-embed-image-overlay .video-play-icon{width:130px;height:80px;background-color:white;-webkit-border-radius:15px;border-radius:15px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;font-size:40px;color:#162B40;-webkit-transition:all 0.4s ease;-o-transition:all 0.4s ease;transition:all 0.4s ease}.croco-school__single-article-media .video-embed-image-overlay:hover .video-play-icon{-webkit-box-shadow:5px 5px 10px rgba(0,0,0,0.15);box-shadow:5px 5px 10px rgba(0,0,0,0.15)}.croco-school__single-article-container{width:75%;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.guide-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner{padding-left:0;margin-left:0;border-left:none;padding-right:57px;margin-right:30px;border-right:1px solid #E4E7ED}@media (max-width: 768px){.guide-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner{padding-right:20px;margin-right:10px}}@media (max-width: 768px){.guide-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner{padding:10px;margin-right:0;border:none}}.course-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner{margin-right:40px}@media (max-width: 425px){.course-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner{margin-right:0}}@media (max-width: 425px){.croco-school__single-article-container{width:100%}}.croco-school__single-article-sidebar{width:25%;min-width:200px}@media (max-width: 425px){.croco-school__single-article-sidebar{width:100%;min-width:280px}}.croco-school__single-search{padding:50px 0;background-color:#F4F5F7;margin-bottom:0}@media (max-width: 425px){.croco-school__single-search{margin-bottom:10px}}.croco-school__lesson-progress{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin:80px 0 0 0;padding:40px 0 40px 0;border-top:1px solid #E4E7ED;border-bottom:1px solid #E4E7ED}.croco-school__lesson-progress .progress-message{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:100%;color:#162b40;font-size:24px;margin:0 0 30px 0;-webkit-border-radius:3px;border-radius:3px}.croco-school__lesson-progress .progress-message i{font-size:30px;color:#34D7A1;margin-right:10px}.croco-school__lesson-progress .progress-message a:hover span{text-decoration:none}.croco-school__lesson-progress a{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:14px 49px 12px 39px;background-color:#34D7A1;-webkit-border-radius:3px;border-radius:3px;text-align:center;width:48%;margin:0 1%}.croco-school__lesson-progress a i{color:white;font-size:20px;margin-right:10px}.croco-school__lesson-progress a span{color:white;font-size:14px;font-weight:600;-webkit-border-radius:3px;border-radius:3px;letter-spacing:1.4px;text-transform:uppercase}@media (max-width: 425px){.croco-school__lesson-progress a span{font-size:9px}}.croco-school__lesson-progress a:hover{background-color:#2fc594}.croco-school__lesson-progress a.back-button{background-color:#617BE5}.croco-school__lesson-progress a.back-button:hover{background-color:#576fd0}@media (max-width: 425px){.croco-school__lesson-progress a{padding:14px 10px 12px 10px;margin-top:20px;width:100%}}@media (max-width: 425px){.croco-school__lesson-progress{margin:40px 0 0 0;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}}.cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__label{padding:0}.cherry-search-wrapper .cherry-search form.cherry-search__form button.cherry-search__submit{padding:9px 20px;font-size:13px;line-height:21px;font-weight:600;margin-left:10px}.cherry-search-wrapper .cherry-search form.cherry-search__form button.cherry-search__submit:hover{background-color:#617BE5}.cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__field{padding:11px 15px;color:#5C6B79;font-weight:400;font-size:14px;border:1px solid #E4E8ED}.cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__field:active,.cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__field:focus{padding:10px 15px;border:2px solid #E4E8ED;-webkit-box-shadow:none;box-shadow:none}.cherry-search-wrapper .cherry-search .cherry-search__results-list{-webkit-box-shadow:0 0 20px rgba(22,43,64,0.1);box-shadow:0 0 20px rgba(22,43,64,0.1);border:none;padding:15px;-webkit-border-radius:3px;border-radius:3px;margin-top:10px}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item{border-top-color:#E4E7ED;-webkit-border-radius:3px;border-radius:3px;padding-top:10px;margin-top:10px}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item:hover{background-color:transparent}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item:hover a{background-color:#f6f6f6}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item:hover .cherry-search__item-title{color:#617BE5}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item>a{padding:5px 15px;-webkit-border-radius:3px;border-radius:3px}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item .cherry-search__item-thumbnail{display:none}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item .cherry-search__item-title{color:#162B40;font-size:14px;font-weight:600}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item .cherry-search__item-content{color:#162B40;font-size:14px}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item .cherry-search__item-author{color:#162B40;font-size:11px}.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__more-button{border:none;margin-top:20px}.cherry-search-wrapper ::-webkit-input-placeholder{color:#5C6B79;font-weight:400}.cherry-search-wrapper ::-moz-placeholder{color:#5C6B79;font-weight:400}.cherry-search-wrapper :-moz-placeholder{color:#5C6B79;font-weight:400}.cherry-search-wrapper :-ms-input-placeholder{color:#5C6B79;font-weight:400}.croco-school__single-article-content img{margin-top:45px;margin-bottom:45px}.croco-school-related-articles__list ul li{line-height:1.267em;margin-bottom:4px}.croco-school-related-articles__list .croco-school-related-articles__item{display:block;padding:0}.croco-school-related-articles__list .croco-school-related-articles__item .croco-school-related-articles__link{display:block;padding:9px 15px;font-weight:500;line-height:1.467em}@media (max-width: 768px){.croco-school-related-articles__list .croco-school-related-articles__item .croco-school-related-articles__link{font-size:12px}}.croco-school-related-articles__list .croco-school-related-articles__item .education_hat{padding:0 10px}@media (max-width: 768px){.croco-school-related-articles__list .croco-school-related-articles__item .education_hat{padding:0 5px 0 5px}}.croco-school-related-articles__item.current{background-color:#617BE5}.croco-school-related-articles__item.current .croco-school-related-articles__link{color:#fff}.croco-school__single-article-content a{font-weight:600}.croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky{margin-top:40px}@media (max-width: 425px){.croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky{margin-top:0}}@media (max-width: 425px){.croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky{position:relative !important;width:100% !important;padding:0;top:0 !important;left:0 !important;-webkit-transform:none !important;-ms-transform:none !important;transform:none !important}.croco-school__single-article-sidebar .inner-wrapper-sticky{margin-top:20px;margin-bottom:20px}}@media (max-width: 425px){#secondary.croco-school__single-article-sidebar.is-affixed{height:100% !important}}@media (max-width: 425px){#secondary{margin-top:10px}}.croco-school__single-article-container-inner h1,.croco-school__single-article-container-inner h2,.croco-school__single-article-container-inner h3,.croco-school__single-article-container-inner h4{margin:30px 0;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}.croco-school__single-article-container-inner h5,.croco-school__single-article-container-inner h6{margin:30px 0 0;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}.croco-school__single-article-container-inner ul{margin:1.5em 0 1.5em 3.8em;padding-left:0;padding-right:0}.croco-school__single-article-container-inner ol{margin:1.5em 0 1.5em 1.1em;padding-left:0;padding-right:0}.croco-school__single-article-container-inner ul>ul{margin:0 0 0 1.7em}.croco-school__single-article-container-inner li>ul{margin-bottom:0;margin-left:1.6em;margin-top:0}.croco-school__single-article-container-inner li>ol{margin-left:0}.croco-school__single-article-container-inner p{margin-bottom:30px}.croco-school__single-article-container-inner b{color:#34D7A1}.croco-school__single-article-container-inner b span{display:inline-block;margin-right:12px;color:#ffffff;position:relative}.croco-school__single-article-container-inner b span:before{content:'';color:#ffffff;background-color:#34D7A1;-webkit-border-radius:50%;border-radius:50%;width:35px;height:35px;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);z-index:-1}.croco-school__single-article-container-inner strong{color:#5C6B79}.croco-school__single-article-container-inner a{color:#617BE5}table{margin:30px 0}table tr td,table tr th,table td,table th{padding:5px 10px;font-size:16px}@media screen and (max-width: 640px){table{display:block;overflow-x:auto}}@media (max-width: 425px){.croco-school__single-article-container-inner h1,.croco-school__single-article-container-inner h2,.croco-school__single-article-container-inner h3,.croco-school__single-article-container-inner h4{margin:15px 0}.croco-school__single-article-container-inner h3{font-size:20px}.croco-school__single-article-container-inner h5{font-size:16px}.croco-school__single-article-container-inner p{font-size:16px}.croco-school__single-article-container-inner li{font-size:16px}.croco-school__single-article-container-inner table td,.croco-school__single-article-container-inner table th{font-size:14px}.croco-school__single-article-container-inner h5,.croco-school__single-article-container-inner h6{margin:15px 0 0}.croco-school__single-article-container-inner ul{margin:1em 0 1em 1.8em;padding-left:0;padding-right:0}.croco-school__single-article-container-inner p+p{margin-top:15px}.croco-school__single-article-container-inner ol{margin:1em 0 1em 1em;padding-left:0;padding-right:0}.croco-school__single-article-container-inner ul>ul{margin:0 0 0 0.7em}.croco-school__single-article-container-inner li>ul{margin-bottom:0;margin-left:0.6em}}.croco-school__single-article-container-inner .croco-school__single-article-content a:before{background-color:#617BE5;opacity:0.4;content:'';display:block;height:2px;position:absolute;left:0;width:100%;top:100%;-webkit-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}.croco-school__single-article-container-inner .croco-school__single-article-content a:after{content:'';height:2px;display:block;position:absolute;top:100%;left:0;-webkit-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease;width:0;background-color:#617BE5}.croco-school__single-article-container-inner .croco-school__single-article-content a:hover{text-decoration:none}.croco-school__single-article-container-inner .croco-school__single-article-content a:hover:after{top:100%;-webkit-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;transition:all 0.2s ease-out;width:100%;background-color:#617BE5}.croco-school__single-article-container-inner .croco-school__single-article-content a{color:inherit;position:relative;text-decoration:none}.arrows-1_bold-right{font-size:14px}.tippy-tooltip.light-border-theme{background-color:white;background-clip:padding-box;color:#5C6B79;-webkit-box-shadow:0px 4px 20px rgba(22,43,64,0.15);box-shadow:0px 4px 20px rgba(22,43,64,0.15);-webkit-border-radius:3px;border-radius:3px;padding-top:8px;padding-bottom:10px}.tippy-tooltip.light-border-theme .tippy-backdrop{background-color:white}.tippy-tooltip.light-border-theme .tippy-arrow::after,.tippy-tooltip.light-border-theme .tippy-arrow::before,.tippy-tooltip.light-border-theme .tippy-roundarrow::after,.tippy-tooltip.light-border-theme .tippy-roundarrow::before{content:'';position:absolute;z-index:-1}.tippy-tooltip.light-border-theme .tippy-roundarrow{fill:white}.tippy-tooltip.light-border-theme .tippy-roundarrow::after{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAyNCA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zOnNlcmlmPSJodHRwOi8vd3d3LnNlcmlmLmNvbS8iIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MS40MTQyMTsiPjxwYXRoIGQ9Ik0zLDhjMCwwIDIuMDIxLC0wLjAxNSA1LjI1MywtNC4yMThjMS4zMzEsLTEuNzMxIDIuNTQ0LC0yLjc3NSAzLjc0NywtMi43ODJjMS4yMDMsLTAuMDA3IDIuNDE2LDEuMDM1IDMuNzYxLDIuNzgyYzMuMjUxLDQuMjIzIDUuMjM5LDQuMjE4IDUuMjM5LDQuMjE4bC0xOCwwWiIgc3R5bGU9ImZpbGw6IzAwMDgxNjtmaWxsLW9wYWNpdHk6MC4yMDM5MjI7ZmlsbC1ydWxlOm5vbnplcm87Ii8+PC9zdmc+);-webkit-background-size:24px 20px;background-size:24px 20px;width:24px;height:20px;left:0;top:0;fill:#fff}.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-roundarrow::after{top:1px;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow{border-top-color:#fff}.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::after,.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::before{border-top:8px solid;top:-7px}.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::after{border-top-color:#fff}.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::before{border-top-color:white}.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-roundarrow::after{top:-1px}.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow{border-bottom-color:#fff}.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::after,.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::before{border-bottom:8px solid;bottom:-7px}.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::after{border-bottom-color:#fff}.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::before{border-bottom-color:white}.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-roundarrow::after{left:1px;top:0;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow{border-left-color:#fff}.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::after,.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::before{border-left:8px solid;left:-7px}.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::after{border-left-color:#fff}.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::before{border-left-color:white}.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-roundarrow::after{left:-1px;top:0;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow{border-right-color:#fff}.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::after,.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::before{border-right:8px solid;right:-7px}.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::after{border-right-color:#fff}.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::before{border-right-color:white}.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::before,.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::after,.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::before,.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::after{left:-8px;border-left:8px solid transparent;border-right:8px solid transparent}.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::before,.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::after,.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::before,.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::after{top:-8px;border-top:8px solid transparent;border-bottom:8px solid transparent}.guide-article .croco-school__single-article-content{margin:0 auto}.guide-article .croco-school__single-article-title,.guide-article .croco-school__single-article-content{max-width:800px;padding-left:20px;padding-right:20px}.guide-article .croco-school__single-article-title img.aligncenter,.guide-article .croco-school__single-article-content img.aligncenter{margin:0 auto;-webkit-box-shadow:0 20px 20px rgba(22,43,64,0.12);box-shadow:0 20px 20px rgba(22,43,64,0.12)}.guide-article .custom-width,.custom-width .wp-video{background-color:#F4F5F7;width:100vw;padding:50px 30px;max-width:1160px;margin-left:50%;margin-right:auto;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);margin-bottom:49px;margin-top:40px}@media (max-width: 768px){.guide-article .custom-width,.custom-width .wp-video{max-width:680px}}.banner a:hover{background-color:#ffffff;color:#34D7A1}.banner a:hover:after{display:none}.croco-school__single-article-content .banner.invert a:hover{background-color:#162B40;color:#ffffff;-webkit-box-shadow:none;box-shadow:none}.croco-school__single-article-content .banner.invert a{-webkit-box-shadow:0 10px 10px rgba(22,43,64,0.12);box-shadow:0 10px 10px rgba(22,43,64,0.12);background-color:#34D7A1;color:#fff}.croco-school__single-article-content .banner a:hover{background-color:#617BE5;color:#ffffff}.croco-school__single-article-content .banner a{background-color:#34D7A1;color:#fff}.croco-school__single-article-content .banner{margin-bottom:50px;margin-top:50px;background-color:#F4F6FD;border:1px solid #DCE1F8;padding:13px 52px 35px 52px;-webkit-border-radius:3px;border-radius:3px}.croco-school__single-article-content .banner p{line-height:30px;font-size:18px;margin-bottom:26px}.croco-school__single-article-content .banner h3{color:#617BE5;font-weight:bold;line-height:45px;font-size:32px;margin-bottom:0}.croco-school__single-article-content .banner a{-webkit-border-radius:3px;border-radius:3px;text-decoration:none;font-weight:bold;line-height:25px;font-size:14px;letter-spacing:0.05em;text-transform:uppercase;padding:16px 36px}.croco-school__single-article-content .banner a:hover{text-decoration:none}.croco-school__single-article-content .banner.invert{padding:13px 181px 35px 41px;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg width='760' height='260' viewBox='0 0 760 260' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='760' height='260' fill='url(%23paint0_linear)'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M672.175 175.396L652.11 175.658L659.177 169.028C660.921 167.37 663.626 167.109 665.632 168.417C666.854 169.202 668.075 170.249 669.209 171.645C669.209 171.645 681.772 167.021 687.791 156.814C689.71 159.606 691.891 163.445 693.811 168.243C688.314 171.383 681.248 173.826 672.175 175.396Z' fill='url(%23paint1_linear)'/%3E%3Cpath d='M644.694 181.677C644.694 181.677 663.974 302.328 663.712 303.026C663.712 303.026 669.034 305.469 674.879 303.375C674.879 303.375 673.134 238.906 669.034 214.13C669.034 214.13 702.01 271.795 712.392 300.496C712.392 300.496 717.888 299.886 722.337 296.832C722.337 296.832 686.831 193.105 677.409 179.234L644.694 181.677Z' fill='%23162B40'/%3E%3Cpath d='M556.148 63.5586C556.148 63.5586 569.146 66.4375 577.085 70.1015C578.655 70.7994 579.876 72.108 580.662 73.6783C583.017 78.8254 590.083 91.9112 603.867 98.1052C601.861 100.722 598.72 106.218 597.324 115.378C589.037 109.272 581.97 98.9776 578.481 82.1405C578.481 82.1405 575.863 83.5363 572.636 81.966C570.891 81.0936 568.972 79.9595 567.489 78.9999C566.006 78.0402 564.871 76.6444 564.435 74.9869C563.912 72.8059 564.174 70.7994 564.174 68.7057L557.456 66.612C557.456 66.5247 555.45 65.8268 556.148 63.5586Z' fill='url(%23paint2_linear)'/%3E%3Cpath d='M597.237 115.291C598.633 106.131 601.774 100.635 603.78 98.0178C612.33 101.856 623.409 103.078 637.542 98.1922C638.85 97.756 640.246 97.4943 641.555 97.4071C649.057 96.9709 673.92 96.1857 694.422 102.903C698.783 104.299 702.273 107.527 704.018 111.627C709.601 124.364 718.587 153.414 693.636 168.071C691.717 163.272 689.536 159.521 687.617 156.642C691.63 149.838 692.851 140.59 685.698 128.551C680.463 142.597 678.021 163.098 677.584 172.171C677.41 175.137 677.933 178.103 679.155 180.895L679.242 181.156C679.504 181.767 679.155 182.465 678.544 182.552C664.499 185.693 649.842 184.82 645.48 184.471C644.695 184.384 644.085 183.861 643.91 183.076C637.106 154.287 637.018 134.658 638.763 122.183C632.395 123.84 612.853 126.894 597.237 115.291Z' fill='white'/%3E%3Cpath d='M655.425 125.059C653.497 125.059 651.935 123.447 651.935 121.46C651.935 119.473 653.497 117.861 655.425 117.861C655.428 117.861 655.431 117.862 655.434 117.862C663.138 117.867 669.383 124.309 669.383 132.256C669.383 140.206 663.133 146.65 655.425 146.65C653.497 146.65 651.935 145.039 651.935 143.052C651.935 141.064 653.497 139.453 655.425 139.453C655.426 139.453 655.427 139.453 655.428 139.453C659.281 139.451 662.404 136.23 662.404 132.256C662.404 128.281 659.279 125.059 655.425 125.059Z' fill='%2336E7AC'/%3E%3Cpath d='M673.397 80.6543C673.397 80.6543 674.793 95.6594 676.101 100.109C676.276 100.806 676.014 101.504 675.403 101.853C673.31 103.075 668.162 105.081 661.183 101.592C660.049 101.068 659.351 99.8468 659.439 98.6255L660.049 84.0566L673.397 80.6543Z' fill='url(%23paint3_linear)'/%3E%3Cpath d='M659.701 61.375C659.701 61.375 655.164 71.8437 654.815 77.3397C654.466 82.8357 653.332 86.4125 659.701 87.4594C666.069 88.5935 671.391 85.3657 674.27 79.9569C674.27 79.9569 678.806 71.5819 677.759 68.0924C676.8 64.6901 659.701 61.375 659.701 61.375Z' fill='url(%23paint4_linear)'/%3E%3Cpath d='M672.089 76.0314L671.74 75.8569C671.304 75.6824 671.042 75.0718 671.304 74.6356C672.176 72.8908 673.921 68.965 671.653 68.0054C668.774 66.7841 657.258 64.4286 654.816 60.4156C652.46 56.4899 654.554 51.43 657.694 50.0342C657.869 49.947 658.131 50.0342 658.305 50.2087L658.567 50.7321C658.741 51.0811 659.265 50.9938 659.352 50.6449C659.439 50.2959 659.963 50.2087 660.137 50.5577C660.922 51.779 662.929 53.7855 668.425 54.7451C676.276 56.2282 681.423 59.3688 681.511 64.7776C681.511 65.1265 681.86 65.301 682.209 65.1265C682.819 64.7776 683.692 64.6031 684.913 65.65C687.094 67.482 686.222 72.1056 681.511 76.0314C681.249 76.2059 681.249 76.5548 681.511 76.7293C682.383 77.2527 683.604 78.6486 680.377 80.3933C676.974 82.2253 674.444 82.0509 673.397 81.8764C673.136 81.8764 672.961 81.6147 673.049 81.353L674.095 76.6421C674.183 76.3804 673.921 76.1186 673.659 76.1186H672.089V76.0314Z' fill='%23162B40'/%3E%3Cpath d='M671.915 77.0792C671.915 77.0792 673.66 70.449 676.626 72.281C679.592 74.113 675.055 79.7836 672.7 80.0453L671.915 77.0792Z' fill='url(%23paint5_linear)'/%3E%3Cpath d='M574.991 80.9173C575.253 80.9173 575.427 80.8301 575.602 80.6556C576.038 80.3066 576.125 79.696 575.776 79.2598C575.253 78.6491 570.891 73.2403 569.146 72.2807C568.623 72.019 568.361 71.7572 568.361 71.5828L572.985 72.5424L575.776 74.9851C576.212 75.334 576.823 75.334 577.172 74.8978C577.521 74.4616 577.521 73.851 577.085 73.502L574.032 70.8849C573.944 70.7976 573.77 70.7104 573.595 70.6231L567.925 69.489C567.489 69.4018 567.14 69.5763 566.878 69.9252C566.442 70.6231 566.267 71.321 566.355 72.019C566.529 72.8041 567.14 73.502 568.187 74.0255C569.233 74.6361 572.461 78.3874 574.293 80.5684C574.38 80.8301 574.729 80.9173 574.991 80.9173Z' fill='%23F8A570'/%3E%3Cpath d='M680.55 167.281C680.55 167.281 678.805 164.402 674.879 164.402C670.866 164.402 666.33 171.818 666.33 171.818C666.33 171.818 672.611 174.697 674.879 176.965C677.147 179.233 680.55 171.818 680.55 167.281Z' fill='url(%23paint6_linear)'/%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M537.98 209.046C539.156 208.383 540.582 207.352 541.754 206.158C548.577 199.036 537.54 193.581 530.722 195.056C527.271 195.855 526.236 198.726 526.043 201.428C526.014 203.351 523.746 204.552 521.968 203.417L508 194.503L516.765 181.558C517.767 180.079 520.002 180.269 520.854 181.696C521.877 183.408 523.535 185.526 525.948 187.066C531.408 190.55 537.52 184.21 539.276 182.153C540.822 180.139 542.606 169.448 529.913 168.586C528.143 168.515 526.949 166.518 528.034 164.915L538.218 149.875L552.441 158.951C553.584 159.681 555.264 158.811 555.086 157.462C554.79 150.917 561.968 146.493 565.048 147.047C568.804 147.678 575.149 151.198 572.586 158.743C571.221 162.639 568.79 164.619 566.562 165.492C565.259 166.073 565.27 167.669 566.413 168.398L580 177.069L569.565 192.48C568.564 193.959 566.202 193.687 565.516 192.014C564.573 189.647 563.206 186.832 562.186 185.652C560.274 183.372 554.193 181.61 549.591 186.794C544.906 192.102 546.088 198.683 551.334 201.678C553.703 203.014 555.942 203.736 557.756 204.011C559.36 204.328 560.173 206.083 559.254 207.439L550.072 221L537.373 212.896C536.147 212.29 536.3 209.915 537.98 209.046Z' fill='%23617BE5'/%3E%3C/g%3E%3Cpath d='M590 5.51134C590 5.80045 589.807 5.9932 589.518 6.18594L581.905 8.78798C581.037 12.5465 579.495 16.1122 577.472 19.2925L580.941 26.5204C581.037 26.8095 581.037 27.0986 580.845 27.2914L574.002 34.0374C573.81 34.2302 573.424 34.2302 573.231 34.1338L566.003 30.568C562.823 32.4955 559.257 34.0374 555.499 34.9048L552.8 42.5181C552.704 42.8073 552.415 42.9036 552.126 43H542.489C542.2 43 542.007 42.8073 541.814 42.5181L539.212 34.9048C535.454 34.0374 531.888 32.4955 528.707 30.4717L521.48 33.941C521.19 34.0374 520.901 34.0374 520.709 33.8447L513.963 27.0023C513.77 26.8095 513.77 26.424 513.866 26.2313L517.432 19.0034C515.505 15.8231 513.963 12.2574 513.095 8.49886L505.482 5.80045C505.193 5.70408 505.096 5.41497 505 5.12585V-4.51134C505 -4.80045 505.193 -4.99319 505.482 -5.18594L513.095 -7.78798C513.963 -11.5465 515.505 -15.1122 517.528 -18.2925L514.059 -25.5204C513.963 -25.8095 513.963 -26.0986 514.155 -26.2914L520.998 -33.0374C521.19 -33.2302 521.576 -33.2302 521.769 -33.1338L528.997 -29.568C532.177 -31.4955 535.743 -33.0374 539.501 -33.9048L542.2 -41.5181C542.296 -41.8073 542.585 -41.9036 542.874 -42H552.511C552.8 -42 552.993 -41.8073 553.186 -41.5181L555.788 -33.9048C559.546 -33.0374 563.112 -31.4955 566.293 -29.4717L573.52 -32.941C573.81 -33.0374 574.099 -33.0374 574.291 -32.8447L581.037 -26.0023C581.23 -25.8095 581.23 -25.424 581.134 -25.2313L577.568 -18.0034C579.495 -14.8231 581.037 -11.2574 581.905 -7.49886L589.518 -4.80045C589.807 -4.70408 589.904 -4.41497 590 -4.12585V5.51134ZM553.379 -18.9671C542.681 -22.1474 531.406 -16.076 528.226 -5.37868C525.045 5.3186 531.117 16.5941 541.91 19.7744C552.608 22.9546 563.883 16.8832 567.063 6.08957C570.244 -4.51134 564.076 -15.7868 553.379 -18.9671Z' fill='url(%23paint7_linear)'/%3E%3Cpath d='M572.878 -7.04502C568.662 -21.0572 553.954 -29.0922 539.932 -24.8787C525.911 -20.7632 517.968 -5.96716 522.087 8.04502C526.303 22.0572 541.011 30.0922 555.032 25.8787C569.054 21.6652 577.094 6.96716 572.878 -7.04502ZM553.365 20.1954C542.482 23.429 531.009 17.2558 527.774 6.37923C524.538 -4.49735 530.715 -15.9619 541.697 -19.1954C552.581 -22.429 564.053 -16.2558 567.289 -5.28125C570.525 5.49735 564.249 16.9619 553.365 20.1954Z' fill='url(%23paint8_linear)'/%3E%3Cpath d='M475.816 174.104C475.78 174.27 475.646 174.357 475.456 174.433L470.759 174.993C469.799 177.047 468.474 178.907 466.92 180.487L468.026 185.068C468.046 185.246 468.01 185.412 467.876 185.499L463.113 188.536C462.979 188.623 462.757 188.576 462.658 188.497L458.941 185.559C456.876 186.276 454.637 186.724 452.37 186.761L449.883 190.806C449.792 190.96 449.614 190.98 449.436 191L443.896 189.816C443.73 189.78 443.643 189.646 443.567 189.456L443.007 184.759C440.953 183.799 439.093 182.474 437.513 180.92L432.932 182.026C432.754 182.046 432.588 182.01 432.501 181.876L429.464 177.113C429.377 176.979 429.424 176.757 429.503 176.658L432.441 172.941C431.724 170.876 431.276 168.637 431.239 166.37L427.194 163.883C427.04 163.792 427.02 163.614 427 163.436L428.184 157.896C428.22 157.73 428.354 157.643 428.544 157.567L433.241 157.007C434.201 154.953 435.526 153.093 437.08 151.513L435.974 146.932C435.954 146.754 435.99 146.588 436.124 146.501L440.887 143.464C441.021 143.377 441.243 143.424 441.342 143.503L445.059 146.441C447.124 145.724 449.363 145.276 451.63 145.239L454.117 141.194C454.208 141.04 454.386 141.02 454.564 141L460.104 142.184C460.27 142.22 460.357 142.354 460.433 142.544L460.993 147.241C463.047 148.201 464.907 149.526 466.487 151.08L471.068 149.974C471.246 149.954 471.412 149.99 471.499 150.124L474.536 154.887C474.623 155.021 474.576 155.243 474.497 155.342L471.559 159.059C472.276 161.124 472.724 163.363 472.761 165.63L476.806 168.117C476.96 168.208 476.98 168.386 477 168.564L475.816 174.104ZM457.772 155.532C452.013 152.389 444.785 154.493 441.642 160.252C438.5 166.01 440.604 173.238 446.418 176.393C452.177 179.536 459.405 177.432 462.559 171.618C465.69 165.914 463.53 158.675 457.772 155.532Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='494' y='139' width='108' height='110' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dx='4' dy='10'/%3E%3CfeGaussianBlur stdDeviation='9'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.380392 0 0 0 0 0.482353 0 0 0 0 0.898039 0 0 0 0.4 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='147.646' y1='56.0926' x2='277.57' y2='427.367' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%235B77E7'/%3E%3Cstop offset='0.49373' stop-color='%2349B5D2'/%3E%3Cstop offset='1' stop-color='%2326E8A8'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='646.755' y1='131.484' x2='664.95' y2='158.776' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear' x1='578.272' y1='79.4763' x2='619.918' y2='133.656' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint3_linear' x1='671.1' y1='114.491' x2='666.544' y2='90.571' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint4_linear' x1='658.772' y1='70.6062' x2='684.767' y2='90.4967' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint5_linear' x1='661.997' y1='66.3933' x2='687.993' y2='86.2836' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint6_linear' x1='668.437' y1='162.036' x2='680.431' y2='180.026' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint7_linear' x1='547.599' y1='42.8172' x2='547.599' y2='-41.9901' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232BE4C3'/%3E%3Cstop offset='1' stop-color='%234EFEC3'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint8_linear' x1='547.562' y1='-25.886' x2='547.562' y2='26.9938' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232BE4C3'/%3E%3Cstop offset='1' stop-color='%234EFEC3'/%3E%3C/linearGradient%3E%3CclipPath id='clip0'%3E%3Crect width='370' height='260' fill='white' transform='translate(390)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");background-position:center right;background-repeat:no-repeat;border:none;-webkit-background-size:cover;background-size:cover}.croco-school__single-article-content .banner.invert a:before{display:none}.croco-school__single-article-content .banner.invert h3{color:#ffffff}.croco-school__single-article-content .info-banner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:43px;margin-top:39px;background-color:transparent;border:none;padding:20px 0 20px 0;-webkit-border-radius:3px;border-radius:3px}.croco-school__single-article-content .info-banner img{display:none;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;margin:5px 16px 0 0}.croco-school__single-article-content .info-banner:before{content:'';background-image:url("data:image/svg+xml;charset=utf8,%3Csvg width='56' height='57' viewBox='0 0 56 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 49.875C21 53.8101 24.1341 57 28 57C31.8659 57 35 53.8101 35 49.875V49.5H21V49.875Z' fill='%2334D7A1'/%3E%3Cpath d='M21 47V49.5H35V47H21Z' fill='%2334D7A1'/%3E%3Cg opacity='0.2'%3E%3Cpath d='M26.2775 35.9958C23.6298 35.2537 21.6842 32.8477 21.6842 30H25.1292C25.1292 31.5623 26.417 32.8333 28 32.8333C28 25.6755 28 17.5612 28 13C19.7158 13 13 19.628 13 27.8042C13 33.2903 16.0237 38.0792 20.5159 40.6368L22.5455 47H26.2775V35.9958Z' fill='%23617BE5'/%3E%3Cpath d='M28 13C28 17.5612 28 25.6755 28 32.8333C29.583 32.8333 30.8708 31.5623 30.8708 30H34.3158C34.3158 32.8477 32.3702 35.2537 29.7225 35.9958V47H33.4545L35.4841 40.6368C39.9763 38.0793 43 33.2904 43 27.8042C43 19.628 36.2842 13 28 13Z' fill='%23617BE5'/%3E%3C/g%3E%3Crect x='27' width='2' height='8' fill='%23FCD09F'/%3E%3Crect y='28' width='2' height='8' transform='rotate(-90 0 28)' fill='%23FCD09F'/%3E%3Crect x='48' y='28' width='2' height='8' transform='rotate(-90 48 28)' fill='%23FCD09F'/%3E%3Cpath d='M42.4142 13.0711L41 11.6569L46.6569 6L48.0711 7.41421L42.4142 13.0711Z' fill='%23FCD09F'/%3E%3Cpath d='M12.6571 13.0711L14.0713 11.6569L8.41443 6L7.00022 7.41421L12.6571 13.0711Z' fill='%23FCD09F'/%3E%3C/svg%3E");-webkit-background-size:auto auto;background-size:auto;background-repeat:no-repeat;width:94px;height:58px;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;margin:5px 16px 0 0}.croco-school__single-article-content .info-banner a{font-style:italic;font-weight:bold;color:#617BE5}.croco-school__single-article-content .info-banner p,.croco-school__single-article-content .info-banner span{font-style:italic;font-weight:bold;color:#617BE5;line-height:30px;font-size:18px;margin-bottom:0;margin-top:0}@media (min-width: 768px){.croco-school__single-article-content .banner.invert h3{padding-right:100px}}@media (max-width: 768px){.croco-school__single-article-content .banner.invert{padding-right:41px;background-image:-webkit-linear-gradient(280deg, #5b77e7 0%, #26e8a8 100%);background-image:-o-linear-gradient(280deg, #5b77e7 0%, #26e8a8 100%);background-image:linear-gradient(170deg, #5b77e7 0%, #26e8a8 100%)}}@media (max-width: 425px){.croco-school__single-article-content .info-banner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.croco-school__single-article-content .info-banner:before{margin-bottom:10px}.croco-school__single-article-content .info-banner p,.croco-school__single-article-content .info-banner span{font-size:16px}.croco-school__single-article-content .banner,.croco-school__single-article-content .banner.invert{padding:13px 20px 35px 20px}.croco-school__single-article-content .banner h3,.croco-school__single-article-content .banner.invert h3{line-height:38px;font-size:25px;margin-bottom:15px}.croco-school__single-article-content .banner p,.croco-school__single-article-content .banner.invert p{font-size:16px}}.search-no-results #primary{margin:0 auto}.search.search-results .site-content{margin-top:60px}.article-sidebar-bg:before{content:'';position:absolute;top:0;bottom:0;right:0;width:9999em;background-color:#fff}.cs-articles-archive .cs-article-link-text{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.cs-articles-archive .cs-article-link-text:before{margin-right:5px}.croco-article-back-btn-wrap a.croco-article-back-btn:hover{text-decoration:none}.croco-article-back-btn-wrap{margin-left:12px;margin-top:50px}.croco-article-back-btn-wrap:before{content:'';display:inline-block;margin-right:7px;-webkit-transform:translateY(4px);-ms-transform:translateY(4px);transform:translateY(4px);width:21px;height:16px;background-repeat:no-repeat;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.08203' y='7' width='19' height='2' fill='%23D0D5D9'%3E%3C/rect%3E%3Crect x='1.41406' y='6.66797' width='11' height='2' transform='rotate(45 1.41406 6.66797)' fill='%23D0D5D9'%3E%3C/rect%3E%3Crect x='0.0820312' y='8' width='11' height='2' transform='rotate(-45 0.0820312 8)' fill='%23D0D5D9'%3E%3C/rect%3E%3C/svg%3E")}.croco-article-back-btn__text{color:inherit;position:relative;text-decoration:none}.croco-article-back-btn__text:before{background-color:#617BE5;opacity:0.4;content:'';display:block;height:2px;position:absolute;left:0;width:100%;top:100%;-webkit-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}.croco-article-back-btn__text:after{content:'';height:2px;display:block;position:absolute;top:100%;left:0;-webkit-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease;width:0;background-color:#617BE5}.croco-article-back-btn__text:hover{text-decoration:none}.croco-article-back-btn__text:hover:after{top:100%;-webkit-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;transition:all 0.2s ease-out;width:100%;background-color:#617BE5}.croco-school-embed-responsive{position:relative;display:block;padding:0;margin-bottom:30px}.croco-school-embed-responsive iframe,.croco-school-embed-responsive embed,.croco-school-embed-responsive object{position:absolute;top:0;left:0;bottom:0;height:100%;width:100%;border:0}.croco-school-embed-responsive.croco-school-embed-responsive-16by9{padding-bottom:56.25%}.croco-school-embed-responsive.croco-school-embed-responsive-4by3{padding-bottom:75%}.croco-school__single-post-navigation{width:100%;margin:0 auto;background-color:#F9FAFB;margin-bottom:-60px}.croco-school__single-post-navigation .post-navigation .nav-links{display:block}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-text,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-text{color:#617BE5}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text{position:relative}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text:before,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text:before{background-color:#617BE5;opacity:0.4;content:'';display:block;height:2px;position:absolute;left:0;width:100%;top:100%;-webkit-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text:after,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text:after{content:'';height:2px;display:block;position:absolute;top:100%;left:0;-webkit-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease;width:0;background-color:#617BE5}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text:hover,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text:hover{text-decoration:none}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text:hover:after,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text:hover:after{top:100%;-webkit-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;transition:all 0.2s ease-out;width:100%;background-color:#617BE5}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-post-title,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-post-title{color:#617BE5}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-text,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-text{text-decoration:none}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-text:after,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-text:after{top:100%;-webkit-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;transition:all 0.2s ease-out;width:100%;background-color:#617BE5}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next .croco-school-nav-wrap,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous .croco-school-nav-wrap{margin-top:20px;position:relative;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next .croco-school-nav-wrap i,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous .croco-school-nav-wrap i{color:#617BE5;position:relative;height:16px;top:7px;font-size:13px}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next a,.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous{padding-left:0}.croco-school__single-post-navigation .post-navigation .nav-links .nav-previous i{margin-right:10px}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next{padding-right:0}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next .croco-school-nav-wrap{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.croco-school__single-post-navigation .post-navigation .nav-links .nav-next i{margin-left:10px}.croco-school__single-post-navigation .post-navigation .nav-links .nav-post-title{font-weight:500;font-size:18px;line-height:27px;color:#162B40}.croco-school__single-post-navigation .post-navigation .nav-links .nav-text{font-weight:400;font-size:18px;line-height:1.367;font-family:Roboto, sans-serif;letter-spacing:0;color:#617BE5;text-transform:capitalize}.croco-school__single-post-navigation .post-navigation{padding:40px 0;margin:0 auto;border:none;width:760px}
+.croco-school-articles__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+
+.croco-school-articles__thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 18px; }
+  .croco-school-articles__thumbnail img {
+    width: 500px;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.croco-school-articles__name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px; }
+
+@media (max-width: 425px) {
+  .croco-school-articles__name-container {
+    margin-bottom: 0; } }
+
+.croco-school-articles__name {
+  text-align: center;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: -1px; }
+
+@media (max-width: 425px) {
+  .croco-school-articles__name {
+    font-size: 30px; } }
+
+.croco-school-articles__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  font-size: 16px;
+  font-weight: 400;
+  color: #162B40;
+  left: 0; }
+  .croco-school-articles__back i {
+    margin-right: 10px; }
+
+.croco-school-articles__more-articles {
+  margin-top: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .croco-school-articles__more-articles a {
+    font-size: 16px;
+    color: #162B40;
+    font-weight: 400; }
+  .croco-school-articles__more-articles i {
+    margin-left: 10px; }
+  .croco-school-articles__more-articles:hover a {
+    color: #34D7A1; }
+
+.croco-school-articles__terms-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-left: -20px;
+  margin-right: -20px; }
+
+@media (max-width: 425px) {
+  .croco-school-articles__terms-list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+.croco-school-articles__terms-item {
+  width: 33.3333%;
+  padding: 0 20px; }
+
+@media (max-width: 425px) {
+  .croco-school-articles__terms-item {
+    width: 100%;
+    padding: 10px;
+    max-width: 280px; } }
+
+.croco-school-articles__article-list-title {
+  font-size: 18px; }
+
+.croco-school-articles__article-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .croco-school-articles__article-list ul li {
+    line-height: 23px;
+    padding: 13px 0;
+    border-bottom: 1px solid #E4E7ED; }
+    .croco-school-articles__article-list ul li:last-child {
+      border-bottom: none; }
+    .croco-school-articles__article-list ul li a {
+      position: relative;
+      font-size: 16px;
+      color: #617BE5;
+      font-weight: 400;
+      line-height: 23px; }
+      .croco-school-articles__article-list ul li a:hover {
+        text-decoration: underline; }
+      .croco-school-articles__article-list ul li a i {
+        margin-left: 5px;
+        font-size: 16px;
+        color: #34d7a1; }
+
+.croco-school-related-articles__list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.croco-school-related-articles__item {
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .croco-school-related-articles__item:last-child {
+    margin-bottom: 0; }
+  .croco-school-related-articles__item:hover {
+    background-color: #F4F5F7; }
+    .croco-school-related-articles__item:hover .croco-school-related-articles__link {
+      color: #162B40; }
+
+.croco-school-related-articles__link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #617BE5;
+  position: relative; }
+
+@media (max-width: 768px) {
+  .croco-school-related-articles__link {
+    font-size: 12px; } }
+
+.croco-school-related-articles i {
+  font-size: 18px;
+  color: #34d7a1; }
+
+@media (max-width: 768px) {
+  .croco-school-related-articles i {
+    font-size: 13px; } }
+
+.croco-school-course-list__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-left: -20px;
+  margin-right: -20px; }
+
+.croco-school-course-list__item {
+  width: 33.3333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+  @media (max-width: 1024px) {
+    .croco-school-course-list__item {
+      width: 50%; } }
+  @media (max-width: 767px) {
+    .croco-school-course-list__item {
+      width: 100%; } }
+
+.croco-school-course-list__item-inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  position: relative;
+  margin: 20px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px rgba(22, 43, 64, 0.05);
+  box-shadow: 2px 2px 5px rgba(22, 43, 64, 0.05);
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .croco-school-course-list__item-inner:hover {
+    -webkit-box-shadow: 0px 20px 20px rgba(22, 43, 64, 0.12);
+    box-shadow: 0px 20px 20px rgba(22, 43, 64, 0.12);
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+
+.croco-school-course-list__item-thumb {
+  position: relative;
+  height: 180px;
+  background-color: #f9fafb; }
+  .elementor .croco-school-course-list__item-thumb img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.croco-school-course-list__item-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 27px 30px 30px 30px; }
+
+.croco-school-course-list__item-name {
+  font-size: 24px;
+  margin: 0 0 15px 0; }
+
+.croco-school-course-list__item-desc {
+  margin: 0 0 15px 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 16px; }
+
+.croco-school-course-list__progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #a2aab3;
+  font-size: 14px;
+  margin: 0 0 15px 0; }
+
+.croco-school-course-list__progress-label {
+  color: #152c40;
+  margin-right: 5px;
+  font-weight: 500;
+  font-size: 14px; }
+
+.croco-school-course-list__progress-status {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  font-weight: 500; }
+  .croco-school-course-list__progress-status .complete-message {
+    color: #34D7A1;
+    font-weight: 500; }
+  .croco-school-course-list__progress-status .progress-bar {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .croco-school-course-list__progress-status .progress-bar .bar {
+      width: 100%;
+      height: 8px;
+      background-color: #F4F5F7;
+      border-radius: 4px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto; }
+      .croco-school-course-list__progress-status .progress-bar .bar span {
+        display: block;
+        height: 100%;
+        background-color: #617BE5;
+        border-radius: 4px; }
+    .croco-school-course-list__progress-status .progress-bar .progress-count {
+      margin-left: 10px; }
+
+.croco-school-course-list__progress-link {
+  padding: 10px;
+  background-color: #34D7A1;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 18px; }
+  .croco-school-course-list__progress-link span {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    border-radius: 3px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .croco-school-course-list__progress-link:hover {
+    background-color: #617BE5; }
+
+.croco-school-course-list__lessons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #617BE5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  z-index: 1; }
+  .croco-school-course-list__lessons span {
+    margin-right: 5px; }
+
+.croco-school-course {
+  color: #162B40; }
+  .croco-school-course__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .croco-school-course__name {
+    font-size: 40px;
+    line-height: 49px;
+    color: #162B40;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 0 0 8px 0; }
+  .croco-school-course__lessons {
+    font-size: 18px;
+    line-height: 26px;
+    color: #617BE5;
+    font-weight: 500;
+    margin-bottom: 10px; }
+    .croco-school-course__lessons span {
+      margin-right: 5px; }
+  .croco-school-course__thumb {
+    width: 450px;
+    height: 250px;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 18px;
+    margin-top: 12px; }
+    .elementor .croco-school-course__thumb img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .croco-school-course__desc {
+    max-width: 750px;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #5C6B79; }
+  .croco-school-course__progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 540px;
+    max-width: 100%;
+    color: #a2aab3;
+    font-size: 14px;
+    margin: 0 0 20px 0; }
+    .croco-school-course__progress.in_progress-status .croco-school-course__progress-status {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto; }
+  .croco-school-course__progress-label {
+    font-size: 16px;
+    color: #152c40;
+    margin-right: 10px;
+    font-weight: 500; }
+  .croco-school-course__progress-status {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    font-weight: 500;
+    font-size: 16px; }
+    .croco-school-course__progress-status .complete-message {
+      font-weight: 500;
+      font-size: 16px;
+      color: #34D7A1; }
+    .croco-school-course__progress-status .progress-bar {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .croco-school-course__progress-status .progress-bar .bar {
+        width: 100%;
+        height: 8px;
+        background-color: #F4F5F7;
+        border-radius: 4px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto; }
+        .croco-school-course__progress-status .progress-bar .bar span {
+          display: block;
+          height: 100%;
+          background-color: #617BE5;
+          border-radius: 4px; }
+      .croco-school-course__progress-status .progress-bar .progress-count {
+        margin-left: 10px; }
+  .croco-school-course__progress-link {
+    padding: 11px 55px;
+    background-color: #34D7A1;
+    border-radius: 3px;
+    text-align: center; }
+    .croco-school-course__progress-link span {
+      color: white;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .croco-school-course__progress-link:hover {
+      background-color: #617BE5; }
+
+.croco-school-course-progress__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+  .croco-school-course-progress__inner .in_progress-status.current .croco-school-course-progress__item-icon,
+  .croco-school-course-progress__inner .done-status.current .croco-school-course-progress__item-icon,
+  .croco-school-course-progress__inner .current .croco-school-course-progress__item-icon {
+    color: #617BE5;
+    border-color: #617BE5;
+    background-color: #ffffff; }
+
+.croco-school-course-progress__title {
+  font-size: 18px;
+  margin: 0 0 20px 0; }
+
+.croco-school-course-progress__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid #E4E8ED; }
+  .croco-school-course-progress__item:first-child {
+    margin-top: 0; }
+
+.croco-school-course-progress__item-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40px;
+  height: 40px;
+  border: 2px solid #E4E8ED;
+  border-radius: 50%;
+  color: #A2AAB3;
+  font-size: 20px;
+  margin-right: 20px; }
+  .done-status .croco-school-course-progress__item-icon {
+    color: #ffffff;
+    border-color: #34D7A1;
+    background-color: #34D7A1; }
+  .in_progress-status .croco-school-course-progress__item-icon {
+    color: #A2AAB3;
+    border-color: #E4E8ED; }
+  .in_progress-status.current .croco-school-course-progress__item-icon {
+    color: #617BE5;
+    border-color: #617BE5; }
+
+.croco-school-course-progress__item-inner {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+.croco-school-course-progress__item-title {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500; }
+
+.croco-school-course-progress__item-progress {
+  font-size: 14px;
+  font-weight: 500;
+  color: #A2AAB3; }
+  .done-status .croco-school-course-progress__item-progress {
+    color: #34D7A1;
+    font-weight: 500; }
+  .in_progress-status .croco-school-course-progress__item-progress {
+    font-weight: 500;
+    color: #617BE5; }
+
+.croco-school-lesson-list__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding-left: -20px;
+  padding-right: -20px; }
+
+.croco-school-lesson-list__item {
+  width: 33.3333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  color: #162B40; }
+  @media (max-width: 1024px) {
+    .croco-school-lesson-list__item {
+      width: 50%; } }
+  @media (max-width: 767px) {
+    .croco-school-lesson-list__item {
+      width: 100%; } }
+
+.croco-school-lesson-list__item-inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative;
+  margin: 20px;
+  padding: 26px 30px 30px 30px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px rgba(22, 43, 64, 0.05);
+  box-shadow: 2px 2px 5px rgba(22, 43, 64, 0.05);
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .croco-school-lesson-list__item-inner:hover {
+    -webkit-box-shadow: 0px 20px 20px rgba(22, 43, 64, 0.12);
+    box-shadow: 0px 20px 20px rgba(22, 43, 64, 0.12);
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+
+.croco-school-lesson-list__lessons {
+  font-size: 18px;
+  line-height: 22px;
+  color: #617BE5;
+  margin-bottom: 8px;
+  font-weight: 900; }
+  .croco-school-lesson-list__lessons span {
+    margin-right: 5px;
+    font-weight: 900; }
+
+.croco-school-lesson-list__title {
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 0 10px 0; }
+
+.croco-school-lesson-list__excerpt {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 0 25px 0;
+  color: #5C6B79; }
+
+.croco-school-lesson-list__permalink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #34D7A1;
+  border-radius: 3px;
+  text-align: center; }
+  .croco-school-lesson-list__permalink.status-done {
+    background-color: white;
+    -webkit-box-shadow: inset 0 0 0 1px #e4e7ed;
+    box-shadow: inset 0 0 0 1px #e4e7ed; }
+    .croco-school-lesson-list__permalink.status-done i {
+      display: block; }
+    .croco-school-lesson-list__permalink.status-done span {
+      color: #34D7A1; }
+    .croco-school-lesson-list__permalink.status-done:hover {
+      background-color: white;
+      -webkit-box-shadow: inset 0 0 0 1px #34D7A1;
+      box-shadow: inset 0 0 0 1px #34D7A1; }
+  .croco-school-lesson-list__permalink i {
+    display: none;
+    color: #34D7A1;
+    font-size: 20px;
+    margin-right: 5px; }
+  .croco-school-lesson-list__permalink span {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    border-radius: 3px;
+    text-transform: uppercase; }
+  .croco-school-lesson-list__permalink:hover {
+    background-color: #2fc594; }
+
+.croco-school-cats__title {
+  color: #162B40; }
+  .croco-school-cats--single .croco-school-cats__title {
+    margin: 0 0 20px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700; }
+    @media (max-width: 425px) {
+      .croco-school-cats--single .croco-school-cats__title {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 0 10px; } }
+  .croco-school-cats--archive .croco-school-cats__title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500; }
+
+.croco-school-cats__child-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  list-style: none; }
+  .croco-school-cats--single .croco-school-cats__child-list {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500; }
+    @media (max-width: 425px) {
+      .croco-school-cats--single .croco-school-cats__child-list {
+        font-size: 14px; } }
+  .croco-school-cats--archive .croco-school-cats__child-list {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400; }
+
+.croco-school-cats__child-item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 10px; }
+  .croco-school-cats--archive .croco-school-cats__child-item + .croco-school-cats__child-item {
+    margin-top: 1px; }
+
+.croco-school-cats__child-link {
+  position: relative;
+  color: #617BE5; }
+  .croco-school-cats__child-link:before {
+    content: '\f054';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'FontAwesome';
+    font-size: 8px; }
+  .croco-school-cats--single .croco-school-cats__child-link {
+    display: inline-block;
+    padding-left: 15px; }
+    .croco-school-cats--single .croco-school-cats__child-link:hover {
+      color: #34D7A1; }
+  .croco-school-cats--archive .croco-school-cats__child-link {
+    display: block;
+    padding-left: 35px;
+    padding-right: 20px; }
+    .croco-school-cats--archive .croco-school-cats__child-link:before {
+      left: 20px; }
+    .croco-school-cats--archive .croco-school-cats__child-link:hover, .croco-school-cats--archive .croco-school-cats__child-link.current-category {
+      color: #fff;
+      background-color: #617BE5; }
+
+@media (max-width: 425px) {
+  .custom-background-image-size .elementor-widget-container {
+    background-image: none !important; } }
+
+@media (max-width: 425px) {
+  .custom-width-section .elementor-widget-container {
+    background-image: none !important; } }
+
+@media (max-width: 1024px) and (min-width: 425px) {
+  .custom-width-section .elementor-widget-container {
+    background-size: 350px !important; } }
+
+.cs-articles-archive__main-title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: -1px;
+  color: #162B40; }
+  @media (max-width: 425px) {
+    .cs-articles-archive__main-title {
+      font-size: 30px;
+      line-height: 40px; } }
+
+.cs-articles-archive__list {
+  margin: 42px 0 0;
+  list-style: none;
+  counter-reset: list; }
+
+.cs-articles-archive__article-item + .cs-articles-archive__article-item {
+  margin-top: 20px; }
+
+.cs-articles-archive .cs-articles-archive__article-link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 11px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5C6B79;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px rgba(22, 43, 64, 0.1);
+  box-shadow: 0 2px 4px rgba(22, 43, 64, 0.1); }
+  @media (max-width: 425px) {
+    .cs-articles-archive .cs-articles-archive__article-link {
+      padding: 10px 10px;
+      font-size: 16px; } }
+  .cs-articles-archive .cs-articles-archive__article-link .cs-article-link-text:before {
+    content: counter(list) ". ";
+    counter-increment: list;
+    color: #34D7A1; }
+  .cs-articles-archive .cs-articles-archive__article-link .video-format-icon {
+    margin-left: 20px;
+    vertical-align: middle; }
+    .cs-articles-archive .cs-articles-archive__article-link .video-format-icon svg {
+      height: 100%;
+      vertical-align: middle; }
+  .cs-articles-archive .cs-articles-archive__article-link .read-now {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: auto;
+    padding-left: 15px; }
+    @media (max-width: 425px) {
+      .cs-articles-archive .cs-articles-archive__article-link .read-now {
+        display: none; } }
+    .cs-articles-archive .cs-articles-archive__article-link .read-now__text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      white-space: nowrap;
+      color: #617BE5;
+      opacity: 0;
+      -webkit-transition: .2s ease;
+      -o-transition: .2s ease;
+      transition: .2s ease; }
+    .cs-articles-archive .cs-articles-archive__article-link .read-now__icon {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      font-size: 12px;
+      color: #D0D5D9; }
+  .cs-articles-archive .cs-articles-archive__article-link:hover {
+    color: #162B40;
+    -webkit-box-shadow: 0 14px 14px rgba(22, 43, 64, 0.12);
+    box-shadow: 0 14px 14px rgba(22, 43, 64, 0.12); }
+    .cs-articles-archive .cs-articles-archive__article-link:hover .read-now__text {
+      opacity: 1; }
+    .cs-articles-archive .cs-articles-archive__article-link:hover .read-now__icon {
+      color: #617BE5; }
+
+.cs-articles-archive__child-term-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  color: #162B40; }
+
+.cs-articles-archive__child-terms-list {
+  margin-top: 80px; }
+
+.cs-articles-archive__child-term-item + .cs-articles-archive__child-term-item {
+  margin-top: 80px; }
+
+.custom-width-section.elementor-widget-croco-school-categories .croco-school-cats {
+  width: 75%; }
+  @media (max-width: 425px) {
+    .custom-width-section.elementor-widget-croco-school-categories .croco-school-cats {
+      width: 100%; } }
+
+.home-widgets.elementor-widget-croco-school-categories {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 2px 4px rgba(22, 43, 64, 0.1);
+  box-shadow: 0 2px 4px rgba(22, 43, 64, 0.1);
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all; }
+  .home-widgets.elementor-widget-croco-school-categories:hover {
+    -webkit-box-shadow: 0 20px 20px rgba(22, 43, 64, 0.12);
+    box-shadow: 0 20px 20px rgba(22, 43, 64, 0.12);
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px); }
+
+.site-content .croco-school h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.175; }
+
+@media (max-width: 768px) {
+  .site-content .croco-school h1 {
+    font-size: 36px; } }
+
+@media (max-width: 425px) {
+  .site-content .croco-school h1 {
+    font-size: 30px; } }
+
+.croco-school__single-article {
+  margin-top: 0; }
+
+.site-content .error-404,
+.site-content .not-found {
+  margin: 60px auto; }
+  .site-content .error-404 .search-form label,
+  .site-content .not-found .search-form label {
+    padding: 0; }
+  .site-content .error-404 .search-form .search-form__submit.btn,
+  .site-content .not-found .search-form .search-form__submit.btn {
+    padding: 14px; }
+
+.croco-school .guide-article a {
+  color: #617BE5; }
+  .croco-school .guide-article a:hover {
+    text-decoration: underline; }
+
+.croco-school .guide-article .cherry-search-wrapper .cherry-search form.cherry-search__form button.cherry-search__submit {
+  background-color: #617BE5; }
+
+.croco-school-container {
+  width: 760px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: .9375rem;
+  padding-right: .9375rem; }
+
+.croco-school__single-article .breadcrumbs {
+  display: none;
+  max-width: 1200px;
+  margin: 28px auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-top: none; }
+  .croco-school__single-article .breadcrumbs .breadcrumbs_item {
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400; }
+
+.croco-school__single-article-inner {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; } }
+
+.croco-school h1.croco-school__single-article-title {
+  margin: 0 auto 30px auto; }
+
+.croco-school__single-article-content {
+  margin-bottom: 35px; }
+
+.croco-school .guide-article.has-sidebar .croco-school__single-article-sidebar .croco-school-related-articles__list a:hover {
+  text-decoration: none; }
+
+.croco-school__single-article-media {
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .croco-school__single-article-media .croco-school__single-article-media-inner {
+    position: relative; }
+  .croco-school__single-article-media .croco-school-article-image {
+    width: 100%;
+    line-height: 0; }
+  .croco-school__single-article-media .croco-school__single-media-frame {
+    position: relative; }
+    .croco-school__single-article-media .croco-school__single-media-frame.aspect-ratio-169 {
+      padding-bottom: 56.25%; }
+    .croco-school__single-article-media .croco-school__single-media-frame.aspect-ratio-219 {
+      padding-bottom: 42.8571%; }
+    .croco-school__single-article-media .croco-school__single-media-frame.aspect-ratio-43 {
+      padding-bottom: 75%; }
+    .croco-school__single-article-media .croco-school__single-media-frame.aspect-ratio-32 {
+      padding-bottom: 66.6666%; }
+  .croco-school__single-article-media .croco-school-video-iframe {
+    max-width: 100%;
+    margin: 0;
+    line-height: 1;
+    border: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .croco-school__single-article-media .video-embed-image-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .croco-school__single-article-media .video-embed-image-overlay .video-play-icon {
+      width: 130px;
+      height: 80px;
+      background-color: white;
+      border-radius: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 40px;
+      color: #162B40;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    .croco-school__single-article-media .video-embed-image-overlay:hover .video-play-icon {
+      -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); }
+
+.croco-school__single-article-container {
+  width: 75%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+  .guide-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none;
+    padding-right: 57px;
+    margin-right: 30px;
+    border-right: 1px solid #E4E7ED; }
+  @media (max-width: 768px) {
+    .guide-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
+      padding-right: 20px;
+      margin-right: 10px; } }
+  @media (max-width: 768px) {
+    .guide-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
+      padding: 10px;
+      margin-right: 0;
+      border: none; } }
+  .course-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
+    margin-right: 40px; }
+  @media (max-width: 425px) {
+    .course-article.has-sidebar .croco-school__single-article-container .croco-school__single-article-container-inner {
+      margin-right: 0; } }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-container {
+    width: 100%; } }
+
+.croco-school__single-article-sidebar {
+  width: 25%;
+  min-width: 200px; }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-sidebar {
+    width: 100%;
+    min-width: 280px; } }
+
+.croco-school__single-search {
+  padding: 50px 0;
+  background-color: #F4F5F7;
+  margin-bottom: 0; }
+
+@media (max-width: 425px) {
+  .croco-school__single-search {
+    margin-bottom: 10px; } }
+
+.croco-school__lesson-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 80px 0 0 0;
+  padding: 40px 0 40px 0;
+  border-top: 1px solid #E4E7ED;
+  border-bottom: 1px solid #E4E7ED; }
+  .croco-school__lesson-progress .progress-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    color: #162b40;
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    border-radius: 3px; }
+    .croco-school__lesson-progress .progress-message i {
+      font-size: 30px;
+      color: #34D7A1;
+      margin-right: 10px; }
+    .croco-school__lesson-progress .progress-message a:hover span {
+      text-decoration: none; }
+  .croco-school__lesson-progress a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 49px 12px 39px;
+    background-color: #34D7A1;
+    border-radius: 3px;
+    text-align: center;
+    width: 48%;
+    margin: 0 1%; }
+    .croco-school__lesson-progress a i {
+      color: white;
+      font-size: 20px;
+      margin-right: 10px; }
+    .croco-school__lesson-progress a span {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 3px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase; }
+    @media (max-width: 425px) {
+      .croco-school__lesson-progress a span {
+        font-size: 9px; } }
+    .croco-school__lesson-progress a:hover {
+      background-color: #2fc594; }
+    .croco-school__lesson-progress a.back-button {
+      background-color: #617BE5; }
+      .croco-school__lesson-progress a.back-button:hover {
+        background-color: #576fd0; }
+  @media (max-width: 425px) {
+    .croco-school__lesson-progress a {
+      padding: 14px 10px 12px 10px;
+      margin-top: 20px;
+      width: 100%; } }
+
+@media (max-width: 425px) {
+  .croco-school__lesson-progress {
+    margin: 40px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+.cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__label {
+  padding: 0; }
+
+.cherry-search-wrapper .cherry-search form.cherry-search__form button.cherry-search__submit {
+  padding: 9px 20px;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-left: 10px; }
+
+.cherry-search-wrapper .cherry-search form.cherry-search__form button.cherry-search__submit:hover {
+  background-color: #617BE5; }
+
+.cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__field {
+  padding: 11px 15px;
+  color: #5C6B79;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #E4E8ED; }
+
+.cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__field:active,
+.cherry-search-wrapper .cherry-search form.cherry-search__form .cherry-search__field:focus {
+  padding: 10px 15px;
+  border: 2px solid #E4E8ED;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.cherry-search-wrapper .cherry-search .cherry-search__results-list {
+  -webkit-box-shadow: 0 0 20px rgba(22, 43, 64, 0.1);
+  box-shadow: 0 0 20px rgba(22, 43, 64, 0.1);
+  border: none;
+  padding: 15px;
+  border-radius: 3px;
+  margin-top: 10px; }
+  .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item {
+    border-top-color: #E4E7ED;
+    border-radius: 3px;
+    padding-top: 10px;
+    margin-top: 10px; }
+    .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item:hover {
+      background-color: transparent; }
+      .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item:hover a {
+        background-color: #f6f6f6; }
+      .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item:hover .cherry-search__item-title {
+        color: #617BE5; }
+    .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item > a {
+      padding: 5px 15px;
+      border-radius: 3px; }
+    .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item .cherry-search__item-thumbnail {
+      display: none; }
+    .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item .cherry-search__item-title {
+      color: #162B40;
+      font-size: 14px;
+      font-weight: 600; }
+    .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item .cherry-search__item-content {
+      color: #162B40;
+      font-size: 14px; }
+    .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item .cherry-search__item-author {
+      color: #162B40;
+      font-size: 11px; }
+  .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__more-button {
+    border: none;
+    margin-top: 20px; }
+
+.cherry-search-wrapper ::-webkit-input-placeholder {
+  color: #5C6B79;
+  font-weight: 400; }
+
+.cherry-search-wrapper ::-moz-placeholder {
+  color: #5C6B79;
+  font-weight: 400; }
+
+.cherry-search-wrapper :-moz-placeholder {
+  color: #5C6B79;
+  font-weight: 400; }
+
+.cherry-search-wrapper :-ms-input-placeholder {
+  color: #5C6B79;
+  font-weight: 400; }
+
+.croco-school__single-article-content img {
+  margin-top: 45px;
+  margin-bottom: 45px; }
+
+.croco-school-related-articles__list ul li {
+  line-height: 1.267em;
+  margin-bottom: 4px; }
+
+.croco-school-related-articles__list .croco-school-related-articles__item {
+  display: block;
+  padding: 0; }
+  .croco-school-related-articles__list .croco-school-related-articles__item .croco-school-related-articles__link {
+    display: block;
+    padding: 9px 15px;
+    font-weight: 500;
+    line-height: 1.467em; }
+  @media (max-width: 768px) {
+    .croco-school-related-articles__list .croco-school-related-articles__item .croco-school-related-articles__link {
+      font-size: 12px; } }
+  .croco-school-related-articles__list .croco-school-related-articles__item .education_hat {
+    padding: 0 10px; }
+  @media (max-width: 768px) {
+    .croco-school-related-articles__list .croco-school-related-articles__item .education_hat {
+      padding: 0 5px 0 5px; } }
+
+.croco-school-related-articles__item.current {
+  background-color: #617BE5; }
+  .croco-school-related-articles__item.current .croco-school-related-articles__link {
+    color: #fff; }
+
+.croco-school__single-article-content a {
+  font-weight: 600; }
+
+.croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky {
+  margin-top: 40px; }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky {
+    margin-top: 0; } }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-sidebar.is-affixed .inner-wrapper-sticky {
+    position: relative !important;
+    width: 100% !important;
+    padding: 0;
+    top: 0 !important;
+    left: 0 !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important; }
+  .croco-school__single-article-sidebar .inner-wrapper-sticky {
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+
+@media (max-width: 425px) {
+  #secondary.croco-school__single-article-sidebar.is-affixed {
+    height: 100% !important; } }
+
+@media (max-width: 425px) {
+  #secondary {
+    margin-top: 10px; } }
+
+.croco-school__single-article-container-inner h1, .croco-school__single-article-container-inner h2, .croco-school__single-article-container-inner h3, .croco-school__single-article-container-inner h4 {
+  margin: 30px 0;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+.croco-school__single-article-container-inner h5, .croco-school__single-article-container-inner h6 {
+  margin: 30px 0 0;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+.croco-school__single-article-container-inner ul {
+  margin: 1.5em 0 1.5em 3.8em;
+  padding-left: 0;
+  padding-right: 0; }
+
+.croco-school__single-article-container-inner ol {
+  margin: 1.5em 0 1.5em 1.1em;
+  padding-left: 0;
+  padding-right: 0; }
+
+.croco-school__single-article-container-inner ul > ul {
+  margin: 0 0 0 1.7em; }
+
+.croco-school__single-article-container-inner li > ul {
+  margin-bottom: 0;
+  margin-left: 1.6em;
+  margin-top: 0; }
+
+.croco-school__single-article-container-inner li > ol {
+  margin-left: 0; }
+
+.croco-school__single-article-container-inner p {
+  margin-bottom: 30px; }
+
+.croco-school__single-article-container-inner b {
+  color: #34D7A1; }
+  .croco-school__single-article-container-inner b span {
+    display: inline-block;
+    margin-right: 12px;
+    color: #ffffff;
+    position: relative; }
+    .croco-school__single-article-container-inner b span:before {
+      content: '';
+      color: #ffffff;
+      background-color: #34D7A1;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1; }
+
+.croco-school__single-article-container-inner strong {
+  color: #5C6B79; }
+
+.croco-school__single-article-container-inner a {
+  color: #617BE5; }
+
+table {
+  margin: 30px 0; }
+
+table tr td, table tr th,
+table td, table th {
+  padding: 5px 10px;
+  font-size: 16px; }
+
+@media screen and (max-width: 640px) {
+  table {
+    display: block;
+    overflow-x: auto; } }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-container-inner h1, .croco-school__single-article-container-inner h2, .croco-school__single-article-container-inner h3, .croco-school__single-article-container-inner h4 {
+    margin: 15px 0; }
+  .croco-school__single-article-container-inner h3 {
+    font-size: 20px; }
+  .croco-school__single-article-container-inner h5 {
+    font-size: 16px; }
+  .croco-school__single-article-container-inner p {
+    font-size: 16px; }
+  .croco-school__single-article-container-inner li {
+    font-size: 16px; }
+  .croco-school__single-article-container-inner table td, .croco-school__single-article-container-inner table th {
+    font-size: 14px; }
+  .croco-school__single-article-container-inner h5, .croco-school__single-article-container-inner h6 {
+    margin: 15px 0 0; }
+  .croco-school__single-article-container-inner ul {
+    margin: 1em 0 1em 1.8em;
+    padding-left: 0;
+    padding-right: 0; }
+  .croco-school__single-article-container-inner p + p {
+    margin-top: 15px; }
+  .croco-school__single-article-container-inner ol {
+    margin: 1em 0 1em 1em;
+    padding-left: 0;
+    padding-right: 0; }
+  .croco-school__single-article-container-inner ul > ul {
+    margin: 0 0 0 0.7em; }
+  .croco-school__single-article-container-inner li > ul {
+    margin-bottom: 0;
+    margin-left: 0.6em; } }
+
+.croco-school__single-article-container-inner .croco-school__single-article-content a:before {
+  background-color: #617BE5;
+  opacity: 0.4;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 100%;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
+
+.croco-school__single-article-container-inner .croco-school__single-article-content a:after {
+  content: '';
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  width: 0;
+  background-color: #617BE5; }
+
+.croco-school__single-article-container-inner .croco-school__single-article-content a:hover {
+  text-decoration: none; }
+  .croco-school__single-article-container-inner .croco-school__single-article-content a:hover:after {
+    top: 100%;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    background-color: #617BE5; }
+
+.croco-school__single-article-container-inner .croco-school__single-article-content a {
+  color: inherit;
+  position: relative;
+  text-decoration: none; }
+
+.arrows-1_bold-right {
+  font-size: 14px; }
+
+/*
+  Tippy theme
+ */
+.tippy-tooltip.light-border-theme {
+  background-color: white;
+  background-clip: padding-box;
+  color: #5C6B79;
+  -webkit-box-shadow: 0px 4px 20px rgba(22, 43, 64, 0.15);
+  box-shadow: 0px 4px 20px rgba(22, 43, 64, 0.15);
+  border-radius: 3px;
+  padding-top: 8px;
+  padding-bottom: 10px; }
+  .tippy-tooltip.light-border-theme .tippy-backdrop {
+    background-color: white; }
+  .tippy-tooltip.light-border-theme .tippy-arrow::after, .tippy-tooltip.light-border-theme .tippy-arrow::before,
+  .tippy-tooltip.light-border-theme .tippy-roundarrow::after,
+  .tippy-tooltip.light-border-theme .tippy-roundarrow::before {
+    content: '';
+    position: absolute;
+    z-index: -1; }
+  .tippy-tooltip.light-border-theme .tippy-roundarrow {
+    fill: white; }
+    .tippy-tooltip.light-border-theme .tippy-roundarrow::after {
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAyNCA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zOnNlcmlmPSJodHRwOi8vd3d3LnNlcmlmLmNvbS8iIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MS40MTQyMTsiPjxwYXRoIGQ9Ik0zLDhjMCwwIDIuMDIxLC0wLjAxNSA1LjI1MywtNC4yMThjMS4zMzEsLTEuNzMxIDIuNTQ0LC0yLjc3NSAzLjc0NywtMi43ODJjMS4yMDMsLTAuMDA3IDIuNDE2LDEuMDM1IDMuNzYxLDIuNzgyYzMuMjUxLDQuMjIzIDUuMjM5LDQuMjE4IDUuMjM5LDQuMjE4bC0xOCwwWiIgc3R5bGU9ImZpbGw6IzAwMDgxNjtmaWxsLW9wYWNpdHk6MC4yMDM5MjI7ZmlsbC1ydWxlOm5vbnplcm87Ii8+PC9zdmc+);
+      background-size: 24px 20px;
+      width: 24px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      fill: #fff; }
+
+.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-roundarrow::after {
+  top: 1px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow {
+  border-top-color: #fff; }
+  .tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::after, .tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::before {
+    border-top: 8px solid;
+    top: -7px; }
+  .tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::after {
+    border-top-color: #fff; }
+  .tippy-popper[x-placement^='top'] .tippy-tooltip.light-border-theme .tippy-arrow::before {
+    border-top-color: white; }
+
+.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-roundarrow::after {
+  top: -1px; }
+
+.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow {
+  border-bottom-color: #fff; }
+  .tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::after, .tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::before {
+    border-bottom: 8px solid;
+    bottom: -7px; }
+  .tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::after {
+    border-bottom-color: #fff; }
+  .tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-border-theme .tippy-arrow::before {
+    border-bottom-color: white; }
+
+.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-roundarrow::after {
+  left: 1px;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow {
+  border-left-color: #fff; }
+  .tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::after, .tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::before {
+    border-left: 8px solid;
+    left: -7px; }
+  .tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::after {
+    border-left-color: #fff; }
+  .tippy-popper[x-placement^='left'] .tippy-tooltip.light-border-theme .tippy-arrow::before {
+    border-left-color: white; }
+
+.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-roundarrow::after {
+  left: -1px;
+  top: 0;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow {
+  border-right-color: #fff; }
+  .tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::after, .tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::before {
+    border-right: 8px solid;
+    right: -7px; }
+  .tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::after {
+    border-right-color: #fff; }
+  .tippy-popper[x-placement^='right'] .tippy-tooltip.light-border-theme .tippy-arrow::before {
+    border-right-color: white; }
+
+.tippy-popper[x-placement^='top']
+.tippy-tooltip.light-border-theme
+.tippy-arrow::before, .tippy-popper[x-placement^='top']
+.tippy-tooltip.light-border-theme
+.tippy-arrow::after,
+.tippy-popper[x-placement^='bottom']
+.tippy-tooltip.light-border-theme
+.tippy-arrow::before,
+.tippy-popper[x-placement^='bottom']
+.tippy-tooltip.light-border-theme
+.tippy-arrow::after {
+  left: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent; }
+
+.tippy-popper[x-placement^='left']
+.tippy-tooltip.light-border-theme
+.tippy-arrow::before, .tippy-popper[x-placement^='left']
+.tippy-tooltip.light-border-theme
+.tippy-arrow::after,
+.tippy-popper[x-placement^='right']
+.tippy-tooltip.light-border-theme
+.tippy-arrow::before,
+.tippy-popper[x-placement^='right']
+.tippy-tooltip.light-border-theme
+.tippy-arrow::after {
+  top: -8px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent; }
+
+.guide-article .croco-school__single-article-content {
+  margin: 0 auto; }
+
+.guide-article .croco-school__single-article-title,
+.guide-article .croco-school__single-article-content {
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .guide-article .croco-school__single-article-title img.aligncenter,
+  .guide-article .croco-school__single-article-content img.aligncenter {
+    margin: 0 auto;
+    -webkit-box-shadow: 0 20px 20px rgba(22, 43, 64, 0.12);
+    box-shadow: 0 20px 20px rgba(22, 43, 64, 0.12); }
+
+.guide-article .custom-width,
+.custom-width .wp-video {
+  background-color: #F4F5F7;
+  width: 100vw;
+  padding: 50px 30px;
+  max-width: 1160px;
+  margin-left: 50%;
+  margin-right: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 49px;
+  margin-top: 40px; }
+
+@media (max-width: 768px) {
+  .guide-article .custom-width,
+  .custom-width .wp-video {
+    max-width: 680px; } }
+
+.banner a:hover {
+  background-color: #ffffff;
+  color: #34D7A1; }
+  .banner a:hover:after {
+    display: none; }
+
+.croco-school__single-article-content .banner.invert a:hover {
+  background-color: #162B40;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.croco-school__single-article-content .banner.invert a {
+  -webkit-box-shadow: 0 10px 10px rgba(22, 43, 64, 0.12);
+  box-shadow: 0 10px 10px rgba(22, 43, 64, 0.12);
+  background-color: #34D7A1;
+  color: #fff; }
+
+.croco-school__single-article-content .banner a:hover {
+  background-color: #617BE5;
+  color: #ffffff; }
+
+.croco-school__single-article-content .banner a {
+  background-color: #34D7A1;
+  color: #fff; }
+
+.croco-school__single-article-content .banner {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: #F4F6FD;
+  border: 1px solid #DCE1F8;
+  padding: 13px 52px 35px 52px;
+  border-radius: 3px; }
+  .croco-school__single-article-content .banner p {
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 26px; }
+  .croco-school__single-article-content .banner h3 {
+    color: #617BE5;
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 32px;
+    margin-bottom: 0; }
+  .croco-school__single-article-content .banner a {
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 16px 36px; }
+  .croco-school__single-article-content .banner a:hover {
+    text-decoration: none; }
+  .croco-school__single-article-content .banner.invert {
+    padding: 13px 181px 35px 41px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='760' height='260' viewBox='0 0 760 260' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='760' height='260' fill='url(%23paint0_linear)'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M672.175 175.396L652.11 175.658L659.177 169.028C660.921 167.37 663.626 167.109 665.632 168.417C666.854 169.202 668.075 170.249 669.209 171.645C669.209 171.645 681.772 167.021 687.791 156.814C689.71 159.606 691.891 163.445 693.811 168.243C688.314 171.383 681.248 173.826 672.175 175.396Z' fill='url(%23paint1_linear)'/%3E%3Cpath d='M644.694 181.677C644.694 181.677 663.974 302.328 663.712 303.026C663.712 303.026 669.034 305.469 674.879 303.375C674.879 303.375 673.134 238.906 669.034 214.13C669.034 214.13 702.01 271.795 712.392 300.496C712.392 300.496 717.888 299.886 722.337 296.832C722.337 296.832 686.831 193.105 677.409 179.234L644.694 181.677Z' fill='%23162B40'/%3E%3Cpath d='M556.148 63.5586C556.148 63.5586 569.146 66.4375 577.085 70.1015C578.655 70.7994 579.876 72.108 580.662 73.6783C583.017 78.8254 590.083 91.9112 603.867 98.1052C601.861 100.722 598.72 106.218 597.324 115.378C589.037 109.272 581.97 98.9776 578.481 82.1405C578.481 82.1405 575.863 83.5363 572.636 81.966C570.891 81.0936 568.972 79.9595 567.489 78.9999C566.006 78.0402 564.871 76.6444 564.435 74.9869C563.912 72.8059 564.174 70.7994 564.174 68.7057L557.456 66.612C557.456 66.5247 555.45 65.8268 556.148 63.5586Z' fill='url(%23paint2_linear)'/%3E%3Cpath d='M597.237 115.291C598.633 106.131 601.774 100.635 603.78 98.0178C612.33 101.856 623.409 103.078 637.542 98.1922C638.85 97.756 640.246 97.4943 641.555 97.4071C649.057 96.9709 673.92 96.1857 694.422 102.903C698.783 104.299 702.273 107.527 704.018 111.627C709.601 124.364 718.587 153.414 693.636 168.071C691.717 163.272 689.536 159.521 687.617 156.642C691.63 149.838 692.851 140.59 685.698 128.551C680.463 142.597 678.021 163.098 677.584 172.171C677.41 175.137 677.933 178.103 679.155 180.895L679.242 181.156C679.504 181.767 679.155 182.465 678.544 182.552C664.499 185.693 649.842 184.82 645.48 184.471C644.695 184.384 644.085 183.861 643.91 183.076C637.106 154.287 637.018 134.658 638.763 122.183C632.395 123.84 612.853 126.894 597.237 115.291Z' fill='white'/%3E%3Cpath d='M655.425 125.059C653.497 125.059 651.935 123.447 651.935 121.46C651.935 119.473 653.497 117.861 655.425 117.861C655.428 117.861 655.431 117.862 655.434 117.862C663.138 117.867 669.383 124.309 669.383 132.256C669.383 140.206 663.133 146.65 655.425 146.65C653.497 146.65 651.935 145.039 651.935 143.052C651.935 141.064 653.497 139.453 655.425 139.453C655.426 139.453 655.427 139.453 655.428 139.453C659.281 139.451 662.404 136.23 662.404 132.256C662.404 128.281 659.279 125.059 655.425 125.059Z' fill='%2336E7AC'/%3E%3Cpath d='M673.397 80.6543C673.397 80.6543 674.793 95.6594 676.101 100.109C676.276 100.806 676.014 101.504 675.403 101.853C673.31 103.075 668.162 105.081 661.183 101.592C660.049 101.068 659.351 99.8468 659.439 98.6255L660.049 84.0566L673.397 80.6543Z' fill='url(%23paint3_linear)'/%3E%3Cpath d='M659.701 61.375C659.701 61.375 655.164 71.8437 654.815 77.3397C654.466 82.8357 653.332 86.4125 659.701 87.4594C666.069 88.5935 671.391 85.3657 674.27 79.9569C674.27 79.9569 678.806 71.5819 677.759 68.0924C676.8 64.6901 659.701 61.375 659.701 61.375Z' fill='url(%23paint4_linear)'/%3E%3Cpath d='M672.089 76.0314L671.74 75.8569C671.304 75.6824 671.042 75.0718 671.304 74.6356C672.176 72.8908 673.921 68.965 671.653 68.0054C668.774 66.7841 657.258 64.4286 654.816 60.4156C652.46 56.4899 654.554 51.43 657.694 50.0342C657.869 49.947 658.131 50.0342 658.305 50.2087L658.567 50.7321C658.741 51.0811 659.265 50.9938 659.352 50.6449C659.439 50.2959 659.963 50.2087 660.137 50.5577C660.922 51.779 662.929 53.7855 668.425 54.7451C676.276 56.2282 681.423 59.3688 681.511 64.7776C681.511 65.1265 681.86 65.301 682.209 65.1265C682.819 64.7776 683.692 64.6031 684.913 65.65C687.094 67.482 686.222 72.1056 681.511 76.0314C681.249 76.2059 681.249 76.5548 681.511 76.7293C682.383 77.2527 683.604 78.6486 680.377 80.3933C676.974 82.2253 674.444 82.0509 673.397 81.8764C673.136 81.8764 672.961 81.6147 673.049 81.353L674.095 76.6421C674.183 76.3804 673.921 76.1186 673.659 76.1186H672.089V76.0314Z' fill='%23162B40'/%3E%3Cpath d='M671.915 77.0792C671.915 77.0792 673.66 70.449 676.626 72.281C679.592 74.113 675.055 79.7836 672.7 80.0453L671.915 77.0792Z' fill='url(%23paint5_linear)'/%3E%3Cpath d='M574.991 80.9173C575.253 80.9173 575.427 80.8301 575.602 80.6556C576.038 80.3066 576.125 79.696 575.776 79.2598C575.253 78.6491 570.891 73.2403 569.146 72.2807C568.623 72.019 568.361 71.7572 568.361 71.5828L572.985 72.5424L575.776 74.9851C576.212 75.334 576.823 75.334 577.172 74.8978C577.521 74.4616 577.521 73.851 577.085 73.502L574.032 70.8849C573.944 70.7976 573.77 70.7104 573.595 70.6231L567.925 69.489C567.489 69.4018 567.14 69.5763 566.878 69.9252C566.442 70.6231 566.267 71.321 566.355 72.019C566.529 72.8041 567.14 73.502 568.187 74.0255C569.233 74.6361 572.461 78.3874 574.293 80.5684C574.38 80.8301 574.729 80.9173 574.991 80.9173Z' fill='%23F8A570'/%3E%3Cpath d='M680.55 167.281C680.55 167.281 678.805 164.402 674.879 164.402C670.866 164.402 666.33 171.818 666.33 171.818C666.33 171.818 672.611 174.697 674.879 176.965C677.147 179.233 680.55 171.818 680.55 167.281Z' fill='url(%23paint6_linear)'/%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M537.98 209.046C539.156 208.383 540.582 207.352 541.754 206.158C548.577 199.036 537.54 193.581 530.722 195.056C527.271 195.855 526.236 198.726 526.043 201.428C526.014 203.351 523.746 204.552 521.968 203.417L508 194.503L516.765 181.558C517.767 180.079 520.002 180.269 520.854 181.696C521.877 183.408 523.535 185.526 525.948 187.066C531.408 190.55 537.52 184.21 539.276 182.153C540.822 180.139 542.606 169.448 529.913 168.586C528.143 168.515 526.949 166.518 528.034 164.915L538.218 149.875L552.441 158.951C553.584 159.681 555.264 158.811 555.086 157.462C554.79 150.917 561.968 146.493 565.048 147.047C568.804 147.678 575.149 151.198 572.586 158.743C571.221 162.639 568.79 164.619 566.562 165.492C565.259 166.073 565.27 167.669 566.413 168.398L580 177.069L569.565 192.48C568.564 193.959 566.202 193.687 565.516 192.014C564.573 189.647 563.206 186.832 562.186 185.652C560.274 183.372 554.193 181.61 549.591 186.794C544.906 192.102 546.088 198.683 551.334 201.678C553.703 203.014 555.942 203.736 557.756 204.011C559.36 204.328 560.173 206.083 559.254 207.439L550.072 221L537.373 212.896C536.147 212.29 536.3 209.915 537.98 209.046Z' fill='%23617BE5'/%3E%3C/g%3E%3Cpath d='M590 5.51134C590 5.80045 589.807 5.9932 589.518 6.18594L581.905 8.78798C581.037 12.5465 579.495 16.1122 577.472 19.2925L580.941 26.5204C581.037 26.8095 581.037 27.0986 580.845 27.2914L574.002 34.0374C573.81 34.2302 573.424 34.2302 573.231 34.1338L566.003 30.568C562.823 32.4955 559.257 34.0374 555.499 34.9048L552.8 42.5181C552.704 42.8073 552.415 42.9036 552.126 43H542.489C542.2 43 542.007 42.8073 541.814 42.5181L539.212 34.9048C535.454 34.0374 531.888 32.4955 528.707 30.4717L521.48 33.941C521.19 34.0374 520.901 34.0374 520.709 33.8447L513.963 27.0023C513.77 26.8095 513.77 26.424 513.866 26.2313L517.432 19.0034C515.505 15.8231 513.963 12.2574 513.095 8.49886L505.482 5.80045C505.193 5.70408 505.096 5.41497 505 5.12585V-4.51134C505 -4.80045 505.193 -4.99319 505.482 -5.18594L513.095 -7.78798C513.963 -11.5465 515.505 -15.1122 517.528 -18.2925L514.059 -25.5204C513.963 -25.8095 513.963 -26.0986 514.155 -26.2914L520.998 -33.0374C521.19 -33.2302 521.576 -33.2302 521.769 -33.1338L528.997 -29.568C532.177 -31.4955 535.743 -33.0374 539.501 -33.9048L542.2 -41.5181C542.296 -41.8073 542.585 -41.9036 542.874 -42H552.511C552.8 -42 552.993 -41.8073 553.186 -41.5181L555.788 -33.9048C559.546 -33.0374 563.112 -31.4955 566.293 -29.4717L573.52 -32.941C573.81 -33.0374 574.099 -33.0374 574.291 -32.8447L581.037 -26.0023C581.23 -25.8095 581.23 -25.424 581.134 -25.2313L577.568 -18.0034C579.495 -14.8231 581.037 -11.2574 581.905 -7.49886L589.518 -4.80045C589.807 -4.70408 589.904 -4.41497 590 -4.12585V5.51134ZM553.379 -18.9671C542.681 -22.1474 531.406 -16.076 528.226 -5.37868C525.045 5.3186 531.117 16.5941 541.91 19.7744C552.608 22.9546 563.883 16.8832 567.063 6.08957C570.244 -4.51134 564.076 -15.7868 553.379 -18.9671Z' fill='url(%23paint7_linear)'/%3E%3Cpath d='M572.878 -7.04502C568.662 -21.0572 553.954 -29.0922 539.932 -24.8787C525.911 -20.7632 517.968 -5.96716 522.087 8.04502C526.303 22.0572 541.011 30.0922 555.032 25.8787C569.054 21.6652 577.094 6.96716 572.878 -7.04502ZM553.365 20.1954C542.482 23.429 531.009 17.2558 527.774 6.37923C524.538 -4.49735 530.715 -15.9619 541.697 -19.1954C552.581 -22.429 564.053 -16.2558 567.289 -5.28125C570.525 5.49735 564.249 16.9619 553.365 20.1954Z' fill='url(%23paint8_linear)'/%3E%3Cpath d='M475.816 174.104C475.78 174.27 475.646 174.357 475.456 174.433L470.759 174.993C469.799 177.047 468.474 178.907 466.92 180.487L468.026 185.068C468.046 185.246 468.01 185.412 467.876 185.499L463.113 188.536C462.979 188.623 462.757 188.576 462.658 188.497L458.941 185.559C456.876 186.276 454.637 186.724 452.37 186.761L449.883 190.806C449.792 190.96 449.614 190.98 449.436 191L443.896 189.816C443.73 189.78 443.643 189.646 443.567 189.456L443.007 184.759C440.953 183.799 439.093 182.474 437.513 180.92L432.932 182.026C432.754 182.046 432.588 182.01 432.501 181.876L429.464 177.113C429.377 176.979 429.424 176.757 429.503 176.658L432.441 172.941C431.724 170.876 431.276 168.637 431.239 166.37L427.194 163.883C427.04 163.792 427.02 163.614 427 163.436L428.184 157.896C428.22 157.73 428.354 157.643 428.544 157.567L433.241 157.007C434.201 154.953 435.526 153.093 437.08 151.513L435.974 146.932C435.954 146.754 435.99 146.588 436.124 146.501L440.887 143.464C441.021 143.377 441.243 143.424 441.342 143.503L445.059 146.441C447.124 145.724 449.363 145.276 451.63 145.239L454.117 141.194C454.208 141.04 454.386 141.02 454.564 141L460.104 142.184C460.27 142.22 460.357 142.354 460.433 142.544L460.993 147.241C463.047 148.201 464.907 149.526 466.487 151.08L471.068 149.974C471.246 149.954 471.412 149.99 471.499 150.124L474.536 154.887C474.623 155.021 474.576 155.243 474.497 155.342L471.559 159.059C472.276 161.124 472.724 163.363 472.761 165.63L476.806 168.117C476.96 168.208 476.98 168.386 477 168.564L475.816 174.104ZM457.772 155.532C452.013 152.389 444.785 154.493 441.642 160.252C438.5 166.01 440.604 173.238 446.418 176.393C452.177 179.536 459.405 177.432 462.559 171.618C465.69 165.914 463.53 158.675 457.772 155.532Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='494' y='139' width='108' height='110' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dx='4' dy='10'/%3E%3CfeGaussianBlur stdDeviation='9'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.380392 0 0 0 0 0.482353 0 0 0 0 0.898039 0 0 0 0.4 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='147.646' y1='56.0926' x2='277.57' y2='427.367' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%235B77E7'/%3E%3Cstop offset='0.49373' stop-color='%2349B5D2'/%3E%3Cstop offset='1' stop-color='%2326E8A8'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='646.755' y1='131.484' x2='664.95' y2='158.776' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear' x1='578.272' y1='79.4763' x2='619.918' y2='133.656' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint3_linear' x1='671.1' y1='114.491' x2='666.544' y2='90.571' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint4_linear' x1='658.772' y1='70.6062' x2='684.767' y2='90.4967' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint5_linear' x1='661.997' y1='66.3933' x2='687.993' y2='86.2836' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint6_linear' x1='668.437' y1='162.036' x2='680.431' y2='180.026' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9B776'/%3E%3Cstop offset='1' stop-color='%23F47960'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint7_linear' x1='547.599' y1='42.8172' x2='547.599' y2='-41.9901' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232BE4C3'/%3E%3Cstop offset='1' stop-color='%234EFEC3'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint8_linear' x1='547.562' y1='-25.886' x2='547.562' y2='26.9938' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232BE4C3'/%3E%3Cstop offset='1' stop-color='%234EFEC3'/%3E%3C/linearGradient%3E%3CclipPath id='clip0'%3E%3Crect width='370' height='260' fill='white' transform='translate(390)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: none;
+    background-size: cover; }
+    .croco-school__single-article-content .banner.invert a:before {
+      display: none; }
+    .croco-school__single-article-content .banner.invert h3 {
+      color: #ffffff; }
+
+.croco-school__single-article-content .info-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 43px;
+  margin-top: 39px;
+  background-color: transparent;
+  border: none;
+  padding: 20px 0 20px 0;
+  border-radius: 3px; }
+  .croco-school__single-article-content .info-banner img {
+    display: none;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin: 0 16px 0 0; }
+  .croco-school__single-article-content .info-banner:before {
+    content: '';
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='56' height='57' viewBox='0 0 56 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 49.875C21 53.8101 24.1341 57 28 57C31.8659 57 35 53.8101 35 49.875V49.5H21V49.875Z' fill='%2334D7A1'/%3E%3Cpath d='M21 47V49.5H35V47H21Z' fill='%2334D7A1'/%3E%3Cg opacity='0.2'%3E%3Cpath d='M26.2775 35.9958C23.6298 35.2537 21.6842 32.8477 21.6842 30H25.1292C25.1292 31.5623 26.417 32.8333 28 32.8333C28 25.6755 28 17.5612 28 13C19.7158 13 13 19.628 13 27.8042C13 33.2903 16.0237 38.0792 20.5159 40.6368L22.5455 47H26.2775V35.9958Z' fill='%23617BE5'/%3E%3Cpath d='M28 13C28 17.5612 28 25.6755 28 32.8333C29.583 32.8333 30.8708 31.5623 30.8708 30H34.3158C34.3158 32.8477 32.3702 35.2537 29.7225 35.9958V47H33.4545L35.4841 40.6368C39.9763 38.0793 43 33.2904 43 27.8042C43 19.628 36.2842 13 28 13Z' fill='%23617BE5'/%3E%3C/g%3E%3Crect x='27' width='2' height='8' fill='%23FCD09F'/%3E%3Crect y='28' width='2' height='8' transform='rotate(-90 0 28)' fill='%23FCD09F'/%3E%3Crect x='48' y='28' width='2' height='8' transform='rotate(-90 48 28)' fill='%23FCD09F'/%3E%3Cpath d='M42.4142 13.0711L41 11.6569L46.6569 6L48.0711 7.41421L42.4142 13.0711Z' fill='%23FCD09F'/%3E%3Cpath d='M12.6571 13.0711L14.0713 11.6569L8.41443 6L7.00022 7.41421L12.6571 13.0711Z' fill='%23FCD09F'/%3E%3C/svg%3E");
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 58px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin: 0 16px 0 0; }
+  .croco-school__single-article-content .info-banner a {
+    font-style: italic;
+    font-weight: bold;
+    color: #617BE5; }
+  .croco-school__single-article-content .info-banner p,
+  .croco-school__single-article-content .info-banner span {
+    font-style: italic;
+    font-weight: bold;
+    color: #617BE5;
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .croco-school__single-article-content .info-banner p {
+    margin-top: 5px; }
+
+@media (min-width: 768px) {
+  .croco-school__single-article-content .banner.invert h3 {
+    padding-right: 100px; } }
+
+@media (max-width: 768px) {
+  .croco-school__single-article-content .banner.invert {
+    padding-right: 41px;
+    background-image: -webkit-linear-gradient(280deg, #5b77e7 0%, #26e8a8 100%);
+    background-image: -o-linear-gradient(280deg, #5b77e7 0%, #26e8a8 100%);
+    background-image: linear-gradient(170deg, #5b77e7 0%, #26e8a8 100%); } }
+
+@media (max-width: 425px) {
+  .croco-school__single-article-content .info-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .croco-school__single-article-content .info-banner:before {
+      margin-bottom: 10px; }
+    .croco-school__single-article-content .info-banner p,
+    .croco-school__single-article-content .info-banner span {
+      font-size: 16px; }
+  .croco-school__single-article-content .banner,
+  .croco-school__single-article-content .banner.invert {
+    padding: 13px 20px 35px 20px; }
+    .croco-school__single-article-content .banner h3,
+    .croco-school__single-article-content .banner.invert h3 {
+      line-height: 38px;
+      font-size: 25px;
+      margin-bottom: 15px; }
+    .croco-school__single-article-content .banner p,
+    .croco-school__single-article-content .banner.invert p {
+      font-size: 16px; } }
+
+.search-no-results #primary {
+  margin: 0 auto; }
+
+.search.search-results .site-content {
+  margin-top: 60px; }
+
+.article-sidebar-bg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 9999em;
+  background-color: #fff; }
+
+.cs-articles-archive .cs-article-link-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .cs-articles-archive .cs-article-link-text:before {
+    margin-right: 5px; }
+
+.croco-article-back-btn-wrap a.croco-article-back-btn:hover {
+  text-decoration: none; }
+
+.croco-article-back-btn-wrap {
+  margin-left: 12px;
+  margin-top: 50px; }
+  .croco-article-back-btn-wrap:before {
+    content: '';
+    display: inline-block;
+    margin-right: 7px;
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+    width: 21px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.08203' y='7' width='19' height='2' fill='%23D0D5D9'%3E%3C/rect%3E%3Crect x='1.41406' y='6.66797' width='11' height='2' transform='rotate(45 1.41406 6.66797)' fill='%23D0D5D9'%3E%3C/rect%3E%3Crect x='0.0820312' y='8' width='11' height='2' transform='rotate(-45 0.0820312 8)' fill='%23D0D5D9'%3E%3C/rect%3E%3C/svg%3E"); }
+
+.croco-article-back-btn__text {
+  color: inherit;
+  position: relative;
+  text-decoration: none; }
+  .croco-article-back-btn__text:before {
+    background-color: #617BE5;
+    opacity: 0.4;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease; }
+  .croco-article-back-btn__text:after {
+    content: '';
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    width: 0;
+    background-color: #617BE5; }
+  .croco-article-back-btn__text:hover {
+    text-decoration: none; }
+    .croco-article-back-btn__text:hover:after {
+      top: 100%;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      width: 100%;
+      background-color: #617BE5; }
+
+.croco-school-embed-responsive {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin-bottom: 30px; }
+  .croco-school-embed-responsive iframe,
+  .croco-school-embed-responsive embed,
+  .croco-school-embed-responsive object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0; }
+  .croco-school-embed-responsive.croco-school-embed-responsive-16by9 {
+    padding-bottom: 56.25%; }
+  .croco-school-embed-responsive.croco-school-embed-responsive-4by3 {
+    padding-bottom: 75%; }
+
+.croco-school__single-post-navigation {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F9FAFB;
+  margin-bottom: -60px; }
+  .croco-school__single-post-navigation .post-navigation .nav-links {
+    display: block; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-text,
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-text {
+      color: #617BE5; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text,
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text {
+      position: relative; }
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text:before,
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text:before {
+        background-color: #617BE5;
+        opacity: 0.4;
+        content: '';
+        display: block;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 100%;
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease; }
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text:after,
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text:after {
+        content: '';
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 0;
+        background-color: #617BE5; }
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text:hover,
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text:hover {
+        text-decoration: none; }
+        .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a .nav-text:hover:after,
+        .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a .nav-text:hover:after {
+          top: 100%;
+          -webkit-transition: all 0.2s ease-out;
+          -o-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+          width: 100%;
+          background-color: #617BE5; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-post-title,
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-post-title {
+      color: #617BE5; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-text,
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-text {
+      text-decoration: none; }
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a:hover .nav-text:after,
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a:hover .nav-text:after {
+        top: 100%;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        background-color: #617BE5; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-next .croco-school-nav-wrap,
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous .croco-school-nav-wrap {
+      margin-top: 20px;
+      position: relative;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-next .croco-school-nav-wrap i,
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous .croco-school-nav-wrap i {
+        color: #617BE5;
+        position: relative;
+        height: 16px;
+        top: 7px;
+        font-size: 13px; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-next a,
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous {
+      padding-left: 0; }
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-previous i {
+        margin-right: 10px; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-next {
+      padding-right: 0; }
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-next .croco-school-nav-wrap {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+      .croco-school__single-post-navigation .post-navigation .nav-links .nav-next i {
+        margin-left: 10px; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-post-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #162B40; }
+    .croco-school__single-post-navigation .post-navigation .nav-links .nav-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.367;
+      font-family: Roboto, sans-serif;
+      letter-spacing: 0;
+      color: #617BE5;
+      text-transform: capitalize; }
+  .croco-school__single-post-navigation .post-navigation {
+    padding: 40px 0;
+    margin: 0 auto;
+    border: none;
+    width: 760px; }
+
+/*# sourceMappingURL=croco-school-frontend.css.map */
