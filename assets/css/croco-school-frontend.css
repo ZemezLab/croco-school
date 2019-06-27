@@ -938,6 +938,66 @@
     -ms-transform: translateY(-6px);
     transform: translateY(-6px); }
 
+.croco-school-share {
+  display: none; }
+  @media (min-width: 768px) {
+    .croco-school-share {
+      display: block;
+      position: fixed;
+      left: 15px;
+      z-index: 999; } }
+  @media (min-width: 1440px) {
+    .croco-school-share {
+      left: 75px; } }
+  .croco-school-share__inner {
+    display: block;
+    width: 44px;
+    padding: 13px 5px;
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 0 8px 20px rgba(22, 43, 64, 0.12);
+    box-shadow: 0 8px 20px rgba(22, 43, 64, 0.12);
+    border-radius: 4px; }
+  .croco-school-share__share-icon {
+    font-size: 18px;
+    line-height: 1;
+    color: #162B40;
+    margin-bottom: 18px; }
+    .croco-school-share__share-icon i {
+      width: 1em;
+      height: 1em; }
+  .croco-school-share .croco-school-share__list {
+    margin: 0;
+    list-style: none; }
+  .croco-school-share__item {
+    display: block; }
+  .croco-school-share__item + .croco-school-share__item {
+    margin-top: 15px; }
+  .croco-school-share__link {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1; }
+    .croco-school-share__link:focus {
+      outline: none; }
+  .croco-school-share .croco-school-share__item .croco-school-share__link {
+    color: #D0D5D9; }
+    .croco-school-share .croco-school-share__item .croco-school-share__link--facebook:hover {
+      color: #3b5998; }
+    .croco-school-share .croco-school-share__item .croco-school-share__link--twitter:hover {
+      color: #1DA1F2; }
+    .croco-school-share .croco-school-share__item .croco-school-share__link--linkedin:hover {
+      color: #0077b5; }
+    .croco-school-share .croco-school-share__item .croco-school-share__link--pinterest:hover {
+      color: #bd081c; }
+  .croco-school-share__link-icon {
+    width: 1em;
+    height: 1em; }
+    .croco-school-share--both .croco-school-share__link-icon {
+      margin-right: 4px; }
+  .croco-school-share__link-text {
+    display: inline-block; }
+
 .site-content .croco-school h1 {
   font-weight: 900;
   font-size: 40px;

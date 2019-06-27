@@ -71,6 +71,8 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 			$is_sidebar_class = $is_active_sidebar ? 'has-sidebar' : 'no-sidebar';
 
+			require croco_school()->plugin_path( 'includes/sharing.php' );
+
 			?><div class="croco-school__single-article container guide-article <?php echo $is_sidebar_class; ?>"><?php
 					do_action( 'cx_breadcrumbs/render' );
 
@@ -87,8 +89,10 @@ if ( ! class_exists( 'Croco_School_Article_Data' ) ) {
 
 							$format = $this->get_post_format( $post_id );?>
 
+							<?php croco_school_sharing()->the_sharing(); ?>
+
 							<h1 class="croco-school__single-article-title"><?php echo the_title(); ?></h1>
-							<?php	$this->get_article_media();?>
+							<?php $this->get_article_media(); ?>
 							<div class="croco-school__single-article-content"><?php
 
 								add_filter( 'embed_oembed_html', array( $this, 'add_oembed_wrapper' ) );
