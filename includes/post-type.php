@@ -64,6 +64,8 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 			add_filter( 'template_include', array( $this, 'article_view_template' ) );
 
 			add_action( 'restrict_manage_posts', array( $this, 'admin_filter_by_tax' ) , 10, 2);
+
+			add_filter( 'wp_insert_post_data', array( $this, 'increment_menu_order' ) );
 		}
 
 		/**
@@ -221,7 +223,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 			add_theme_support( 'post-formats', $args );
 		}
 
-		function admin_filter_by_tax( $post_type, $which ) {
+		public function admin_filter_by_tax( $post_type, $which ) {
 
 			// Apply this only on a specific post type
 			if ( $this->article_post_slug() !== $post_type ) {
@@ -251,6 +253,29 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 			}
 			echo '</select>';
 
+		}
+
+		public function increment_menu_order( $data ) {
+
+			if ( ! isset( $_POST['post_type'] ) || $_POST['post_type'] !== $this->article_post_slug() ) {
+				return $data;
+			}
+
+			if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+				return $data;
+			}
+
+			if ( $data['post_date'] !== $data['post_modified'] ) { // if update post
+				return $data;
+			}
+
+			if ( ! empty( $data['menu_order'] ) ) {
+				return $data;
+			}
+
+			$data['menu_order'] = 100;
+
+			return $data;
 		}
 
 		/**

@@ -119,7 +119,7 @@ class Croco_School_Articles_Archive extends Croco_School_Base {
 		$query_param = array(
 			'post_type'      => croco_school()->post_type->article_post_slug(),
 			'posts_per_page' => - 1,
-			'orderby'        => array( 'menu_order' => 'ASC', 'date' => 'DESC' ),
+			'orderby'        => array( 'menu_order' => 'ASC' ),
 			'tax_query'      => array(
 				array(
 					'taxonomy'         => croco_school()->post_type->category_term_slug(),
