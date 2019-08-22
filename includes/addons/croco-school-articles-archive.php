@@ -65,7 +65,7 @@ class Croco_School_Articles_Archive extends Croco_School_Base {
 		$term_id = isset( get_queried_object()->term_id ) ? get_queried_object()->term_id : false;
 
 		if ( empty( $term_id ) ) {
-			echo '<h2>Articles not found</h2>';
+			echo '<h1>Articles not found</h1>';
 			return false;
 		}
 		?>
@@ -74,7 +74,7 @@ class Croco_School_Articles_Archive extends Croco_School_Base {
 			<?php
 			$term_data = get_term( $term_id );
 
-			printf( '<h2 class="cs-articles-archive__main-title">%s</h2>', $term_data->name );
+			printf( '<h1 class="cs-articles-archive__main-title">%s</h1>', $term_data->name );
 
 			$this->generate_article_list( $term_id );
 
