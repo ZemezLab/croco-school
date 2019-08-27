@@ -72,7 +72,7 @@ if ( ! class_exists( 'Croco_School_Sharing' ) ) {
 				'linkedin' => array(
 					'name'      => esc_html__( 'LinkedIn', 'croco-school' ),
 					'icon'      => 'fa fa-linkedin',
-					'share_url' => 'http://www.linkedin.com/shareArticle?mini=true&url=%3$s&title=%4$s&summary=%5$s&source=%3$s',
+					'share_url' => 'https://www.linkedin.com/shareArticle?mini=true&url=%3$s&title=%4$s&summary=%5$s&source=%3$s',
 				),
 				'pinterest' => array(
 					'name'      => esc_html__( 'Pinterest', 'croco-school' ),
