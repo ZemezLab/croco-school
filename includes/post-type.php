@@ -98,6 +98,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 						'page-attributes',
 						//'post-formats',
 					] ),
+					'show_in_rest'    => true,
 					'public'          => true,
 					'capability_type' => 'post',
 					'hierarchical'    => false, // Hierarchical causes memory issues - WP loads all records!
