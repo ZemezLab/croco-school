@@ -146,10 +146,12 @@ class Croco_School_Articles_Archive extends Croco_School_Base {
 			while ( $query->have_posts() ) : $query->the_post();
 
 				$post_id = $query->post->ID;
+                $order = get_post_meta( $post_id, 'order', true );
 				$format  = get_post_meta( $post_id, 'article_format', true );
 				?>
 
-				<li id="cs-article-<?php echo $post_id; ?>" class="cs-articles-archive__article-item">
+				<li id="cs-article-<?php echo $post_id; ?>" class="cs-articles-archive__article-item" <?php if ( $order !== '' ) {
+                    printf('style="order:%s;"', $order);}?>>
 					<a class="cs-articles-archive__article-link" href="<?php the_permalink(); ?>">
 						<span class="cs-article-link-text"><?php
 							the_title();

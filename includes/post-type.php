@@ -96,6 +96,7 @@ if ( ! class_exists( 'Croco_School_Post_Type' ) ) {
 						'comments',
 						'revisions',
 						'page-attributes',
+                        'custom-fields',
 						//'post-formats',
 					] ),
 					'show_in_rest'    => true,
